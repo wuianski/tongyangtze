@@ -1,5 +1,3 @@
-"use client";
-
 /* Components */
 import WorkContent from "@/components/WorkContent";
 /* Data */
@@ -10,24 +8,24 @@ import { Box, Paper, Stack, styled } from "@mui/material";
 import Link from "next/link";
 
 async function getWork(params) {
+  const { id } = await params;
+  // console.log(id);
   const works = await getWorks();
-  const work = works.find((work) => work.id == params.id.toString());
+  const work = works.find((work) => work.id == id.toString());
   return work;
 }
 
 async function getLastWork(params) {
+  const { id } = await params;
   const works = await getWorks();
-  const lastwork = works.find(
-    (work) => work.id == (Number(params.id) + 1).toString()
-  );
+  const lastwork = works.find((work) => work.id == (Number(id) + 1).toString());
   return lastwork;
 }
 
 async function getNextWork(params) {
+  const { id } = await params;
   const works = await getWorks();
-  const nextwork = works.find(
-    (work) => work.id == (Number(params.id) - 1).toString()
-  );
+  const nextwork = works.find((work) => work.id == (Number(id) - 1).toString());
   return nextwork;
 }
 

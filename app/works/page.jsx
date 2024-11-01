@@ -1,4 +1,3 @@
-"use client";
 /* Components */
 import HoverImage from "@/components/HoverImage";
 /* Data */

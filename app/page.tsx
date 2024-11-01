@@ -23,6 +23,7 @@ export default function Home() {
           quality={100}
           style={{ objectFit: "cover", objectPosition: "center" }}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
+          priority={true}
         />
       </Box>
     </>
