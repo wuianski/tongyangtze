@@ -60,7 +60,7 @@ export default function Header() {
           <Item
             sx={{
               width: "43%",
-              background: { xs: siteBackgroundColor, sm: backgroundColor },
+              background: { xs: siteBackgroundColor, sm: siteBackgroundColor },
             }}
           >
             <Link href={`/`} scroll={false}>

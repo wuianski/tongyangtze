@@ -107,6 +107,33 @@ export default function NavMobile({ textColor }) {
             </Link>
 
             <Link
+              className={`link ${pathname === "/about" ? "active" : ""}`}
+              href="/about#exhibition"
+            >
+              <Box mb={2} ml={2}>
+                Exhibition
+              </Box>
+            </Link>
+
+            <Link
+              className={`link ${pathname === "/about" ? "active" : ""}`}
+              href="/about#article"
+            >
+              <Box mb={2} ml={2}>
+                Article
+              </Box>
+            </Link>
+
+            <Link
+              className={`link ${pathname === "/about" ? "active" : ""}`}
+              href="/about#press"
+            >
+              <Box mb={2} ml={2}>
+                Press
+              </Box>
+            </Link>
+
+            <Link
               className={`link ${pathname === "/contacts" ? "active" : ""}`}
               href="/contacts"
             >

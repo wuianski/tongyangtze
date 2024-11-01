@@ -41,13 +41,20 @@ export default function HoverImage({ works }) {
       >
         <Stack direction="row" spacing={10}>
           <Item sx={{ width: { xs: "100%", sm: "30%" } }}>
-            <Box sx={{ flexGrow: 1, textAlign: { xs: "center", sm: "unset" } }}>
+            <Box
+              sx={{
+                flexGrow: 1,
+                textAlign: { xs: "center", sm: "unset" },
+                width: "fit-content",
+                margin: "0 auto",
+              }}
+            >
               {works.map((w, index) => (
                 <Link key={index} href={`/works/${w.id}`}>
                   <Box
                     p={0}
                     onMouseOver={() => setHoverId(index)}
-                    sx={{ fontSize: 32, fontStyle: "italic" }}
+                    sx={{ fontSize: 30, fontStyle: "italic" }}
                   >
                     {w.title}
                   </Box>
@@ -75,7 +82,10 @@ export default function HoverImage({ works }) {
                 src={renderSrc}
                 fill={true}
                 alt="Picture of the artwork"
-                style={{ objectFit: "contain", objectPosition: "center top" }}
+                style={{
+                  objectFit: "contain",
+                  objectPosition: "center top",
+                }}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
               />
             </Box>

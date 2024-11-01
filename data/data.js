@@ -3,7 +3,7 @@ export function getWorks() {
         {
             id: 1,
             title: "2011 to Present",
-            src: "/works_cover/不昧.jpg",
+            src: "/works/鳶飛戾天魚躍于淵.jpeg",
             works: [
                 {
                     id: 1,
@@ -122,7 +122,7 @@ export function getWorks() {
         {
             id: 2,
             title: "2001 to 2010",
-            src: "/works_cover/千里之行始於足下.jpg",
+            src: "/works/任所適.jpeg",
             works: [
                 {
                     id: 1,
@@ -201,7 +201,7 @@ export function getWorks() {
         {
             id: 3,
             title: "1991 to 2000",
-            src: "/works_cover/山雨欲來.jpg",
+            src: "/works/浩如烟海.jpeg",
             works: [
                 {
                     id: 1,
@@ -280,7 +280,7 @@ export function getWorks() {
         {
             id: 4,
             title: "1990之前",
-            src: "/works_cover/差若毫厘繆以千里.jpg",
+            src: "/works/滄海之滉漾浥勺水 不足以削其廣.jpeg",
             works: [
                 {
                     id: 1,
@@ -375,7 +375,6 @@ export function getCurrentExs() {
 
 export function getPastExs() {
     const pastExs = [
-
         {
             id: 1,
             year: 2021,
@@ -384,9 +383,261 @@ export function getPastExs() {
         },
         {
             id: 2,
-            year: 2020,
-            title: "Moving Ink: Tong Yang-Tze",
+            year: 2019,
+            title: "Retrospective exhibition “Moving Ink: Tong Yang-Tze” at the Taipei Fine Arts Museum, Taipei.",
             link: "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=663&ddlLang=en-us",
+        },
+        {
+            id: 3,
+            year: 2018,
+            title: "“Golden Proverbs——Calligraphy Works of Tong Yang-Tze” at Eslite Bookstore Xinyi Branch Performance Hall, Taipei. ",
+            link: "",
+        },
+        {
+            id: 4,
+            year: 2016,
+            title: "“Silent Music: Solo Exhibition of Tong Yang-Tze” at BOZAR Centre for Fine Arts, Brussels, Belgium.",
+            link: "",
+        },
+        {
+            id: 5,
+            year: 2016,
+            title: "“Sayings of Confucius” at Eslite Bookstore Xinyi Branch Performance Hall",
+            link: "",
+        },
+        {
+            id: 6,
+            year: 2016,
+            title: "“Tune: Immortals by the River (Billows surge eastward in the Yangtze River) ”at Eslite Bookstore Suzhou, China.",
+            link: "",
+        },
+        {
+            id: 7,
+            year: 2014,
+            title: "“Sayings of Laozi and Zhuangzi” at Eslite Bookstore Xinyi Branch Performance Hall, Taipei.",
+            link: "",
+        },
+        {
+            id: 8,
+            year: 2013,
+            title: "“Contemplating Change” at Eslite Bookstore Xinyi Branch Performance Hall, Taipei.",
+            link: "",
+        },
+        {
+            id: 9,
+            year: 2012,
+            title: "“Solitary Joy” at Eslite Bookstore Xinyi Branch Performance Hall, Taipei.",
+            link: "",
+        },
+        {
+            id: 10,
+            year: 2012,
+            title: "“Silent Music—Variations” at the Kaohsiung Museum of Fine Arts, Kaohsiung.",
+            link: "",
+        },
+        {
+            id: 11,
+            year: 2011,
+            title: "Solo exhibition at Taiwan Academy, New York. ",
+            link: "",
+        },
+        {
+            id: 12,
+            year: 2010,
+            title: "“Brush Beyond Space: Works of Tong Yang-Tze” at the Hong Kong Heritage Museum, Hong Kong.",
+            link: "",
+        },
+        {
+            id: 13,
+            year: 2009,
+            title: "“Dialogues: An Exhibition of Chinese Calligraphy by Tong Yang-Tze” at the National Taiwan Museum of Art, Taichung. ",
+            link: "",
+        },
+        {
+            id: 14,
+            year: 2009,
+            title: "“Eternal Rhythm of Ink: Calligraphy by Tong Yang-Tze & Designs Based on Tong’s Art for Creative Industry” at the Kaohsiung Museum of Fine Arts, Kaohsiung.",
+            link: "",
+        },
+        {
+            id: 15,
+            year: 2008,
+            title: "“Chen Mo Shi Jin (Silence Is Gold) ”at Eslite Bookstore Xinyi Branch Performance Hall, Taipei.",
+            link: "",
+        },
+        {
+            id: 16,
+            year: 2007,
+            title: "“Heartstrings, Silent Music: Works of Tong Yang-Tze” at Eslite Bookstore Xinyi Branch Performance Hall, Taipei.",
+            link: "",
+        },
+        {
+            id: 17,
+            year: 2006,
+            title: "“Chen Mo Shi Jin (Ink Like Gold) ” at Eslite Vision, Taipei.",
+            link: "",
+        },
+        {
+            id: 18,
+            year: 2004,
+            title: "“Realm of Feelings—A Dialogue of Calligraphy and Space” a collaborative exhibition with architectural designer Ray Chen, at the Taipei Fine Arts Museum.",
+            link: "",
+        },
+        {
+            id: 19,
+            year: 2003,
+            title: "“Unrestrained Freedom—A Dialogue of Calligraphy and Space” at the National Theater and Concert Hall.",
+            link: "",
+        },
+        {
+            id: 20,
+            year: 2003,
+            title: "Solo exhibition at Taiwan Academy, New York, USA.",
+            link: "",
+        },
+        {
+            id: 21,
+            year: 2002,
+            title: "“Between Real and Unreal, Change to Overcome” at DaAi TV in collaboration with architect Eric Yao.",
+            link: "",
+        },
+        {
+            id: 22,
+            year: 2000,
+            title: "Solo exhibition at the National Museum of History, Taipei, Mountain Art Museum, Kaohsiung, and National Central University, Taoyuan.",
+            link: "",
+        },
+        {
+            id: 23,
+            year: 1998,
+            title: "Solo exhibition at the National Museum of History, Taipei.",
+            link: "",
+        },
+        {
+            id: 24,
+            year: 1997,
+            title: "Solo exhibition at Eslite Vision, Taipei.",
+            link: "",
+        },
+        {
+            id: 25,
+            year: 1997,
+            title: "Participated in “The Living Brush,” an exhibition of four calligraphy artists, in San Francisco, USA. Fellow participating artists included C. C. Wang, Fred Fang-Yu Wang and Tseng Yu-Ho.",
+            link: "",
+        },
+        {
+            id: 26,
+            year: 1994,
+            title: "Solo exhibitions at the Taipei Fine Arts Museum in Taipei and Duchamp Gallery in Kaohsiung.",
+            link: "",
+        },
+        {
+            id: 27,
+            year: 1993,
+            title: "Solo exhibition at Eslite Vision, Taipei, and the National Tsing Hua University Arts Center, Hsinchu.",
+            link: "",
+        },
+        {
+            id: 28,
+            year: 1992,
+            title: "Participate in the “International Modern Calligraphy Exhibition”, Seoul, Korea.",
+            link: "",
+        },
+        {
+            id: 29,
+            year: 1992,
+            title: "“Encountering the Others”international art exhibition, Kassel, Germany.",
+            link: "",
+        },
+        {
+            id: 30,
+            year: 1989,
+            title: "Solo exhibition at Howard Salon, Taipei.",
+            link: "",
+        },
+        {
+            id: 31,
+            year: 1987,
+            title: "Solo exhibition at Spring Gallery, Taipei.",
+            link: "",
+        },
+        {
+            id: 32,
+            year: 1983,
+            title: "Solo exhibition at Spring Gallery, Taipei.",
+            link: "",
+        },
+        {
+            id: 33,
+            year: 1982,
+            title: "Solo exhibition at Hugh Moss Gallery, London, UK.",
+            link: "",
+        },
+        {
+            id: 34,
+            year: 1980,
+            title: "Solo exhibition at Spring Gallery, Taipei.",
+            link: "",
+        },
+        {
+            id: 35,
+            year: 1979,
+            title: " “Five Artists Exhibition” at Apollo Art Gallery, Taipei.",
+            link: "",
+        },
+        {
+            id: 36,
+            year: 1979,
+            title: "Solo exhibition at Taichung City Culture Center.",
+            link: "",
+        },
+        {
+            id: 37,
+            year: 1978,
+            title: "Group exhibitions at Vassar College, New York, USA, and National Library, Ottawa, Canada. Solo exhibition at the National Museum of History, Taipei, Taiwan.",
+            link: "",
+        },
+        {
+            id: 38,
+            year: 1977,
+            title: "“Exhibition of Contemporary Christian Art” in Halifax, Canada. ",
+            link: "",
+        },
+        {
+            id: 39,
+            year: 1976,
+            title: "Group exhibitions across USA, including: Indianapolis Museum of Art, Indiana, Eisenhower College, New York, Bowdoin College, Maine, and Skidmore College, New York.",
+            link: "",
+        },
+        {
+            id: 40,
+            year: 1975,
+            title: "Group exhibitions across North America, including: Townson State College, Baltimore, Maryland, University of Pennsylvania, Philadelphia, Mount Holyoke College, Massachusetts, Ray Ladies Gallery, New Jersey, Wang Ming Gallery, Washington D.C., HMK Fine Art Studio, New York, USA; and Saint Mary’s University in Halifax, Canada.",
+            link: "",
+        },
+        {
+            id: 41,
+            year: 1974,
+            title: "Solo calligraphy exhibition at St. John’s University, New York, USA.",
+            link: "",
+        },
+        {
+            id: 42,
+            year: 1973,
+            title: "Solo exhibition at Spring Gallery, Taipei.",
+            link: "",
+        },
+        {
+            id: 43,
+            year: 1973,
+            title: "“Five Artists Calligraphy Exhibition” at the National Museum of History, Taipei.",
+            link: "",
+        },
+        {
+            id: 44,
+            year: 1969,
+            title: "Solo exhibition of calligraphy and paintings at the University of Massachusetts Amherst.s",
+            link: "",
         }
     ];
     return pastExs;
@@ -396,22 +647,17 @@ export function getUpcomingExs() {
     const upcomingExs = [
         {
             id: 1,
-            year: 2025,
-            title: "xxx",
-            link: "https://www.metmuseum.org/exhibitions/the-great-hall-commission-tong-yang-tze",
+            year: null,
+            title: "",
+            link: "",
         },
         {
             id: 2,
-            year: 2025,
-            title: "yyy",
-            link: "https://www.mplus.org.hk/en/exhibitions/m-commission-tong-yang-tze/",
+            year: null,
+            title: "",
+            link: "",
         },
-        {
-            id: 3,
-            year: 2026,
-            title: "zzz",
-            link: "https://www.tfam.museum/Exhibition/Exhibition_page.aspx?id=663&ddlLang=en-us",
-        }
+
     ];
     return upcomingExs;
 }
@@ -428,13 +674,13 @@ export function getArticle() {
         {
             id: 2,
             year: 2011,
-            title: "yyy",
+            title: "Sounds of Nature: Music with Form in the Calligraphy of Tong Yang-Tze",
             link: "https://drive.google.com/file/d/1vK-835gKVGhTZK8_MpEMMPFolNJ8IJB1/view?usp=sharing",
         },
         {
             id: 3,
             year: 1944,
-            title: "zzz",
+            title: "Remarks on the Sayings of Lazoi and Zhuangzi Exhibition",
             link: "https://drive.google.com/file/d/1BOkPc1gKwlnydtZl_fxuUfYMn8k7gF_2/view?usp=sharing",
         }
     ];
@@ -463,6 +709,48 @@ export function getPress() {
             year: 2020,
             title: "Renowned Taiwanese calligrapher showcases colossal artwork in US",
             link: "https://taiwannews.com.tw/news/3894223",
+        },
+        {
+            id: 4,
+            name: "OCULA",
+            year: 2018,
+            title: "From Ink to Apparel III – Another Calligraphy and Fashion Crossover",
+            link: "https://english.cw.com.tw/article/article.action?id=2170&from=search",
+        },
+        {
+            id: 5,
+            name: "The Guardian",
+            year: 2017,
+            title: "Flouting Calligraphic Conventions: Tong Yang-tze Breathes New Life into an Old Art",
+            link: "https://www.taiwan-panorama.com/en/Articles/Details?Guid=3aeb1bc6-f08b-47ea-9572-fed0ec2d89a6&langId=3&CatId=8&postname=Flouting%20Calligraphic%20Conventions%3A%20Tong%20Yang-tze%20Breathes%20New%20Life%20into%20an%20Old%20Art",
+        },
+        {
+            id: 6,
+            name: "Taiwan News",
+            year: 2016,
+            title: "Reviving the Joy of ‘Characters’",
+            link: "https://english.cw.com.tw/article/article.action?id=72",
+        },
+        {
+            id: 7,
+            name: "OCULA",
+            year: 2016,
+            title: "Innovative Exhibition Showcases Calligraphy in 16,384 Ways",
+            link: "https://international.thenewslens.com/article/43981",
+        },
+        {
+            id: 8,
+            name: "The Guardian",
+            year: 2012,
+            title: "Calligrapher Tong Yang-tze creates soundless symphony",
+            link: "https://www.taipeitimes.com/News/lang/archives/2012/04/16/2003530418",
+        },
+        {
+            id: 9,
+            name: "Taiwan News",
+            year: 1980,
+            title: "She Wields Her Mighty Pen",
+            link: "https://www.taiwan-panorama.com/en/Articles/Details?Guid=4efb08a5-2c32-400c-8ccb-ff134d883a49&langId=3&CatId=8&postname=She%20Wields%20Her%20Mighty%20Pen",
         }
     ];
     return press;

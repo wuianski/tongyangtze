@@ -13,6 +13,7 @@ const Item = styled(Paper)(({ theme }) => ({
   width: "max-content",
   boxShadow: "none",
   background: "none",
+  borderRadius: 0,
 
   [theme.breakpoints.down("md")]: {
     width: "100%",
