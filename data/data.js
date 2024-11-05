@@ -280,7 +280,7 @@ export function getWorks() {
         {
             id: 4,
             title: "1990之前",
-            src: "/works/滄海之滉漾浥勺水 不足以削其廣.jpg",
+            src: "/works/滄海之滉漾浥勺水不足以削其廣.jpg",
             works: [
                 {
                     id: 1,
@@ -304,7 +304,7 @@ export function getWorks() {
                     info: "Sources: Painting Scroll in Gold and Green, Qian Xuan, Song dynasty",
                     year: "Year: 1973",
                     size: "Size: 34 x 103 cm",
-                    src: "/works/烟雲出沒有無間 半在空虛半在山 我亦閒中消日月 幽林深處聽潺湲.jpg",
+                    src: "/works/烟雲出沒有無間半在空虛半在山我亦閒中消日月幽林深處聽潺湲.jpg",
                 },
                 {
                     id: 4,
@@ -312,7 +312,7 @@ export function getWorks() {
                     info: "Sources: The Master Who Embraces simplicity, Ge Hong, Eastern Jin period",
                     year: "Year: 1973",
                     size: "Size: 81 x 86.5 cm",
-                    src: "/works/滄海之滉漾浥勺水 不足以削其廣.jpg",
+                    src: "/works/滄海之滉漾浥勺水不足以削其廣.jpg",
                 }
             ],
         }
