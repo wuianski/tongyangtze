@@ -52,9 +52,14 @@ export default function HoverImage({ works }) {
               {works.map((w, index) => (
                 <Link key={index} href={`/works/${w.id}`}>
                   <Box
-                    p={0}
+                    pt={1}
                     onMouseOver={() => setHoverId(index)}
-                    sx={{ fontSize: 30, fontStyle: "italic" }}
+                    sx={{
+                      fontSize: 30,
+                      fontStyle: "italic",
+                      fontFamily: "baskerville-display-pt",
+                    }}
+                    className="hover_works"
                   >
                     {w.title}
                   </Box>

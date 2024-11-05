@@ -71,6 +71,7 @@ export default function Header() {
                   color: textColor,
                   position: "fixed",
                   zIndex: 99,
+                  fontFamily: "apparat",
                 }}
                 p={2}
               >
@@ -88,6 +89,7 @@ export default function Header() {
                   marginRight: "auto",
                   position: "relative",
                   zIndex: 100,
+                  pointerEvents: "none",
                 }}
                 pt={2}
               >
@@ -110,6 +112,7 @@ export default function Header() {
                   marginRight: "auto",
                   position: "relative",
                   zIndex: 100,
+                  pointerEvents: "none",
                 }}
                 pt={2}
               >

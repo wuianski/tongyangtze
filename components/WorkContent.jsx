@@ -78,7 +78,7 @@ export default function WorkContent({ work }) {
                         sx={{
                           position: "relative",
                           width: { xs: "max-content", sm: "max-content" },
-                          maxWidth: "100vw",
+                          maxWidth: "90vw",
                           ml: "auto",
                           mr: "auto",
                           // width: "100%",
@@ -104,7 +104,13 @@ export default function WorkContent({ work }) {
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
                         />
                       </Box>
-                      <Box sx={{ fontSize: { xs: 14, sm: 16 }, color: "#fff" }}>
+                      <Box
+                        sx={{
+                          fontSize: { xs: 14, sm: 16 },
+                          fontFamily: "baskerville-display-pt",
+                          color: "#fff",
+                        }}
+                      >
                         {w.title}
                       </Box>
                       <Box sx={{ fontSize: { xs: 12, sm: 14 } }}>{w.info}</Box>

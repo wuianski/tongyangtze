@@ -43,7 +43,7 @@ export default async function Work({ params }) {
         {nextwork && (
           <>
             <Link href={`/works/${nextwork.id}`}>
-              <Box>{nextwork.title}</Box>
+              <Box sx={{ fontFamily: "apparat" }}>{nextwork.title}</Box>
             </Link>
           </>
         )}
@@ -54,7 +54,7 @@ export default async function Work({ params }) {
         {lastwork && (
           <>
             <Link href={`/works/${lastwork.id}`}>
-              <Box>{lastwork.title}</Box>
+              <Box sx={{ fontFamily: "apparat" }}>{lastwork.title}</Box>
             </Link>
           </>
         )}

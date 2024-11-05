@@ -18,7 +18,7 @@ function CustomTabPanel(props) {
       aria-labelledby={`simple-tab-${index}`}
       {...other}
     >
-      {value === index && <Box sx={{ pt: 0, width: "50%" }}>{children}</Box>}
+      {value === index && <Box sx={{ pt: 0, width: "100%" }}>{children}</Box>}
     </div>
   );
 }
@@ -50,7 +50,7 @@ const StyledTabs = styled((props) => (
   "& .MuiTabs-indicatorSpan": {
     maxWidth: 40,
     width: "100%",
-    backgroundColor: "#222222ff",
+    backgroundColor: "#888",
   },
 });
 
@@ -60,9 +60,10 @@ const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
     fontWeight: theme.typography.fontWeightRegular,
     fontSize: theme.typography.pxToRem(15),
     marginRight: theme.spacing(1),
+    fontFamily: "apparat-light",
     color: "#222222ff",
     "&.Mui-selected": {
-      color: "#222222ff",
+      color: "#888",
     },
     paddingBottom: 0,
     // "&.Mui-focusVisible": {
@@ -79,13 +80,9 @@ export default function ExhibitionTabs({ currentExs, pastExs, upcomingExs }) {
   return (
     <>
       <Box>
-        <Box>EXHIBITIONS</Box>
+        <Box sx={{ color: "#000", fontFamily: "apparat" }}>EXHIBITIONS</Box>
         <Box sx={{ width: "100%" }}>
-          <Box
-            ml={18}
-            mt={-5}
-            // sx={{ borderBottom: 1, borderColor: "divider" }}
-          >
+          <Box ml={18} mt={-5}>
             <StyledTabs
               value={value}
               onChange={handleChange}

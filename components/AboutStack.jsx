@@ -10,6 +10,7 @@ import { Box, Paper, Stack, styled } from "@mui/material";
 /* Components */
 import AboutList from "@/components/AboutList";
 import ExhibitionTabs from "@/components/ExhibitionTabs";
+import ExhibitionAccordion from "@/components/ExhibitionAccordion";
 
 const Item = styled(Paper)(({ theme }) => ({
   textAlign: "left",
@@ -38,34 +39,53 @@ export default function AbouStack({
         <Stack direction={{ xs: "column-reverse", sm: "row" }} spacing={0}>
           <Item sx={{ width: { xs: "100%", sm: "80%" } }}>
             <Box sx={{ color: "#222222ff" }}>
-              <Box mt={10} sx={{ fontSize: 30 }}>
+              <Box
+                mt={10}
+                sx={{ fontSize: 30, fontFamily: "baskerville-display-pt" }}
+              >
                 TONG YANG TZE
               </Box>
               <Box sx={{ fontSize: 15 }}>
-                <Box mt={6} mb={-4}>
-                  {aboutContext}
-                </Box>
-                <Box pt={0} pb={20}>
+                <Box
+                  mt={6}
+                  dangerouslySetInnerHTML={{ __html: aboutContext }}
+                  sx={{ lineHeight: 2, color: "#222222" }}
+                ></Box>
+                <Box pt={0} pb={0}>
                   <Box pb={10} id="exhibition"></Box>
-                  <ExhibitionTabs
-                    currentExs={currentExs}
-                    pastExs={pastExs}
-                    upcomingExs={upcomingExs}
-                  />
+                  <Box sx={{ display: { xs: "none", sm: "block" } }}>
+                    <ExhibitionTabs
+                      currentExs={currentExs}
+                      pastExs={pastExs}
+                      upcomingExs={upcomingExs}
+                    />
+                  </Box>
+                  <Box sx={{ display: { xs: "block", sm: "none" } }}>
+                    <ExhibitionAccordion
+                      currentExs={currentExs}
+                      pastExs={pastExs}
+                      upcomingExs={upcomingExs}
+                    />
+                  </Box>
                 </Box>
-                <Box pt={8} pb={20} sx={{ width: "50%" }}>
+                <Box pt={0} pb={0} sx={{ width: "100%" }}>
                   <Box pb={10} id="article"></Box>
-                  <Box>ARTICLE</Box>
+                  <Box sx={{ color: "#000", fontFamily: "apparat" }}>
+                    ARTICLE
+                  </Box>
                   <Box pt={1}>
                     <AboutList timelines={articles} />
                   </Box>
                 </Box>
-                <Box pt={8} pb={60} sx={{ width: "50%" }}>
+                <Box pt={0} pb={{ xs: 40, sm: 100 }} sx={{ width: "100%" }}>
                   <Box pb={10} id="press"></Box>
-                  <Box>PRESS</Box>
+                  <Box sx={{ color: "#000", fontFamily: "apparat" }}>PRESS</Box>
                   <Box pt={1}>
                     <AboutList timelines={presses} />
                   </Box>
+                </Box>
+                <Box pt={0} pb={2} sx={{ width: "100%" }}>
+                  © 2024 — Tong Yang Tze, All rights reserved
                 </Box>
               </Box>
             </Box>

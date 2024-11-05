@@ -9,6 +9,7 @@ import MenuItem from "@mui/material/MenuItem";
 import { styled, alpha } from "@mui/material/styles";
 
 const StyledMenu = styled((props) => (
+  // console.log(props.MenuListProps.ian),
   <Menu
     elevation={0}
     anchorOrigin={{
@@ -21,18 +22,18 @@ const StyledMenu = styled((props) => (
     }}
     {...props}
   />
-))(({ theme }) => ({
+))(({ theme, ...props }) => ({
   "& .MuiList-root": {
     paddingTop: 8,
   },
   "& .MuiPaper-root": {
     borderRadius: 0,
     marginTop: theme.spacing(0),
-    // minWidth: 100,
-    color: "#222222ff",
-    backgroundColor: "#fff",
+    // color: "#222222ff",
+    color: props.MenuListProps.ian,
+    backgroundColor: "unset",
     "& .MuiMenu-list": {
-      padding: "4px 4px",
+      padding: "4px 0px",
     },
     "& .MuiMenuItem-root": {
       padding: 0,
@@ -46,6 +47,9 @@ const StyledMenu = styled((props) => (
           theme.palette.primary.main,
           theme.palette.action.selectedOpacity
         ),
+      },
+      "&:hover": {
+        backgroundColor: "unset",
       },
     },
     ...theme.applyStyles("dark", {
@@ -86,10 +90,11 @@ export default function Nav() {
         sx={{
           fontSize: 18,
           color: textColor,
+          fontFamily: "apparat",
         }}
       >
         <Link
-          className={`link ${pathname === "/works" ? "active" : ""}`}
+          className={`link ${pathname === "/works" ? "active_light" : ""}`}
           href="/works"
         >
           <Box ml={0} component="span">
@@ -98,7 +103,7 @@ export default function Nav() {
         </Link>
 
         <Link
-          className={`link ${pathname === "/others" ? "active" : ""}`}
+          className={`link ${pathname === "/others" ? "active_dark" : ""}`}
           href="/others"
         >
           <Box ml={2} component="span">
@@ -124,6 +129,7 @@ export default function Nav() {
           aria-expanded={open ? "true" : undefined}
           onClick={handleClick}
           sx={{ cursor: "pointer" }}
+          className={`link ${pathname === "/about" ? "active_dark" : ""}`}
         >
           About
         </Box>
@@ -134,11 +140,12 @@ export default function Nav() {
           onClose={handleClose}
           MenuListProps={{
             "aria-labelledby": "basic-button",
+            ian: textColor,
           }}
         >
           <MenuItem onClick={handleClose}>
             <Link
-              className={`link ${pathname === "/about" ? "active" : ""}`}
+              // className={`link ${pathname === "/about" ? "active_dark" : ""}`}
               href="/about#exhibition"
             >
               Exhibition
@@ -146,7 +153,7 @@ export default function Nav() {
           </MenuItem>
           <MenuItem onClick={handleClose}>
             <Link
-              className={`link ${pathname === "/about" ? "active" : ""}`}
+              // className={`link ${pathname === "/about" ? "active_dark" : ""}`}
               href="/about#article"
             >
               Article
@@ -154,7 +161,7 @@ export default function Nav() {
           </MenuItem>
           <MenuItem onClick={handleClose}>
             <Link
-              className={`link ${pathname === "/about" ? "active" : ""}`}
+              // className={`link ${pathname === "/about" ? "active_dark" : ""}`}
               href="/about#press"
             >
               Press
@@ -163,7 +170,7 @@ export default function Nav() {
         </StyledMenu>
 
         <Link
-          className={`link ${pathname === "/contacts" ? "active" : ""}`}
+          className={`link ${pathname === "/contacts" ? "active_dark" : ""}`}
           href="/contacts"
         >
           <Box ml={2} component="span">

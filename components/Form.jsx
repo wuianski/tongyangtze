@@ -8,6 +8,7 @@ import {
   useTheme,
   styled,
 } from "@mui/material/styles";
+import { Opacity } from "@mui/icons-material";
 
 /* Customizing MuiTextField */
 const customTheme = (outerTheme) =>
@@ -20,8 +21,8 @@ const customTheme = (outerTheme) =>
         styleOverrides: {
           root: {
             "--TextField-brandBorderColor": "#888888ff",
-            "--TextField-brandBorderHoverColor": "#222222ff",
-            "--TextField-brandBorderFocusedColor": "#222222ff",
+            "--TextField-brandBorderHoverColor": "#000",
+            "--TextField-brandBorderFocusedColor": "#000",
             "& label.Mui-focused": {
               color: "var(--TextField-brandBorderFocusedColor)",
             },
@@ -42,6 +43,16 @@ const customTheme = (outerTheme) =>
               border: "1px solid var(--TextField-brandBorderFocusedColor)",
             },
             borderRadius: 0,
+            fontFamily: "apparat-light",
+            color: "#000",
+          },
+          input: {
+            [`&::placeholder`]: {
+              color: "#888",
+              opacity: 1,
+            },
+            // color: "#888",
+            // opacity: 1,
           },
         },
       },
