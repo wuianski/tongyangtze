@@ -3,7 +3,7 @@ import HoverImage from "@/components/HoverImage";
 /* Data */
 import { getWorks } from "@/data/data";
 /* MUI */
-import { Box, Paper, Stack, styled } from "@mui/material";
+import { Box } from "@mui/material";
 
 export default async function Works() {
   const works = await getWorks();

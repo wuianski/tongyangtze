@@ -13,7 +13,7 @@ import Nav from "@/components/Nav";
 import NavMobile from "@/components/NavMobile";
 
 /* Stack Item Setting */
-const Item = styled(Paper)(({ theme }) => ({
+const Item = styled(Paper)(({}) => ({
   textAlign: "left",
   color: "unset",
   background: "none",

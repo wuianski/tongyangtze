@@ -2,7 +2,6 @@
 
 /* Next */
 import Image from "next/image";
-import Link from "next/link";
 /* MUI */
 import { Box, Paper, Stack, styled } from "@mui/material";
 

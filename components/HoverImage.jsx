@@ -6,8 +6,6 @@ import Image from "next/image";
 import Link from "next/link";
 /* MUI */
 import { Box, Paper, Stack, styled } from "@mui/material";
-/* Framer Motion */
-import { motion, useWillChange } from "framer-motion";
 
 const Item = styled(Paper)(({ theme }) => ({
   textAlign: "left",
@@ -23,7 +21,6 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function HoverImage({ works }) {
-  const willChange = useWillChange();
   const [hoverId, setHoverId] = useState(0);
   const [renderSrc, setRenderSrc] = useState(works[hoverId].src);
 

@@ -3,7 +3,7 @@
 /* Next */
 import Image from "next/image";
 /* MUI */
-import { Box, Paper, Stack, styled } from "@mui/material";
+import { Box } from "@mui/material";
 /* React-Slick */
 import React, { useState, useEffect, useRef } from "react";
 import Slider from "react-slick";

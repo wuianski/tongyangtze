@@ -1,14 +1,8 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 /* MUI */
-import {
-  Box,
-  //   Accordion,
-  //   AccordionSummary,
-  //   AccordionDetails,
-  Typography,
-} from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { styled } from "@mui/material/styles";
 import MuiAccordion from "@mui/material/Accordion";
@@ -19,7 +13,7 @@ import AboutList from "@/components/AboutList";
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
-))(({ theme }) => ({
+))(({}) => ({
   border: `none`,
   "&:not(:last-child)": {
     borderBottom: 0,
@@ -30,7 +24,7 @@ const Accordion = styled((props) => (
 }));
 
 const AccordionSummary = styled((props) => <MuiAccordionSummary {...props} />)(
-  ({ theme }) => ({
+  ({}) => ({
     // backgroundColor: "rgba(0, 0, 0, .03)",
     padding: 0,
     color: "#222222ff",

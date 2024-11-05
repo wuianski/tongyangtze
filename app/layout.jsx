@@ -1,4 +1,3 @@
-import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";

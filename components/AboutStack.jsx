@@ -1,10 +1,7 @@
 "use client";
 
-import { useEffect } from "react";
 /* Next */
 import Image from "next/image";
-import { usePathname } from "next/navigation";
-import { useRouter } from "next/navigation";
 /* MUI */
 import { Box, Paper, Stack, styled } from "@mui/material";
 /* Components */

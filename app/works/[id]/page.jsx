@@ -3,7 +3,7 @@ import WorkContent from "@/components/WorkContent";
 /* Data */
 import { getWorks } from "@/data/data";
 /* MUI */
-import { Box, Paper, Stack, styled } from "@mui/material";
+import { Box } from "@mui/material";
 /* Next */
 import Link from "next/link";
 

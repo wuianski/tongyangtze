@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 /* MUI */
-import { Box, Paper, Stack, styled, Tab, Tabs } from "@mui/material";
+import { Box, styled, Tab, Tabs } from "@mui/material";
 import PropTypes from "prop-types";
 /* Components */
 import AboutList from "@/components/AboutList";

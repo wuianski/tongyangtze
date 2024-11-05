@@ -1,6 +1,6 @@
 import { useForm } from "formbold-react";
 /* MUI */
-import { Box, TextField, Button, Input } from "@mui/material";
+import { Box, TextField, Button } from "@mui/material";
 import { outlinedInputClasses } from "@mui/material/OutlinedInput";
 import {
   createTheme,
@@ -8,7 +8,6 @@ import {
   useTheme,
   styled,
 } from "@mui/material/styles";
-import { Opacity } from "@mui/icons-material";
 
 /* Customizing MuiTextField */
 const customTheme = (outerTheme) =>
@@ -71,15 +70,14 @@ const ColorButton = styled(Button)(({ theme }) => ({
 }));
 
 export default function Form() {
+  /* Customizing MuiTextField */
+  const outerTheme = useTheme();
   /* Using FormBold */
   const [state, handleSubmit] = useForm("3qpq1");
   /* Return if form submitted */
   if (state.succeeded) {
     return <div>Form submitted successfully</div>;
   }
-
-  /* Customizing MuiTextField */
-  const outerTheme = useTheme();
 
   return (
     <>
