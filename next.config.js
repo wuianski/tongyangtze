@@ -9,20 +9,20 @@ const nextConfig = {
   //     DIRECTUS_URL_DO: process.env.DIRECTUS_URL_DO,
   //     DIRECTUS_IMAGE_DOMAIN_DO: process.env.DIRECTUS_IMAGE_DOMAIN_DO,
   // },
-  // images: {
-  //     domains: [`${process.env.DIRECTUS_IMAGE_DOMAIN_DO}`],
-  //     // domains: [`${process.env.DIRECTUS_IMAGE_DOMAIN_DEV}`],
-  //     minimumCacheTTL: 60,
-  //     /* add remotePatterns to fix issue of Un-configured Host*/
-  //     remotePatterns: [
-  //         {
-  //             protocol: 'https',
-  //             hostname: 'data.luojrshin.com',
-  //             port: '',
-  //             pathname: '/assets/**',
-  //         },
-  //     ],
-  // },
+  images: {
+    //     domains: [`${process.env.DIRECTUS_IMAGE_DOMAIN_DO}`],
+    //     // domains: [`${process.env.DIRECTUS_IMAGE_DOMAIN_DEV}`],
+    minimumCacheTTL: 60,
+    //     /* add remotePatterns to fix issue of Un-configured Host*/
+    //     remotePatterns: [
+    //         {
+    //             protocol: 'https',
+    //             hostname: 'data.luojrshin.com',
+    //             port: '',
+    //             pathname: '/assets/**',
+    //         },
+    //     ],
+  },
 }
 
 module.exports = (nextConfig);
