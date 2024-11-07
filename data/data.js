@@ -12,6 +12,7 @@ export function getWorks() {
                     year: "Year: 2020",
                     size: "Size: 360 x 194 cm",
                     src: "/works/2020天行健.jpg",
+                    info2: "Commissioned by M+"
                 },
                 {
                     id: 2,
@@ -20,6 +21,7 @@ export function getWorks() {
                     year: "Year: 2020",
                     size: "Size: 360 x 194 cm",
                     src: "/works/2020日新.jpg",
+                    info2: "Commissioned by M+"
                 },
                 {
                     id: 3,
@@ -28,6 +30,7 @@ export function getWorks() {
                     year: "Year: 2020",
                     size: "Size: 360 x 194 cm",
                     src: "/works/2020見機而作.jpg",
+                    info2: "Commissioned by M+"
                 },
                 {
                     id: 4,
@@ -36,6 +39,7 @@ export function getWorks() {
                     year: "Year: 2020",
                     size: "Size: 360 x 194 cm",
                     src: "/works/2020樂天知命.jpg",
+                    info2: "Commissioned by M+"
                 },
                 {
                     id: 5,
@@ -44,6 +48,7 @@ export function getWorks() {
                     year: "Year: 2020",
                     size: "Size: 360 x 1037 cm",
                     src: "/works/2020何天之衢道大行也.jpg",
+                    info2: "Commissioned by M+"
                 },
                 {
                     id: 6,

@@ -32,7 +32,7 @@ export default function HoverImage({ works }) {
   return (
     <>
       <Box
-        pt={{ xs: 16, sm: 18 }}
+        pt={{ xs: 15, sm: 18 }}
         pl={{ xs: 0, sm: 15 }}
         pr={{ xs: 0, sm: 15 }}
       >

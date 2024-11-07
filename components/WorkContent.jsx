@@ -44,7 +44,7 @@ export default function WorkContent({ work }) {
 
   return (
     <>
-      <Box pt={{ xs: 14, sm: 13 }} pl={{ xs: 0, sm: 0 }} pr={{ xs: 0, sm: 0 }}>
+      <Box pt={{ xs: 12, sm: 17 }} pl={{ xs: 0, sm: 0 }} pr={{ xs: 0, sm: 0 }}>
         <div className="slider-container">
           <Box>
             <Slider
@@ -106,13 +106,19 @@ export default function WorkContent({ work }) {
                       </Box>
                       <Box
                         sx={{
-                          fontSize: { xs: 14, sm: 16 },
+                          fontSize: { xs: 16, sm: 18 },
                           fontFamily: "baskerville-display-pt",
                           color: "#fff",
                         }}
+                        pb={1}
                       >
                         {w.title}
                       </Box>
+                      {w.info2 ? (
+                        <Box sx={{ fontSize: { xs: 12, sm: 14 } }}>
+                          {w.info2}
+                        </Box>
+                      ) : null}
                       <Box sx={{ fontSize: { xs: 12, sm: 14 } }}>{w.info}</Box>
                       <Box sx={{ fontSize: { xs: 12, sm: 14 } }}>{w.year}</Box>
                       <Box sx={{ fontSize: { xs: 12, sm: 14 } }}>{w.size}</Box>

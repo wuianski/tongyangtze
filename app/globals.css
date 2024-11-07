@@ -82,5 +82,10 @@ a {
   color: #888;
 }
 
-
-
+/* Hide Scrollbar */
+body::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scrollbar-width: none;
+}

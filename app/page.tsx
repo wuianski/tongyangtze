@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Box from "@mui/material/Box";
+/* Image */
+import front from "@/public/g76.png";
 
 export default function Home() {
   return (
@@ -16,13 +18,14 @@ export default function Home() {
         mb={6}
       >
         <Image
-          src={"/g76.png"}
+          src={front}
           alt="front page image"
           fill={true}
           quality={100}
           style={{ objectFit: "cover", objectPosition: "center" }}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
           priority={true}
+          placeholder="blur"
         />
       </Box>
     </>

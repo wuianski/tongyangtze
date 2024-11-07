@@ -6,6 +6,8 @@ import Image from "next/image";
 import { Box, Paper, Stack, styled } from "@mui/material";
 /* Components */
 import Form from "@/components/Form";
+/* Image */
+import contact from "@/public/contact.png";
 
 const Item = styled(Paper)(({ theme }) => ({
   textAlign: "left",
@@ -65,12 +67,13 @@ export default function AbouStack() {
                 mb={6}
               >
                 <Image
-                  src={"/contact_img.jpeg"}
-                  alt="profile picture"
+                  src={contact}
+                  alt="contact picture"
                   fill={true}
                   quality={100}
                   style={{ objectFit: "cover", objectPosition: "center" }}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
+                  placeholder="blur"
                 />
               </Box>
             </Box>

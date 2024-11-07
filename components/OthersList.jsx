@@ -23,7 +23,7 @@ export default function OthersList({ others }) {
   return (
     <>
       <Box
-        pt={{ xs: 15, sm: 17 }}
+        pt={{ xs: 17, sm: 19 }}
         pl={{ xs: 2, sm: 15 }}
         pr={{ xs: 2, sm: 15 }}
         pb={2}

@@ -8,6 +8,8 @@ import { Box, Paper, Stack, styled } from "@mui/material";
 import AboutList from "@/components/AboutList";
 import ExhibitionTabs from "@/components/ExhibitionTabs";
 import ExhibitionAccordion from "@/components/ExhibitionAccordion";
+/* Image */
+import about from "@/public/profile.jpeg";
 
 const Item = styled(Paper)(({ theme }) => ({
   textAlign: "left",
@@ -84,6 +86,11 @@ export default function AbouStack({
                 <Box pt={0} pb={2} sx={{ width: "100%" }}>
                   © 2024 — Tong Yang Tze, All rights reserved
                 </Box>
+                <Box pt={0} pb={2} sx={{ width: "100%" }}>
+                  IMAGE LICENSING: “Moving Ink: Tong Yang-Tze” exhibited at
+                  Taipei Fine Arts Museum, 2019-2020. Courtesy of Taipei Fine
+                  Arts Museum.
+                </Box>
               </Box>
             </Box>
           </Item>
@@ -101,12 +108,13 @@ export default function AbouStack({
                 mb={6}
               >
                 <Image
-                  src={"/profile.jpeg"}
+                  src={about}
                   alt="profile picture"
                   fill={true}
                   quality={100}
                   style={{ objectFit: "cover", objectPosition: "center" }}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
+                  placeholder="blur"
                 />
               </Box>
             </Box>
