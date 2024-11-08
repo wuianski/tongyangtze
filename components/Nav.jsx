@@ -1,88 +1,46 @@
-import React, { useState } from "react";
+"use client";
+
+import React from "react";
 /* Next */
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 /* MUI */
 import Box from "@mui/material/Box";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-import { styled, alpha } from "@mui/material/styles";
+import { styled } from "@mui/material/styles";
+import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
 
-const StyledMenu = styled((props) => (
-  // console.log(props.MenuListProps.ian),
-  <Menu
-    elevation={0}
-    anchorOrigin={{
-      vertical: "bottom",
-      horizontal: "left",
-    }}
-    transformOrigin={{
-      vertical: "top",
-      horizontal: "left",
-    }}
-    {...props}
-  />
-))(({ theme, ...props }) => ({
-  "& .MuiList-root": {
-    paddingTop: 8,
-  },
-  "& .MuiPaper-root": {
-    borderRadius: 0,
-    marginTop: theme.spacing(0),
-    // color: "#222222ff",
-    color: props.MenuListProps.ian,
-    backgroundColor: "unset",
-    "& .MuiMenu-list": {
-      padding: "4px 0px",
-    },
-    "& .MuiMenuItem-root": {
-      padding: 0,
-      "& .MuiSvgIcon-root": {
-        fontSize: 18,
-        color: theme.palette.text.secondary,
-        marginRight: theme.spacing(1.5),
-      },
-      "&:active": {
-        backgroundColor: alpha(
-          theme.palette.primary.main,
-          theme.palette.action.selectedOpacity
-        ),
-      },
-      "&:hover": {
-        backgroundColor: "unset",
-      },
-    },
-    ...theme.applyStyles("dark", {
-      color: theme.palette.grey[300],
-    }),
+/* Menu - About*/
+const HtmlTooltip = styled(({ className, ...props }) => (
+  <Tooltip {...props} classes={{ popper: className }} />
+))(({}) => ({
+  [`& .${tooltipClasses.tooltip}`]: {
+    background: "none",
+    color: "rgba(0, 0, 0, 0.87)",
+    maxWidth: 220,
+    fontSize: 15,
+    border: "none",
+    padding: 0,
   },
 }));
 
 export default function Nav() {
   const pathname = usePathname();
   let textColor;
+  let hoverClass;
 
-  if (
-    pathname === "/others" ||
-    pathname === "/about" ||
-    pathname === "/contacts"
-  ) {
+  if (pathname === "/about" || pathname === "/contacts") {
     textColor = "#222222ff";
+    hoverClass = "hover_works";
+  } else if (pathname === "/others") {
+    textColor = "#222222ff";
+    hoverClass = "hover_ex_tab";
   } else if (pathname === "/works" || pathname === "/") {
     textColor = "#aaaaaaff";
+    hoverClass = "hover_works";
   } else {
     textColor = "#aaaaaaff";
+    hoverClass = "hover_works";
   }
-
-  /* Menu - About*/
-  const [anchorEl, setAnchorEl] = useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
 
   return (
     <>
@@ -94,7 +52,7 @@ export default function Nav() {
         }}
       >
         <Link
-          className={`link ${pathname === "/works" ? "active_light" : ""}`}
+          className={` ${pathname === "/works" ? "active_light" : hoverClass}`}
           href="/works"
         >
           <Box ml={0} component="span">
@@ -103,77 +61,55 @@ export default function Nav() {
         </Link>
 
         <Link
-          className={`link ${pathname === "/others" ? "active_dark" : ""}`}
+          className={` ${pathname === "/others" ? "active_light" : hoverClass}`}
           href="/others"
         >
-          <Box ml={2} component="span">
+          <Box ml={3} component="span">
             Others
           </Box>
         </Link>
-        {/* 
-        <Link
-          className={`link ${pathname === "/about" ? "active" : ""}`}
-          href="/about"
+
+        <HtmlTooltip
+          placement="bottom-start"
+          title={
+            <React.Fragment>
+              <Box color={textColor} sx={{ ml: "-3px", pb: 0.5 }}>
+                <Link href="/about#exhibition" className={hoverClass}>
+                  Exhibition
+                </Link>
+              </Box>
+              <Box color={textColor} sx={{ ml: "-3px", pb: 0.5 }}>
+                <Link href="/about#article" className={hoverClass}>
+                  Article
+                </Link>
+              </Box>
+              <Box color={textColor} sx={{ ml: "-3px", pb: 0.5 }}>
+                <Link href="/about#press" className={hoverClass}>
+                  Press
+                </Link>
+              </Box>
+            </React.Fragment>
+          }
         >
-          <Box ml={2} component="span">
-            About
+          <Box ml={3} component="span">
+            <Link
+              className={` ${
+                pathname === "/about" ? "active_light" : hoverClass
+              }`}
+              href="/about"
+            >
+              About
+            </Link>
           </Box>
-        </Link> */}
-
-        <Box
-          ml={2}
-          component="span"
-          id="basic-button"
-          aria-controls={open ? "basic-menu" : undefined}
-          aria-haspopup="true"
-          aria-expanded={open ? "true" : undefined}
-          onClick={handleClick}
-          sx={{ cursor: "pointer" }}
-          className={`link ${pathname === "/about" ? "active_dark" : ""}`}
-        >
-          About
-        </Box>
-        <StyledMenu
-          id="basic-menu"
-          anchorEl={anchorEl}
-          open={open}
-          onClose={handleClose}
-          MenuListProps={{
-            "aria-labelledby": "basic-button",
-            ian: textColor,
-          }}
-        >
-          <MenuItem onClick={handleClose}>
-            <Link
-              // className={`link ${pathname === "/about" ? "active_dark" : ""}`}
-              href="/about#exhibition"
-            >
-              Exhibition
-            </Link>
-          </MenuItem>
-          <MenuItem onClick={handleClose}>
-            <Link
-              // className={`link ${pathname === "/about" ? "active_dark" : ""}`}
-              href="/about#article"
-            >
-              Article
-            </Link>
-          </MenuItem>
-          <MenuItem onClick={handleClose}>
-            <Link
-              // className={`link ${pathname === "/about" ? "active_dark" : ""}`}
-              href="/about#press"
-            >
-              Press
-            </Link>
-          </MenuItem>
-        </StyledMenu>
+        </HtmlTooltip>
 
         <Link
-          className={`link ${pathname === "/contacts" ? "active_dark" : ""}`}
+          className={` ${
+            pathname === "/contacts" ? "active_light" : hoverClass
+          }`}
           href="/contacts"
         >
-          <Box ml={2} component="span">
+          <Box ml={3} component="span">
             Contacts
           </Box>
         </Link>

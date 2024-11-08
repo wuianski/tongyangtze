@@ -7,6 +7,9 @@ import { Box } from "@mui/material";
 /* React-Slick */
 import React, { useState, useEffect, useRef } from "react";
 import Slider from "react-slick";
+/* Icons */
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 
 /* Customizing React-Slick's arrow */
 function NextArrow(props) {
@@ -31,6 +34,62 @@ function PrevArrow(props) {
   );
 }
 
+function NextArrow_thumb(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className="NextArrow_thumb"
+      style={{
+        ...style,
+        background: "none",
+        position: "relative",
+        right: "-38px",
+        top: "-68px",
+        float: "right",
+      }}
+      onClick={onClick}
+    >
+      <ArrowForwardIosIcon
+        sx={{
+          fontSize: 30,
+          color: "#aaa",
+          opacity: className.includes("slick-disabled") ? 0.25 : 1,
+          cursor: className.includes("slick-disabled") ? "unset" : "pointer",
+        }}
+      />
+    </div>
+  );
+}
+
+function PrevArrow_thumb(props) {
+  const { className, style, onClick } = props;
+  // console.log(className.includes("slick-disabled"));
+  return (
+    <Box
+      // className={className}
+      style={{
+        ...style,
+        background: "none",
+        position: "relative",
+        left: "-38px",
+        // top: "60px",
+        width: "fit-content",
+      }}
+      sx={{ top: { xs: "46px", sm: "60px" } }}
+      onClick={onClick}
+    >
+      <ArrowBackIosNewIcon
+        sx={{
+          fontSize: 30,
+          color: "#aaa",
+          opacity: className.includes("slick-disabled") ? 0.25 : 1,
+          cursor: className.includes("slick-disabled") ? "unset" : "pointer",
+        }}
+      />
+    </Box>
+  );
+}
+
 export default function WorkContent({ work }) {
   const [nav1, setNav1] = useState(null);
   const [nav2, setNav2] = useState(null);
@@ -41,6 +100,9 @@ export default function WorkContent({ work }) {
     setNav1(sliderRef1);
     setNav2(sliderRef2);
   }, []);
+
+  // const [activeSlide, setActiveSlide] = useState(0);
+  // console.log(activeSlide);
 
   return (
     <>
@@ -60,7 +122,7 @@ export default function WorkContent({ work }) {
                     key={index}
                     sx={{
                       textAlign: "center",
-                      mb: "1vh",
+                      mb: { xs: "0vh", sm: "0.5vh" },
                       height: "68vh",
                       position: "relative",
                     }}
@@ -74,15 +136,13 @@ export default function WorkContent({ work }) {
                       }}
                     >
                       <Box
-                        mb={2}
+                        mb={{ xs: 1, sm: 2 }}
                         sx={{
                           position: "relative",
                           width: { xs: "max-content", sm: "max-content" },
                           maxWidth: "90vw",
                           ml: "auto",
                           mr: "auto",
-                          // width: "100%",
-                          // height: { xs: "40vh", sm: "49vh" },
                           pointerEvents: "none",
                         }}
                       >
@@ -93,8 +153,6 @@ export default function WorkContent({ work }) {
                           height={0}
                           alt="Picture of the artwork"
                           style={{
-                            // objectFit: "contain",
-                            // objectPosition: "center center",
                             width: "auto",
                             maxWidth: "100%",
                             height: "100%",
@@ -129,15 +187,11 @@ export default function WorkContent({ work }) {
             </Slider>
           </Box>
           <Box
-            // mt={0}
+            mt={{ xs: -2, sm: 0 }}
             sx={{
-              //   position: "absolute",
-              //   display: "block",
               width: { xs: "80vw", sm: "50vw" },
               marginLeft: "auto",
               marginRight: "auto",
-              //   bottom: 0,
-              //   left: "25vw",
             }}
           >
             <Slider
@@ -151,16 +205,21 @@ export default function WorkContent({ work }) {
               swipeToSlide={true}
               focusOnSelect={true}
               variableWidth={true}
+              nextArrow={<NextArrow_thumb />}
+              prevArrow={<PrevArrow_thumb />}
+              beforeChange={(current, next) => {
+                setActiveSlide(next);
+              }}
             >
               {work.works.map((w, index) => {
                 return (
                   <Box key={index} sx={{ textAlign: "center" }}>
                     <Box
                       mb={2}
-                      mr={1}
+                      mr={2} // margin between images
                       sx={{
                         position: "relative",
-                        height: 68,
+                        height: { xs: 48, sm: 68 },
                         pointerEvents: "none",
                       }}
                     >
@@ -171,8 +230,6 @@ export default function WorkContent({ work }) {
                         width={0}
                         height={0}
                         style={{
-                          // objectFit: "contain",
-                          // objectPosition: "center top",
                           width: "auto",
                           height: "100%",
                         }}

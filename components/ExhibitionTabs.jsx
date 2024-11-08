@@ -33,6 +33,7 @@ function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
     "aria-controls": `simple-tabpanel-${index}`,
+    className: "hover_ex_tab",
   };
 }
 
@@ -46,11 +47,12 @@ const StyledTabs = styled((props) => (
     display: "flex",
     justifyContent: "center",
     backgroundColor: "transparent",
+    height: 1,
   },
   "& .MuiTabs-indicatorSpan": {
     maxWidth: 40,
     width: "100%",
-    backgroundColor: "#888",
+    backgroundColor: "#b82e29",
   },
 });
 
@@ -63,9 +65,10 @@ const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
     fontFamily: "apparat-light",
     color: "#222222ff",
     "&.Mui-selected": {
-      color: "#888",
+      color: "#b82e29",
     },
     paddingBottom: 0,
+    paddingTop: 18,
     // "&.Mui-focusVisible": {
     //   backgroundColor: "rgba(100, 95, 228, 0.32)",
     // },
@@ -80,9 +83,11 @@ export default function ExhibitionTabs({ currentExs, pastExs, upcomingExs }) {
   return (
     <>
       <Box>
-        <Box sx={{ color: "#000", fontFamily: "apparat" }}>EXHIBITIONS</Box>
+        <Box sx={{ color: "#000", fontFamily: "apparat", fontSize: 16 }}>
+          EXHIBITIONS
+        </Box>
         <Box sx={{ width: "100%" }}>
-          <Box ml={18} mt={-5}>
+          <Box ml={18} mt={-5.7}>
             <StyledTabs
               value={value}
               onChange={handleChange}
@@ -93,15 +98,17 @@ export default function ExhibitionTabs({ currentExs, pastExs, upcomingExs }) {
               <StyledTab label="Upcoming" {...a11yProps(2)} />
             </StyledTabs>
           </Box>
-          <CustomTabPanel value={value} index={0}>
-            <AboutList timelines={currentExs} />
-          </CustomTabPanel>
-          <CustomTabPanel value={value} index={1}>
-            <AboutList timelines={pastExs} />
-          </CustomTabPanel>
-          <CustomTabPanel value={value} index={2}>
-            <AboutList timelines={upcomingExs} />
-          </CustomTabPanel>
+          <Box pt={1}>
+            <CustomTabPanel value={value} index={0}>
+              <AboutList timelines={currentExs} />
+            </CustomTabPanel>
+            <CustomTabPanel value={value} index={1}>
+              <AboutList timelines={pastExs} />
+            </CustomTabPanel>
+            <CustomTabPanel value={value} index={2}>
+              <AboutList timelines={upcomingExs} />
+            </CustomTabPanel>
+          </Box>
         </Box>
       </Box>
     </>

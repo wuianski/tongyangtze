@@ -8,6 +8,7 @@ import {
   getCurrentExs,
   getPastExs,
   getUpcomingExs,
+  getAbout2,
 } from "@/data/data";
 
 export default async function About() {
@@ -17,6 +18,7 @@ export default async function About() {
   const currentExs = await getCurrentExs();
   const pastExs = await getPastExs();
   const upcomingExs = await getUpcomingExs();
+  const aboutContext2 = await getAbout2();
 
   //   console.log(aboutContext);
   return (
@@ -28,6 +30,7 @@ export default async function About() {
         currentExs={currentExs}
         pastExs={pastExs}
         upcomingExs={upcomingExs}
+        aboutContext2={aboutContext2}
       />
     </>
   );

@@ -108,6 +108,7 @@ export default function OthersList({ others }) {
                         sx={{
                           fontSize: 15,
                           minHeight: { xs: "unset", sm: "unset" },
+                          lineHeight: 2,
                         }}
                       >
                         {other.context}

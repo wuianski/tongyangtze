@@ -33,6 +33,7 @@ export default function AboutStack({
   currentExs,
   pastExs,
   upcomingExs,
+  aboutContext2,
 }) {
   const variants = {
     hidden: {
@@ -64,6 +65,9 @@ export default function AboutStack({
                 >
                   TONG YANG TZE
                 </Box>
+                <Box pt={6}>
+                  <AboutList timelines={aboutContext2} />
+                </Box>
                 <Box sx={{ fontSize: 15 }}>
                   <Box
                     mt={6}
@@ -71,7 +75,7 @@ export default function AboutStack({
                     sx={{ lineHeight: 2, color: "#222222" }}
                   ></Box>
                   <Box pt={0} pb={0}>
-                    <Box pb={10} id="exhibition"></Box>
+                    <Box pb={15} id="exhibition"></Box>
                     <Box sx={{ display: { xs: "none", sm: "block" } }}>
                       <ExhibitionTabs
                         currentExs={currentExs}
@@ -88,8 +92,14 @@ export default function AboutStack({
                     </Box>
                   </Box>
                   <Box pt={0} pb={0} sx={{ width: "100%" }}>
-                    <Box pb={10} id="article"></Box>
-                    <Box sx={{ color: "#000", fontFamily: "apparat" }}>
+                    <Box pb={15} id="article"></Box>
+                    <Box
+                      sx={{
+                        color: "#000",
+                        fontFamily: "apparat",
+                        fontSize: 16,
+                      }}
+                    >
                       ARTICLE
                     </Box>
                     <Box pt={1}>
@@ -97,8 +107,14 @@ export default function AboutStack({
                     </Box>
                   </Box>
                   <Box pt={0} pb={{ xs: 40, sm: 100 }} sx={{ width: "100%" }}>
-                    <Box pb={10} id="press"></Box>
-                    <Box sx={{ color: "#000", fontFamily: "apparat" }}>
+                    <Box pb={15} id="press"></Box>
+                    <Box
+                      sx={{
+                        color: "#000",
+                        fontFamily: "apparat",
+                        fontSize: 16,
+                      }}
+                    >
                       PRESS
                     </Box>
                     <Box pt={1}>

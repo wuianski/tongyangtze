@@ -29,10 +29,10 @@ export default function AboutList({ timelines }) {
                   <Box mt={1}>{timeline.year}</Box>
                 </Item>
                 <Item sx={{ width: { xs: "80%", sm: "88%" } }}>
-                  <Box mt={1} className="hover">
+                  <Box mt={1}>
                     {timeline.link ? (
                       <a href={timeline.link} target="_blank">
-                        {timeline.title}
+                        <Box className="hover">{timeline.title}</Box>
                       </a>
                     ) : (
                       timeline.title

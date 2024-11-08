@@ -58,7 +58,7 @@ export default function NavMobile({ textColor }) {
           }}
         >
           {/* Site Title */}
-          <Link href={`/`}>
+          <Link href={`/`} scroll={false}>
             <Box
               sx={{
                 fontSize: 18,

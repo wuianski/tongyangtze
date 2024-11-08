@@ -83,7 +83,7 @@ export default function Header() {
             <Link href={`/`} scroll={false}>
               <Box
                 sx={{
-                  fontSize: { xs: 18, md: 18 },
+                  fontSize: { xs: 18, md: 15 },
                   width: "fit-content",
                   color: textColor,
                   position: "fixed",
@@ -120,10 +120,10 @@ export default function Header() {
                   <Image
                     src={logo}
                     alt="logo"
-                    width={53}
-                    height={52}
+                    width={40}
+                    height={39}
                     quality={100}
-                    sizes="150px"
+                    sizes="40px"
                   />
                 </Box>
               </motion.div>
@@ -147,7 +147,7 @@ export default function Header() {
                   width={33}
                   height={32}
                   quality={100}
-                  sizes="150px"
+                  sizes="33px"
                 />
               </Box>
             </Box>

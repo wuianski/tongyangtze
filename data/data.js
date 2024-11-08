@@ -7,52 +7,52 @@ export function getWorks() {
             works: [
                 {
                     id: 1,
-                    title: "The movement of heaven is powerful.",
+                    title: "The movement of heaven is powerful",
                     info: "Sources: The Book of Changes",
                     year: "Year: 2020",
                     size: "Size: 360 x 194 cm",
                     src: "/works/2020天行健.jpg",
-                    info2: "Commissioned by M+"
+                    info2: "Commission: M+"
                 },
                 {
                     id: 2,
-                    title: "Renew oneself daily.",
+                    title: "Renew oneself daily",
                     info: "Sources: The great learning, The Book of Rites",
                     year: "Year: 2020",
                     size: "Size: 360 x 194 cm",
                     src: "/works/2020日新.jpg",
-                    info2: "Commissioned by M+"
+                    info2: "Commission: M+"
                 },
                 {
                     id: 3,
-                    title: "At the auspicious moment, act without delay.",
+                    title: "At the auspicious moment, act without delay",
                     info: "Sources: The Book of Changes",
                     year: "Year: 2020",
                     size: "Size: 360 x 194 cm",
                     src: "/works/2020見機而作.jpg",
-                    info2: "Commissioned by M+"
+                    info2: "Commission: M+"
                 },
                 {
                     id: 4,
-                    title: "Delight in the existence of heaven and understand its order.",
+                    title: "Delight in the existence of heaven and understand its order",
                     info: "Sources: The Book of Changes",
                     year: "Year: 2020",
                     size: "Size: 360 x 194 cm",
                     src: "/works/2020樂天知命.jpg",
-                    info2: "Commissioned by M+"
+                    info2: "Commission: M+"
                 },
                 {
                     id: 5,
-                    title: "Embracing the way of heaven brings progress.",
+                    title: "Embracing the way of heaven brings progress",
                     info: "Sources: The Book of Changes",
                     year: "Year: 2020",
                     size: "Size: 360 x 1037 cm",
                     src: "/works/2020何天之衢道大行也.jpg",
-                    info2: "Commissioned by M+"
+                    info2: "Commission: M+"
                 },
                 {
                     id: 6,
-                    title: "There are things that one must not do.",
+                    title: "There are things that one must not do",
                     info: "Sources: Zi Lu, The Analects of Confucius",
                     year: "Year: 2017",
                     size: "Size: 69 x 138 cm",
@@ -60,7 +60,7 @@ export function getWorks() {
                 },
                 {
                     id: 7,
-                    title: "If you allow things to unfold naturally, they will take care of themselves.",
+                    title: "If you allow things to unfold naturally, they will take care of themselves",
                     info: "Sources: Zhao Zhiqian, Quing dynasty",
                     year: "Year: 2017",
                     size: "Size: 69 x 138 cm",
@@ -68,7 +68,7 @@ export function getWorks() {
                 },
                 {
                     id: 8,
-                    title: "I do not open up the truth to one who is not eager to get knowledge, nor help out any one who is not anxious to explain himself.",
+                    title: "I do not open up the truth to one who is not eager to get knowledge, nor help out any one who is not anxious to explain himself",
                     info: "Sources: Shu Er, The Analects of Confucius",
                     year: "Year: 2015",
                     size: "Size: 97 x 180 cm",
@@ -76,7 +76,7 @@ export function getWorks() {
                 },
                 {
                     id: 9,
-                    title: "They are determined to be sincere in what they do.",
+                    title: "They are determined to be sincere in what they do",
                     info: "Sources: Zi Lu, The Analects of Confucius",
                     year: "Year: 2015",
                     size: "Size: 97 x 180 cm",
@@ -84,7 +84,7 @@ export function getWorks() {
                 },
                 {
                     id: 10,
-                    title: "Three-point Reflection.",
+                    title: "Three-point Reflection",
                     info: "Sources: Xue Er, The Analects of Confucius",
                     year: "Year: 2014",
                     size: "Size: 180 x 97 cm",
@@ -92,7 +92,7 @@ export function getWorks() {
                 },
                 {
                     id: 11,
-                    title: "What is full tumbles over.",
+                    title: "What is full tumbles over",
                     info: "Sources: The Right Hand Vessel, The Xunzi",
                     year: "Year: 2013",
                     size: "Size: 144 x 152 cm",
@@ -100,7 +100,7 @@ export function getWorks() {
                 },
                 {
                     id: 12,
-                    title: "Don't ignore one's conscience.",
+                    title: "Don't ignore one's conscience",
                     info: "Sources: Chapter 14, Dao De Jing, Laozi",
                     year: "Year: 2013",
                     size: "Size: 144 x 152 cm",
@@ -116,7 +116,7 @@ export function getWorks() {
                 },
                 {
                     id: 14,
-                    title: "The hawk flies up to heaven, the fish leaps in the deep.",
+                    title: "The hawk flies up to heaven, the fish leaps in the deep",
                     info: "Sources: Major Court Hymns, The Book of Odes",
                     year: "Year: 2011",
                     size: "Size: 180 x 776 cm (180 x 97cm/ each, set of 8)",
@@ -147,7 +147,7 @@ export function getWorks() {
                 },
                 {
                     id: 3,
-                    title: "Mine the mountains [for copper], boil the sea water [for salt].",
+                    title: "Mine the mountains [for copper], boil the sea water [for salt]",
                     info: "Sources: Stele with Inscription for Expressing Loyalty Prospect, Su Shi, Song dynasty",
                     year: "Year: 2006",
                     size: "Size: 180 x 728 cm (180 x 91cm/ each, set of 8)",
@@ -155,7 +155,7 @@ export function getWorks() {
                 },
                 {
                     id: 4,
-                    title: "The mountain rain is about to fall; in the pavilion, the wind swirls about everywhere.",
+                    title: "The mountain rain is about to fall; in the pavilion, the wind swirls about everywhere",
                     info: "Sources: The Eastern Rostrum of Xianyang, Xu Hun, Tang dynasty",
                     year: "Year: 2006",
                     size: "Size: 180 x 776 cm (180 x 97cm/ each, set of 8)",
@@ -163,7 +163,7 @@ export function getWorks() {
                 },
                 {
                     id: 5,
-                    title: "Having arrived, be at ease.",
+                    title: "Having arrived, be at ease",
                     info: "Sources: Ji Shi, The Analects of Confucius",
                     year: "Year: 2006",
                     size: "Size: 180 x 776 cm (180x97cm/each, set of 8)",
@@ -171,7 +171,7 @@ export function getWorks() {
                 },
                 {
                     id: 6,
-                    title: "Find work suitable to your talents.",
+                    title: "Find work suitable to your talents",
                     info: "Sources: Sutras 13, The Middle-length Discourses",
                     year: "Year: 2003",
                     size: "Size: 360 x 873 cm",
@@ -179,7 +179,7 @@ export function getWorks() {
                 },
                 {
                     id: 7,
-                    title: "Cutting and filing, chiseling and polishing, pure as gold or as tin, soft and rich as a scepter of jade.",
+                    title: "Cutting and filing, chiseling and polishing, pure as gold or as tin, soft and rich as a scepter of jade",
                     info: "Sources: Airs of the States, The Book of Odes",
                     year: "Year: 2002",
                     size: "Size: 182 x 736 cm (182 x 92cm/ each, set of 8)",
@@ -187,7 +187,7 @@ export function getWorks() {
                 },
                 {
                     id: 8,
-                    title: "A swan goose elevates itself little by little to the perfect rock.",
+                    title: "A swan goose elevates itself little by little to the perfect rock",
                     info: "Sources: The Book of Changes",
                     year: "Year: 2002",
                     size: "Size: 181 x 368 cm (181x92 cm/each, set of 4)",
@@ -195,7 +195,7 @@ export function getWorks() {
                 },
                 {
                     id: 9,
-                    title: "To wander while lying down.",
+                    title: "To wander while lying down",
                     info: "Sources: Biography of Zong Bing, The History of the Song",
                     year: "Year: 2002",
                     size: "Size: 69 x 69 cm",
@@ -210,7 +210,7 @@ export function getWorks() {
             works: [
                 {
                     id: 1,
-                    title: "There is another world.",
+                    title: "There is another world",
                     info: "Sources: Questions and Answers in the Mountains, Li Bai, Tang dynasty",
                     year: "Year: 2000",
                     size: "Size: 137.5 x 250.7 cm",
@@ -218,7 +218,7 @@ export function getWorks() {
                 },
                 {
                     id: 2,
-                    title: "Looking unyielding and strong.",
+                    title: "Looking unyielding and strong",
                     info: "Sources: Men of Former Times 11, The Analects of Confucius",
                     year: "Year: 2000",
                     size: "Size: 61.8 x 137.6 cm",
@@ -226,7 +226,7 @@ export function getWorks() {
                 },
                 {
                     id: 3,
-                    title: "I alone am respectable.",
+                    title: "I alone am respectable",
                     info: "Sources: Story of the Prince Attaining Enlightenment 1, The New Collection of Dunhuang Transformation Texts．Volume 3",
                     year: "Year: 1998",
                     size: "Size: 70 x 138 cm",
@@ -234,7 +234,7 @@ export function getWorks() {
                 },
                 {
                     id: 4,
-                    title: "Vast as the misty sea.",
+                    title: "Vast as the misty sea",
                     info: "Sources: On a Dream, Shi Zhen-Guang, Sui dynasty",
                     year: "Year: 1997",
                     size: "Size: 138 x 254 cm",
@@ -242,7 +242,7 @@ export function getWorks() {
                 },
                 {
                     id: 5,
-                    title: "Don't ignore one's conscience.",
+                    title: "Don't ignore one's conscience",
                     info: "Sources: Chapter 14, Dao De Jing, Laozi",
                     year: "Year: 1997",
                     size: "Size: 66.3 x 134.6 cm",
@@ -258,7 +258,7 @@ export function getWorks() {
                 },
                 {
                     id: 7,
-                    title: "Understanding your heart.",
+                    title: "Understanding your heart",
                     info: "Sources: Buddha Sayings",
                     year: "Year: 1996",
                     size: "Size: 68 x 68 cm",
@@ -266,7 +266,7 @@ export function getWorks() {
                 },
                 {
                     id: 8,
-                    title: "[If at the beginning there is] a difference of a millimeter, [in the end] the discrepancy will be a thousand li.",
+                    title: "[If at the beginning there is] a difference of a millimeter, [in the end] the discrepancy will be a thousand li",
                     info: "Sources: Explanations of the Classics, The Book of Rites",
                     year: "Year: 1992",
                     size: "Size: 69 x 69 cm",
@@ -274,7 +274,7 @@ export function getWorks() {
                 },
                 {
                     id: 9,
-                    title: " [When asked about filial piety] the difficulty is with countenance.",
+                    title: " [When asked about filial piety] the difficulty is with countenance",
                     info: "Sources: Exercising Government, The Analects of Confucius",
                     year: "Year: 1991",
                     size: "Size: 69 x 69 cm",
@@ -284,12 +284,12 @@ export function getWorks() {
         },
         {
             id: 4,
-            title: "1990之前",
+            title: "Before 1990",
             src: "/works/滄海之滉漾浥勺水不足以削其廣.jpg",
             works: [
                 {
                     id: 1,
-                    title: "A Journey of a thousand miles begins with the first step.",
+                    title: "A Journey of a thousand miles begins with the first step",
                     info: "Sources: Chapter 64, Dao De Jing, Laozi",
                     year: "Year: 1987",
                     size: "Size: 68 x 70 cm",
@@ -297,7 +297,7 @@ export function getWorks() {
                 },
                 {
                     id: 2,
-                    title: "The mountain rain is imminent.",
+                    title: "The mountain rain is imminent",
                     info: "Sources: The Eastern Rostrum of Xianyang, Xu Hun, Tang dynasty",
                     year: "Year: 1982",
                     size: "Size: 66 x 70 cm",
@@ -305,7 +305,7 @@ export function getWorks() {
                 },
                 {
                     id: 3,
-                    title: "Mist and clouds appear and disappear on a whim. Half vanishing into thin air, half lingering in the mountain. I pass my days and months in leisure, like the free-spirited mist and clouds; secluded deep in the remote forest, where I listen to sounds of the murmuring stream.",
+                    title: "Mist and clouds appear and disappear on a whim. Half vanishing into thin air, half lingering in the mountain. I pass my days and months in leisure, like the free-spirited mist and clouds; secluded deep in the remote forest, where I listen to sounds of the murmuring stream",
                     info: "Sources: Painting Scroll in Gold and Green, Qian Xuan, Song dynasty",
                     year: "Year: 1973",
                     size: "Size: 34 x 103 cm",
@@ -313,7 +313,7 @@ export function getWorks() {
                 },
                 {
                     id: 4,
-                    title: "Taking a spoonful of water from surging sea cannot reduce its immensity.",
+                    title: "Taking a spoonful of water from surging sea cannot reduce its immensity",
                     info: "Sources: The Master Who Embraces simplicity, Ge Hong, Eastern Jin period",
                     year: "Year: 1973",
                     size: "Size: 81 x 86.5 cm",
@@ -381,9 +381,29 @@ export function getOthers() {
 }
 
 export function getAbout() {
-    const about = "<div>" + "<p>1966  B.F.A. National Taiwan Normal University, Taipei, Taiwan</p>" + "<p>1970  M.F.A. University of Massachusetts, Amherst, U.S.A</p>" + "<p>2012  Received the 31st National Cultural Award Laureate</p>" + "<br>" + "<p>TONG Yang-Tze is one of Taiwan’s most important modern-day artists. She started her study of calligraphy when she was just eight. Following her graduation from National Taiwan Normal University with a degree in fine arts, TONG Yang-Tze continued to deepen her artistic studies in the US. Following her return to Taiwan, she began experimenting with fusing Western theories of painting with the lines and strokes that are the backbone of Chinese calligraphy. TONG Yang-Tze is practically famous for her large-scale calligraphic pieces done in cursive script, with her work often described as vigorous, bold and unrestrained. The structure of her characters and their lay out reveal a uniquely modern interpretation and serve as the basis for a new calligraphic style.</p>" + "<br>" + "<p>A full-time artist for over 50 years, TONG Yang-Tze has held over 60 calligraphy exhibitions worldwide. In recent years, her focus has shifted to crossover exhibitions, using the medium of the calligraphic form and content to “re-introduce” the Chinese script to the public and highlighting its place in the modern world. TONG Yang-Tze’s bold crossover experiments look to bring to life the beauty of calligraphy in the internet age and to ensure that the artistic beauty of the Chinese script finds its way into modern day dialogues—thus continuing the contemporary brilliance of this ancient Eastern tradition.</p>" + "</div>";
-
+    const about = "<div>" + "<p>TONG Yang-Tze is one of Taiwan’s most important modern-day artists. She started her study of calligraphy when she was just eight. Following her graduation from National Taiwan Normal University with a degree in fine arts, TONG Yang-Tze continued to deepen her artistic studies in the US. Following her return to Taiwan, she began experimenting with fusing Western theories of painting with the lines and strokes that are the backbone of Chinese calligraphy. TONG Yang-Tze is practically famous for her large-scale calligraphic pieces done in cursive script, with her work often described as vigorous, bold and unrestrained. The structure of her characters and their lay out reveal a uniquely modern interpretation and serve as the basis for a new calligraphic style.</p>" + "<br>" + "<p>A full-time artist for over 50 years, TONG Yang-Tze has held over 60 calligraphy exhibitions worldwide. In recent years, her focus has shifted to crossover exhibitions, using the medium of the calligraphic form and content to “re-introduce” the Chinese script to the public and highlighting its place in the modern world. TONG Yang-Tze’s bold crossover experiments look to bring to life the beauty of calligraphy in the internet age and to ensure that the artistic beauty of the Chinese script finds its way into modern day dialogues—thus continuing the contemporary brilliance of this ancient Eastern tradition.</p>" + "</div>";
     return about;
+}
+
+export function getAbout2() {
+    const about2 = [
+        {
+            id: 1,
+            year: 1966,
+            title: "B.F.A. National Taiwan Normal University, Taipei, Taiwan",
+        },
+        {
+            id: 2,
+            year: 1970,
+            title: "M.F.A. University of Massachusetts, Amherst, U.S.A",
+        },
+        {
+            id: 3,
+            year: 2012,
+            title: "Received the 31st National Cultural Award Laureate",
+        },
+    ];
+    return about2;
 }
 
 export function getCurrentExs() {
@@ -692,20 +712,19 @@ export function getArticle() {
         {
             id: 1,
             year: 2014,
-            auther: "Han Pao-Teh",
-            title: "Painting Within Calligraphy—On Tong Yang-Tze’s Contemporary Calligraphy",
+            title: "Han Pao-Teh | Painting Within Calligraphy—On Tong Yang-Tze’s Contemporary Calligraphy",
             link: "https://drive.google.com/file/d/1Vm4R1xmwImEuY20Ei5SEktRlAdEo1MK0/view?usp=sharing",
         },
         {
             id: 2,
             year: 2011,
-            title: "Sounds of Nature: Music with Form in the Calligraphy of Tong Yang-Tze",
+            title: "Shih Shou-Chien | Sounds of Nature: Music with Form in the Calligraphy of Tong Yang-Tze",
             link: "https://drive.google.com/file/d/1vK-835gKVGhTZK8_MpEMMPFolNJ8IJB1/view?usp=sharing",
         },
         {
             id: 3,
             year: 1944,
-            title: "Remarks on the Sayings of Lazoi and Zhuangzi Exhibition",
+            title: "Ke Qing-Ming | Remarks on the Sayings of Lazoi and Zhuangzi Exhibition",
             link: "https://drive.google.com/file/d/1BOkPc1gKwlnydtZl_fxuUfYMn8k7gF_2/view?usp=sharing",
         }
     ];
@@ -716,65 +735,56 @@ export function getPress() {
     const press = [
         {
             id: 1,
-            name: "OCULA",
             year: 2023,
-            title: "Created by calligraphy artist Tong Yang-Tze and new media artist Chris Cheung (h0nh1m), the work will go on display from 30 June.",
+            title: "OCULA | Created by calligraphy artist Tong Yang-Tze and new media artist Chris Cheung (h0nh1m), the work will go on display from 30 June.",
             link: "https://ocula.com/magazine/art-news/m-to-show-generative-ink-work-on-tv-like-facade/",
         },
         {
             id: 2,
-            name: "The Guardian",
             year: 2021,
-            title: "‘She has invaded all our lives’ – Tong Yang-tze, the artist making calligraphy cool",
+            title: "The Guardian | ‘She has invaded all our lives’ – Tong Yang-tze, the artist making calligraphy cool",
             link: "https://www.theguardian.com/artanddesign/2021/nov/16/tong-yang-tze-artist-making-calligraphy-cool-m-hong-kong",
         },
         {
             id: 3,
-            name: "Taiwan News",
             year: 2020,
-            title: "Renowned Taiwanese calligrapher showcases colossal artwork in US",
+            title: "Taiwan News | Renowned Taiwanese calligrapher showcases colossal artwork in US",
             link: "https://taiwannews.com.tw/news/3894223",
         },
         {
             id: 4,
-            name: "OCULA",
             year: 2018,
-            title: "From Ink to Apparel III – Another Calligraphy and Fashion Crossover",
+            title: "CommonWealth Magazine | From Ink to Apparel III – Another Calligraphy and Fashion Crossover",
             link: "https://english.cw.com.tw/article/article.action?id=2170&from=search",
         },
         {
             id: 5,
-            name: "The Guardian",
             year: 2017,
-            title: "Flouting Calligraphic Conventions: Tong Yang-tze Breathes New Life into an Old Art",
+            title: "Taiwan Panorama | Flouting Calligraphic Conventions: Tong Yang-tze Breathes New Life into an Old Art",
             link: "https://www.taiwan-panorama.com/en/Articles/Details?Guid=3aeb1bc6-f08b-47ea-9572-fed0ec2d89a6&langId=3&CatId=8&postname=Flouting%20Calligraphic%20Conventions%3A%20Tong%20Yang-tze%20Breathes%20New%20Life%20into%20an%20Old%20Art",
         },
         {
             id: 6,
-            name: "Taiwan News",
             year: 2016,
-            title: "Reviving the Joy of ‘Characters’",
+            title: "CommonWealth Magazine | Reviving the Joy of ‘Characters’",
             link: "https://english.cw.com.tw/article/article.action?id=72",
         },
         {
             id: 7,
-            name: "OCULA",
-            year: null,
-            title: "Innovative Exhibition Showcases Calligraphy in 16,384 Ways",
+            year: 2016,
+            title: "The News Liens | Innovative Exhibition Showcases Calligraphy in 16,384 Ways",
             link: "https://international.thenewslens.com/article/43981",
         },
         {
             id: 8,
-            name: "The Guardian",
             year: 2012,
-            title: "Calligrapher Tong Yang-tze creates soundless symphony",
+            title: "The Taipei Times | Calligrapher Tong Yang-tze creates soundless symphony",
             link: "https://www.taipeitimes.com/News/lang/archives/2012/04/16/2003530418",
         },
         {
             id: 9,
-            name: "Taiwan News",
             year: 1980,
-            title: "She Wields Her Mighty Pen",
+            title: "Taiwan Panorama | She Wields Her Mighty Pen",
             link: "https://www.taiwan-panorama.com/en/Articles/Details?Guid=4efb08a5-2c32-400c-8ccb-ff134d883a49&langId=3&CatId=8&postname=She%20Wields%20Her%20Mighty%20Pen",
         }
     ];

@@ -61,7 +61,7 @@ export default function ContactStack() {
                   Contact us
                 </Box>
                 <Box sx={{ fontSize: 15, color: "#000" }}>
-                  Please fll this form in a decent manner
+                  Please fill this form in a decent manner.
                 </Box>
               </Box>
               <Box pt={4}>
