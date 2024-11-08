@@ -5,6 +5,8 @@ import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import { LayoutTransition } from "@/components/LayoutTransition";
+
 export const metadata = {
   title: "TONG YANG TZE",
   description: "TONG YANG TZE's personal website",
@@ -17,10 +19,16 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://use.typekit.net/fll2djb.css" />
       </head>
       <body>
-        <Header />
-        <main>
-          <AppRouterCacheProvider>{children} </AppRouterCacheProvider>
-        </main>
+        <LayoutTransition
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
+          <Header />
+          <main>
+            <AppRouterCacheProvider>{children} </AppRouterCacheProvider>
+          </main>
+        </LayoutTransition>
       </body>
     </html>
   );

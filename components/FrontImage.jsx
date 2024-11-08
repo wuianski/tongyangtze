@@ -12,14 +12,11 @@ export default function FrontImage({ image }) {
     hidden: {
       opacity: 0,
     },
-    visible: {
+    visible: (custom) => ({
       opacity: 1,
-      transition: {
-        type: "spring",
-        delay: 0.3,
-        duration: 1,
-      },
-    },
+      // y: 0,
+      transition: { delay: custom * 0.3, duration: 1.3 },
+    }),
   };
 
   return (
@@ -30,26 +27,28 @@ export default function FrontImage({ image }) {
         initial="hidden"
         animate="visible"
       >
-        <Box
-          sx={{
-            position: "fixed",
-            top: 0,
-            left: 0,
-            // zIndex: -1,
-            width: "100vw",
-            height: "100vh",
-          }}
-        >
-          <Image
-            src={image}
-            alt="front page image"
-            fill={true}
-            quality={100}
-            style={{ objectFit: "cover", objectPosition: "center" }}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw"
-            // priority={true}
-            placeholder="blur"
-          />
+        <Box>
+          <Box
+            sx={{
+              position: "fixed",
+              top: 0,
+              left: 0,
+              zIndex: -1,
+              width: "100vw",
+              height: "100vh",
+            }}
+          >
+            <Image
+              src={image}
+              alt="front page image"
+              fill={true}
+              quality={100}
+              style={{ objectFit: "cover", objectPosition: "center" }}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw"
+              priority={true}
+              placeholder="blur"
+            />
+          </Box>
         </Box>
       </motion.div>
     </>
