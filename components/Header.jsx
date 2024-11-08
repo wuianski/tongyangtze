@@ -123,7 +123,7 @@ export default function Header() {
                     width={53}
                     height={52}
                     quality={100}
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
+                    sizes="150px"
                   />
                 </Box>
               </motion.div>
@@ -147,7 +147,7 @@ export default function Header() {
                   width={33}
                   height={32}
                   quality={100}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
+                  sizes="150px"
                 />
               </Box>
             </Box>

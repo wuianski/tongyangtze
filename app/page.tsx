@@ -23,7 +23,7 @@ export default function Home() {
           fill={true}
           quality={100}
           style={{ objectFit: "cover", objectPosition: "center" }}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw"
           priority={true}
           placeholder="blur"
         />
