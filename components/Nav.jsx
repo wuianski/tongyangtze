@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 /* Next */
 import { usePathname } from "next/navigation";
