@@ -8,6 +8,8 @@ import { Box, Paper, Stack, styled } from "@mui/material";
 import Form from "@/components/Form";
 /* Image */
 import contact from "@/public/contact.png";
+/* Framer Motion */
+import { motion } from "framer-motion";
 
 const Item = styled(Paper)(({ theme }) => ({
   textAlign: "left",
@@ -23,7 +25,19 @@ const Item = styled(Paper)(({ theme }) => ({
   },
 }));
 
-export default function AbouStack() {
+export default function ContactStack() {
+  const variants = {
+    hidden: {
+      opacity: 0,
+      // y: 100,
+    },
+    visible: (custom) => ({
+      opacity: 1,
+      // y: 0,
+      transition: { delay: custom * 0.3, duration: 0.3 },
+    }),
+  };
+
   return (
     <>
       <Box
@@ -33,20 +47,27 @@ export default function AbouStack() {
       >
         <Stack direction={{ xs: "column", sm: "row" }} spacing={0}>
           <Item sx={{ width: { xs: "100%", sm: "80%" } }}>
-            <Box sx={{ color: "#222222ff" }}>
-              <Box
-                mt={1}
-                sx={{ fontSize: 30, fontFamily: "baskerville-display-pt" }}
-              >
-                Contact us
+            <motion.div
+              custom={1}
+              variants={variants}
+              initial="hidden"
+              animate="visible"
+            >
+              <Box sx={{ color: "#222222ff" }}>
+                <Box
+                  mt={1}
+                  sx={{ fontSize: 30, fontFamily: "baskerville-display-pt" }}
+                >
+                  Contact us
+                </Box>
+                <Box sx={{ fontSize: 15, color: "#000" }}>
+                  Please fll this form in a decent manner
+                </Box>
               </Box>
-              <Box sx={{ fontSize: 15, color: "#000" }}>
-                Please fll this form in a decent manner
+              <Box pt={4}>
+                <Form />
               </Box>
-            </Box>
-            <Box pt={4}>
-              <Form />
-            </Box>
+            </motion.div>
           </Item>
           <Item
             sx={{
@@ -55,27 +76,34 @@ export default function AbouStack() {
             }}
           >
             <Box mt={1} sx={{ fontSize: 30 }}>
-              <Box
-                sx={{
-                  position: "fixed",
-                  top: 0,
-                  right: 0,
-                  zIndex: -1,
-                  width: "50vw",
-                  height: "100vh",
-                }}
-                mb={6}
+              <motion.div
+                custom={0}
+                variants={variants}
+                initial="hidden"
+                animate="visible"
               >
-                <Image
-                  src={contact}
-                  alt="contact picture"
-                  fill={true}
-                  quality={100}
-                  style={{ objectFit: "cover", objectPosition: "center" }}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
-                  placeholder="blur"
-                />
-              </Box>
+                <Box
+                  sx={{
+                    position: "fixed",
+                    top: 0,
+                    right: 0,
+                    zIndex: -1,
+                    width: "50vw",
+                    height: "100vh",
+                  }}
+                  mb={6}
+                >
+                  <Image
+                    src={contact}
+                    alt="contact picture"
+                    fill={true}
+                    quality={100}
+                    style={{ objectFit: "cover", objectPosition: "center" }}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
+                    placeholder="blur"
+                  />
+                </Box>
+              </motion.div>
             </Box>
           </Item>
         </Stack>

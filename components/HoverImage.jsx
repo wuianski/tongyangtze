@@ -6,6 +6,8 @@ import Image from "next/image";
 import Link from "next/link";
 /* MUI */
 import { Box, Paper, Stack, styled } from "@mui/material";
+/* Framer Motion */
+import { motion } from "framer-motion";
 
 const Item = styled(Paper)(({ theme }) => ({
   textAlign: "left",
@@ -29,6 +31,19 @@ export default function HoverImage({ works }) {
     setRenderSrc(works[hoverId].src);
     // console.log(renderSrc);
   }, [hoverId]);
+
+  const variants = {
+    hidden: {
+      opacity: 0,
+      // y: 100,
+    },
+    visible: (custom) => ({
+      opacity: 1,
+      // y: 0,
+      transition: { delay: custom * 0.3, duration: 0.3 },
+    }),
+  };
+
   return (
     <>
       <Box
@@ -38,31 +53,38 @@ export default function HoverImage({ works }) {
       >
         <Stack direction="row" spacing={10}>
           <Item sx={{ width: { xs: "100%", sm: "30%" } }}>
-            <Box
-              sx={{
-                flexGrow: 1,
-                textAlign: { xs: "center", sm: "unset" },
-                width: "fit-content",
-                margin: "0 auto",
-              }}
+            <motion.div
+              custom={1}
+              variants={variants}
+              initial="hidden"
+              animate="visible"
             >
-              {works.map((w, index) => (
-                <Link key={index} href={`/works/${w.id}`}>
-                  <Box
-                    pt={1}
-                    onMouseOver={() => setHoverId(index)}
-                    sx={{
-                      fontSize: 30,
-                      fontStyle: "italic",
-                      fontFamily: "baskerville-display-pt",
-                    }}
-                    className="hover_works"
-                  >
-                    {w.title}
-                  </Box>
-                </Link>
-              ))}
-            </Box>
+              <Box
+                sx={{
+                  flexGrow: 1,
+                  textAlign: { xs: "center", sm: "unset" },
+                  width: "fit-content",
+                  margin: "0 auto",
+                }}
+              >
+                {works.map((w, index) => (
+                  <Link key={index} href={`/works/${w.id}`}>
+                    <Box
+                      pt={1}
+                      onMouseOver={() => setHoverId(index)}
+                      sx={{
+                        fontSize: 30,
+                        fontStyle: "italic",
+                        fontFamily: "baskerville-display-pt",
+                      }}
+                      className="hover_works"
+                    >
+                      {w.title}
+                    </Box>
+                  </Link>
+                ))}
+              </Box>
+            </motion.div>
           </Item>
           <Item
             sx={{
@@ -70,27 +92,34 @@ export default function HoverImage({ works }) {
               display: { xs: "none", sm: "block" },
             }}
           >
-            <Box
-              mt={1}
-              sx={{
-                position: "relative",
-                width: "100%",
-                height: 500,
-                pointerEvents: "none",
-              }}
+            <motion.div
+              custom={0}
+              variants={variants}
+              initial="hidden"
+              animate="visible"
             >
-              <Image
-                priority={true}
-                src={renderSrc}
-                fill={true}
-                alt="Picture of the artwork"
-                style={{
-                  objectFit: "contain",
-                  objectPosition: "center top",
+              <Box
+                mt={1}
+                sx={{
+                  position: "relative",
+                  width: "100%",
+                  height: 500,
+                  pointerEvents: "none",
                 }}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
-              />
-            </Box>
+              >
+                <Image
+                  priority={true}
+                  src={renderSrc}
+                  fill={true}
+                  alt="Picture of the artwork"
+                  style={{
+                    objectFit: "contain",
+                    objectPosition: "center top",
+                  }}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
+                />
+              </Box>
+            </motion.div>
           </Item>
         </Stack>
       </Box>

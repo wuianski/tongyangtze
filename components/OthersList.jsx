@@ -4,6 +4,8 @@
 import Image from "next/image";
 /* MUI */
 import { Box, Paper, Stack, styled } from "@mui/material";
+/* Framer Motion */
+import { motion } from "framer-motion";
 
 const Item = styled(Paper)(({ theme }) => ({
   textAlign: "left",
@@ -20,6 +22,18 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function OthersList({ others }) {
+  const variants = {
+    hidden: {
+      opacity: 0,
+      // y: 100,
+    },
+    visible: (custom) => ({
+      opacity: 1,
+      // y: 0,
+      transition: { delay: custom * 0.3, duration: 0.3 },
+    }),
+  };
+
   return (
     <>
       <Box
@@ -38,58 +52,72 @@ export default function OthersList({ others }) {
                 >
                   <Item sx={{ width: { xs: "100%", sm: "100%" } }}>
                     <Box pr={{ xs: 0, sm: 16 }}>
-                      <Box
-                        sx={{
-                          position: "relative",
-                          // width: { xs: "100%", sm: (751 / 4) * 3 },
-                          // height: { xs: "60vw", sm: (416 / 4) * 3 },
-                          // maxWidth: "calc(50vw - 256px)",
-                          width: "100%",
-                          paddingTop: "56.25%",
-                        }}
+                      <motion.div
+                        custom={1}
+                        variants={variants}
+                        initial="hidden"
+                        animate="visible"
                       >
-                        <Image
-                          src={other.src}
-                          alt="cover image"
-                          fill={true}
-                          quality={100}
-                          style={{
-                            objectFit: "cover",
-                            objectPosition: "center",
+                        <Box
+                          sx={{
+                            position: "relative",
+                            // width: { xs: "100%", sm: (751 / 4) * 3 },
+                            // height: { xs: "60vw", sm: (416 / 4) * 3 },
+                            // maxWidth: "calc(50vw - 256px)",
+                            width: "100%",
+                            paddingTop: "56.25%",
                           }}
-                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
-                        />
-                      </Box>
+                        >
+                          <Image
+                            src={other.src}
+                            alt="cover image"
+                            fill={true}
+                            quality={100}
+                            style={{
+                              objectFit: "cover",
+                              objectPosition: "center",
+                            }}
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
+                          />
+                        </Box>
+                      </motion.div>
                     </Box>
                   </Item>
                   <Item sx={{ width: { xs: "100%", sm: "100%" } }}>
-                    <Box
-                      mt={0}
-                      sx={{
-                        fontSize: 30,
-                        color: "#000",
-                        fontFamily: "baskerville-display-pt",
-                      }}
+                    <motion.div
+                      custom={0}
+                      variants={variants}
+                      initial="hidden"
+                      animate="visible"
                     >
-                      {other.title}
-                    </Box>
-                    <Box pt={1} sx={{ fontSize: 15 }}>
-                      {other.year}
-                    </Box>
-                    <Box
-                      pt={4}
-                      sx={{
-                        fontSize: 15,
-                        minHeight: { xs: "unset", sm: "unset" },
-                      }}
-                    >
-                      {other.context}
-                    </Box>
-                    <Box pt={4} sx={{ fontSize: 15 }}>
-                      <a href={other.link} target="_blank">
-                        More Information
-                      </a>
-                    </Box>
+                      <Box
+                        mt={0}
+                        sx={{
+                          fontSize: 30,
+                          color: "#000",
+                          fontFamily: "baskerville-display-pt",
+                        }}
+                      >
+                        {other.title}
+                      </Box>
+                      <Box pt={1} sx={{ fontSize: 15 }}>
+                        {other.year}
+                      </Box>
+                      <Box
+                        pt={4}
+                        sx={{
+                          fontSize: 15,
+                          minHeight: { xs: "unset", sm: "unset" },
+                        }}
+                      >
+                        {other.context}
+                      </Box>
+                      <Box pt={4} sx={{ fontSize: 15 }}>
+                        <a href={other.link} target="_blank">
+                          More Information
+                        </a>
+                      </Box>
+                    </motion.div>
                   </Item>
                 </Stack>
               </Box>

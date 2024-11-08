@@ -11,6 +11,8 @@ import { styled } from "@mui/material/styles";
 /* Components */
 import Nav from "@/components/Nav";
 import NavMobile from "@/components/NavMobile";
+/* Framer Motion */
+import { motion } from "framer-motion";
 
 /* Stack Item Setting */
 const Item = styled(Paper)(({}) => ({
@@ -47,6 +49,18 @@ export default function Header() {
     textColor = "#aaaaaaff";
   }
 
+  const variants = {
+    hidden: {
+      opacity: 0,
+      // y: 100,
+    },
+    visible: (custom) => ({
+      opacity: 1,
+      // y: 0,
+      transition: { delay: custom * 0.6, duration: 0.3 },
+    }),
+  };
+
   return (
     <Box
       sx={{
@@ -60,7 +74,10 @@ export default function Header() {
           <Item
             sx={{
               width: "43%",
-              background: { xs: siteBackgroundColor, sm: siteBackgroundColor },
+              background: {
+                xs: siteBackgroundColor,
+                sm: siteBackgroundColor,
+              },
             }}
           >
             <Link href={`/`} scroll={false}>
@@ -79,29 +96,37 @@ export default function Header() {
               </Box>
             </Link>
           </Item>
+
           <Item sx={{ width: "14%" }}>
             {/* Logo */}
             <Box sx={{ display: { xs: "none", md: "block" } }}>
-              <Box
-                sx={{
-                  width: "fit-content",
-                  marginLeft: "auto",
-                  marginRight: "auto",
-                  position: "relative",
-                  zIndex: 100,
-                  pointerEvents: "none",
-                }}
-                pt={2}
+              <motion.div
+                custom={1}
+                variants={variants}
+                initial="hidden"
+                animate="visible"
               >
-                <Image
-                  src={logo}
-                  alt="logo"
-                  width={53}
-                  height={52}
-                  quality={100}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
-                />
-              </Box>
+                <Box
+                  sx={{
+                    width: "fit-content",
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                    position: "relative",
+                    zIndex: 100,
+                    pointerEvents: "none",
+                  }}
+                  pt={2}
+                >
+                  <Image
+                    src={logo}
+                    alt="logo"
+                    width={53}
+                    height={52}
+                    quality={100}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
+                  />
+                </Box>
+              </motion.div>
             </Box>
             {/* Mobile Logo */}
             <Box sx={{ display: { xs: "block", md: "none" } }}>
