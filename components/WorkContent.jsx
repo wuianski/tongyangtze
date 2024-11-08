@@ -207,9 +207,9 @@ export default function WorkContent({ work }) {
               variableWidth={true}
               nextArrow={<NextArrow_thumb />}
               prevArrow={<PrevArrow_thumb />}
-              beforeChange={(current, next) => {
-                setActiveSlide(next);
-              }}
+              // beforeChange={(current, next) => {
+              //   setActiveSlide(next);
+              // }}
             >
               {work.works.map((w, index) => {
                 return (
