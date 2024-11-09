@@ -100,33 +100,33 @@ export default function Header() {
           <Item sx={{ width: "14%" }}>
             {/* Logo */}
             <Box sx={{ display: { xs: "none", md: "block" } }}>
-              <motion.div
+              {/* <motion.div
                 custom={1}
                 variants={variants}
                 initial="hidden"
                 animate="visible"
+              > */}
+              <Box
+                sx={{
+                  width: "fit-content",
+                  marginLeft: "auto",
+                  marginRight: "auto",
+                  position: "relative",
+                  zIndex: 100,
+                  pointerEvents: "none",
+                }}
+                pt={2}
               >
-                <Box
-                  sx={{
-                    width: "fit-content",
-                    marginLeft: "auto",
-                    marginRight: "auto",
-                    position: "relative",
-                    zIndex: 100,
-                    pointerEvents: "none",
-                  }}
-                  pt={2}
-                >
-                  <Image
-                    src={logo}
-                    alt="logo"
-                    width={40}
-                    height={39}
-                    quality={100}
-                    sizes="40px"
-                  />
-                </Box>
-              </motion.div>
+                <Image
+                  src={logo}
+                  alt="logo"
+                  width={40}
+                  height={39}
+                  quality={100}
+                  sizes="40px"
+                />
+              </Box>
+              {/* </motion.div> */}
             </Box>
             {/* Mobile Logo */}
             <Box sx={{ display: { xs: "block", md: "none" } }}>

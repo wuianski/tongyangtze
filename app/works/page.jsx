@@ -5,12 +5,12 @@ import { getWorks } from "@/data/data";
 /* MUI */
 import { Box } from "@mui/material";
 
-export default async function Works() {
-  const works = await getWorks();
+export default function Works() {
+  const works = getWorks();
   //   console.log(works);
   return (
     <>
-      <Box sx={{ height: "calc(100vh - 0px)" }}>
+      <Box>
         <HoverImage works={works} />
       </Box>
     </>

@@ -11,14 +11,14 @@ import {
   getAbout2,
 } from "@/data/data";
 
-export default async function About() {
-  const aboutContext = await getAbout();
-  const articles = await getArticle();
-  const presses = await getPress();
-  const currentExs = await getCurrentExs();
-  const pastExs = await getPastExs();
-  const upcomingExs = await getUpcomingExs();
-  const aboutContext2 = await getAbout2();
+export default function About() {
+  const aboutContext = getAbout();
+  const articles = getArticle();
+  const presses = getPress();
+  const currentExs = getCurrentExs();
+  const pastExs = getPastExs();
+  const upcomingExs = getUpcomingExs();
+  const aboutContext2 = getAbout2();
 
   //   console.log(aboutContext);
   return (
