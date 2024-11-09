@@ -44,7 +44,7 @@ export default function Nav() {
     <>
       <Box
         sx={{
-          fontSize: 18,
+          fontSize: 15,
           color: textColor,
           fontFamily: "apparat",
         }}
