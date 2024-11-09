@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+// import React, { useState } from "react";
 /* Next */
 import Image from "next/image";
 /* MUI */
@@ -9,7 +9,7 @@ import { Box } from "@mui/material";
 import { motion } from "framer-motion";
 
 export default function FrontImage({ image }) {
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
   const variants = {
     hidden: {
@@ -48,8 +48,8 @@ export default function FrontImage({ image }) {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw"
             // priority={true}
             placeholder="blur"
-            loading="lazy"
-            onLoad={() => setLoading(false)}
+            // loading="lazy"
+            // onLoad={() => setLoading(false)}
           />
         </Box>
       </motion.div>
