@@ -29,11 +29,9 @@ export default function ContactStack() {
   const variants = {
     hidden: {
       opacity: 0,
-      // y: 100,
     },
     visible: (custom) => ({
       opacity: 1,
-      // y: 0,
       transition: { delay: custom * 0.3, duration: 0.3 },
     }),
   };
@@ -47,27 +45,27 @@ export default function ContactStack() {
       >
         <Stack direction={{ xs: "column", sm: "row" }} spacing={0}>
           <Item sx={{ width: { xs: "100%", sm: "80%" } }}>
-            {/* <motion.div
+            <motion.div
               custom={1}
               variants={variants}
               initial="hidden"
               animate="visible"
-            > */}
-            <Box sx={{ color: "#222222ff" }}>
-              <Box
-                mt={1}
-                sx={{ fontSize: 30, fontFamily: "baskerville-display-pt" }}
-              >
-                Contact us
+            >
+              <Box sx={{ color: "#222222ff" }}>
+                <Box
+                  mt={1}
+                  sx={{ fontSize: 30, fontFamily: "baskerville-display-pt" }}
+                >
+                  Contact us
+                </Box>
+                <Box sx={{ fontSize: 15, color: "#000" }}>
+                  Please fill this form in a decent manner.
+                </Box>
               </Box>
-              <Box sx={{ fontSize: 15, color: "#000" }}>
-                Please fill this form in a decent manner.
+              <Box pt={4}>
+                <Form />
               </Box>
-            </Box>
-            <Box pt={4}>
-              <Form />
-            </Box>
-            {/* </motion.div> */}
+            </motion.div>
           </Item>
           <Item
             sx={{
@@ -76,35 +74,35 @@ export default function ContactStack() {
             }}
           >
             <Box mt={1} sx={{ fontSize: 30 }}>
-              {/* <motion.div
+              <motion.div
                 custom={0}
                 variants={variants}
                 initial="hidden"
                 animate="visible"
-              > */}
-              <Box
-                sx={{
-                  position: "fixed",
-                  top: 0,
-                  right: 0,
-                  zIndex: -1,
-                  width: "50vw",
-                  height: "100vh",
-                }}
-                mb={6}
               >
-                <Image
-                  src={contact}
-                  alt="contact picture"
-                  fill={true}
-                  quality={100}
-                  style={{ objectFit: "cover", objectPosition: "center" }}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
-                  placeholder="blur"
-                  priority={true}
-                />
-              </Box>
-              {/* </motion.div> */}
+                <Box
+                  sx={{
+                    position: "fixed",
+                    top: 0,
+                    right: 0,
+                    zIndex: -1,
+                    width: "50vw",
+                    height: "100vh",
+                  }}
+                  mb={6}
+                >
+                  <Image
+                    src={contact}
+                    alt="contact picture"
+                    fill={true}
+                    quality={100}
+                    style={{ objectFit: "cover", objectPosition: "center" }}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
+                    placeholder="blur"
+                    priority={true}
+                  />
+                </Box>
+              </motion.div>
             </Box>
           </Item>
         </Stack>

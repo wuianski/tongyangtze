@@ -7,10 +7,10 @@ export const fadeUpVariant = {
   initial: { opacity: 0 },
   animate: {
     opacity: 1,
-    // transition: {
-    //   delay: 1.5,
-    //   duration: 1.5,
-    // },
+    transition: {
+      // delay: 1.5,
+      duration: 0.3,
+    },
   },
 };
 const FadeUpAnimation = ({ children }) => {

@@ -115,7 +115,11 @@ export default function OthersList({ others }) {
                         {other.context}
                       </Box>
                       <Box pt={4} sx={{ fontSize: 15 }}>
-                        <a href={other.link} target="_blank">
+                        <a
+                          href={other.link}
+                          target="_blank"
+                          className="hover_ex_tab"
+                        >
                           More Information
                         </a>
                       </Box>

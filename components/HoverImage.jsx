@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 const Item = styled(Paper)(({ theme }) => ({
   textAlign: "left",
-  color: "#aaaaaaff",
+  color: "#666",
   width: "max-content",
   boxShadow: "none",
   background: "none",
@@ -35,11 +35,9 @@ export default function HoverImage({ works }) {
   const variants = {
     hidden: {
       opacity: 0,
-      // y: 100,
     },
     visible: (custom) => ({
       opacity: 1,
-      // y: 0,
       transition: { delay: custom * 0.3, duration: 0.3 },
     }),
   };

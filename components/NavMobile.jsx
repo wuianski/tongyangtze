@@ -6,6 +6,8 @@ import Box from "@mui/material/Box";
 /* Icons */
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+/* Components */
+import FadeUpAnimation from "@/components/FadeUpAnimation";
 
 /*************/
 /*** delay ***/
@@ -42,105 +44,107 @@ export default function NavMobile({ textColor }) {
             cursor: "pointer",
           }}
         >
-          <CloseIcon sx={{ fontSize: 40, color: "#aaaaaaff" }} />
+          <CloseIcon sx={{ fontSize: 40, color: "#666" }} />
         </Box>
       )}
       {nav_m && (
-        <Box
-          sx={{
-            position: "absolute",
-            width: "100vw",
-            height: "100vh",
-            left: 0,
-            top: 0,
-            backgroundColor: "#151515ff",
-            zIndex: 99,
-          }}
-        >
-          {/* Site Title */}
-          <Link href={`/`} scroll={false}>
+        <FadeUpAnimation>
+          <Box
+            sx={{
+              position: "absolute",
+              width: "100vw",
+              height: "100vh",
+              left: 0,
+              top: 0,
+              backgroundColor: "#151515ff",
+              zIndex: 99,
+            }}
+          >
+            {/* Site Title */}
+            <Link href={`/`} scroll={false}>
+              <Box
+                sx={{
+                  fontSize: 18,
+                  width: "fit-content",
+                  color: "#666",
+                  position: "abolute",
+                  zIndex: 100,
+                }}
+                p={2}
+              >
+                TONG YANG TZE
+              </Box>
+            </Link>
+            {/* Menu */}
             <Box
               sx={{
                 fontSize: 18,
-                width: "fit-content",
-                color: "#aaaaaaff",
-                position: "fixed",
-                zIndex: 100,
+                color: "#666",
               }}
-              p={2}
+              pt={17}
+              pl={2}
+              onClick={async () => {
+                await delay(100);
+                setNav_m(false);
+              }}
             >
-              TONG YANG TZE
+              <Link
+                className={`link ${pathname === "/works" ? "active" : ""}`}
+                href="/works"
+              >
+                <Box mb={2}>Works</Box>
+              </Link>
+
+              <Link
+                className={`link ${pathname === "/others" ? "active" : ""}`}
+                href="/others"
+              >
+                <Box mb={2}>Others</Box>
+              </Link>
+
+              <Link
+                className={`link ${pathname === "/about" ? "active" : ""}`}
+                href="/about"
+              >
+                <Box mb={2}>About</Box>
+              </Link>
+
+              <Link
+                className={`link ${pathname === "/about" ? "active" : ""}`}
+                href="/about#exhibition"
+              >
+                <Box mb={2} ml={2}>
+                  Exhibition
+                </Box>
+              </Link>
+
+              <Link
+                className={`link ${pathname === "/about" ? "active" : ""}`}
+                href="/about#article"
+              >
+                <Box mb={2} ml={2}>
+                  Article
+                </Box>
+              </Link>
+
+              <Link
+                className={`link ${pathname === "/about" ? "active" : ""}`}
+                href="/about#press"
+              >
+                <Box mb={2} ml={2}>
+                  Press
+                </Box>
+              </Link>
+
+              <Link
+                className={`link ${pathname === "/contacts" ? "active" : ""}`}
+                href="/contacts"
+              >
+                <Box mb={2}>Contacts</Box>
+              </Link>
             </Box>
-          </Link>
-          {/* Menu */}
-          <Box
-            sx={{
-              fontSize: 18,
-              color: "#aaaaaaff",
-            }}
-            pt={17}
-            pl={2}
-            onClick={async () => {
-              await delay(100);
-              setNav_m(false);
-            }}
-          >
-            <Link
-              className={`link ${pathname === "/works" ? "active" : ""}`}
-              href="/works"
-            >
-              <Box mb={2}>Works</Box>
-            </Link>
-
-            <Link
-              className={`link ${pathname === "/others" ? "active" : ""}`}
-              href="/others"
-            >
-              <Box mb={2}>Others</Box>
-            </Link>
-
-            <Link
-              className={`link ${pathname === "/about" ? "active" : ""}`}
-              href="/about"
-            >
-              <Box mb={2}>About</Box>
-            </Link>
-
-            <Link
-              className={`link ${pathname === "/about" ? "active" : ""}`}
-              href="/about#exhibition"
-            >
-              <Box mb={2} ml={2}>
-                Exhibition
-              </Box>
-            </Link>
-
-            <Link
-              className={`link ${pathname === "/about" ? "active" : ""}`}
-              href="/about#article"
-            >
-              <Box mb={2} ml={2}>
-                Article
-              </Box>
-            </Link>
-
-            <Link
-              className={`link ${pathname === "/about" ? "active" : ""}`}
-              href="/about#press"
-            >
-              <Box mb={2} ml={2}>
-                Press
-              </Box>
-            </Link>
-
-            <Link
-              className={`link ${pathname === "/contacts" ? "active" : ""}`}
-              href="/contacts"
-            >
-              <Box mb={2}>Contacts</Box>
-            </Link>
           </Box>
-        </Box>
+        </FadeUpAnimation>
       )}
     </>
   );

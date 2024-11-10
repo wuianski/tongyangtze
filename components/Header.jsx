@@ -33,33 +33,21 @@ export default function Header() {
 
   if (pathname === "/about" || pathname === "/contacts") {
     backgroundColor = "none";
-    textColor = "#222222ff";
+    textColor = "#000";
     siteBackgroundColor = "#fff";
   } else if (pathname === "/others") {
     backgroundColor = "#fff";
     siteBackgroundColor = "#fff";
   } else if (pathname === "/works") {
     backgroundColor = "#151515ff";
-    textColor = "#aaaaaaff";
+    textColor = "#666";
   } else if (pathname === "/") {
     backgroundColor = "none";
-    textColor = "#aaaaaaff";
+    textColor = "#666";
   } else {
     backgroundColor = "#151515ff";
-    textColor = "#aaaaaaff";
+    textColor = "#666";
   }
-
-  const variants = {
-    hidden: {
-      opacity: 0,
-      // y: 100,
-    },
-    visible: (custom) => ({
-      opacity: 1,
-      // y: 0,
-      transition: { delay: custom * 0.6, duration: 0.3 },
-    }),
-  };
 
   return (
     <Box
@@ -100,12 +88,6 @@ export default function Header() {
           <Item sx={{ width: "14%" }}>
             {/* Logo */}
             <Box sx={{ display: { xs: "none", md: "block" } }}>
-              {/* <motion.div
-                custom={1}
-                variants={variants}
-                initial="hidden"
-                animate="visible"
-              > */}
               <Box
                 sx={{
                   width: "fit-content",
@@ -126,7 +108,6 @@ export default function Header() {
                   sizes="40px"
                 />
               </Box>
-              {/* </motion.div> */}
             </Box>
             {/* Mobile Logo */}
             <Box sx={{ display: { xs: "block", md: "none" } }}>

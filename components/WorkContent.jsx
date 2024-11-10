@@ -10,6 +10,8 @@ import Slider from "react-slick";
 /* Icons */
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+/* Framer Motion */
+import { motion } from "framer-motion";
 
 /* Customizing React-Slick's arrow */
 function NextArrow(props) {
@@ -188,7 +190,7 @@ export default function WorkContent({ work }) {
             </Slider>
           </Box>
           <Box
-            mt={{ xs: -2, sm: 0 }}
+            mt={{ xs: -3, sm: -1 }}
             sx={{
               width: { xs: "80vw", sm: "50vw" },
               marginLeft: "auto",
@@ -214,30 +216,28 @@ export default function WorkContent({ work }) {
             >
               {work.works.map((w, index) => {
                 return (
-                  <Box key={index} sx={{ textAlign: "center" }}>
-                    <Box
-                      mb={2}
-                      mr={2} // margin between images
-                      sx={{
-                        position: "relative",
-                        height: { xs: 48, sm: 68 },
-                        pointerEvents: "none",
-                      }}
-                    >
-                      <Image
-                        src={w.src}
-                        // fill={true}
-                        alt="Picture of the artwork"
-                        width={0}
-                        height={0}
-                        style={{
-                          width: "auto",
-                          height: "100%",
+                  <Box key={index} sx={{ textAlign: "center" }} mt={1}>
+                    <motion.div whileHover={{ y: -8 }}>
+                      <Box
+                        mb={2}
+                        mr={2} // margin between images
+                        sx={{
+                          position: "relative",
+                          height: { xs: 48, sm: 68 },
+                          pointerEvents: "none",
                         }}
-                        quality={100}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
-                      />
-                    </Box>
+                      >
+                        <Image
+                          src={w.src}
+                          alt="Picture of the artwork"
+                          width={0}
+                          height={0}
+                          style={{ width: "auto", height: "100%" }}
+                          quality={100}
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
+                        />
+                      </Box>
+                    </motion.div>
                   </Box>
                 );
               })}

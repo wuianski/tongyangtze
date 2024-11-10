@@ -39,7 +39,7 @@ export default async function Work({ params }) {
       <Box sx={{ color: "#aaaaaaff" }}>
         <WorkContent work={work} />
       </Box>
-      <Box sx={{ color: "#aaaaaaff", position: "fixed", left: 16, bottom: 16 }}>
+      <Box sx={{ color: "#666", position: "fixed", left: 16, bottom: 16 }}>
         {nextwork && (
           <>
             <Link href={`/works/${nextwork.id}`}>
@@ -53,9 +53,7 @@ export default async function Work({ params }) {
           </>
         )}
       </Box>
-      <Box
-        sx={{ color: "#aaaaaaff", position: "fixed", right: 16, bottom: 16 }}
-      >
+      <Box sx={{ color: "#666", position: "fixed", right: 16, bottom: 16 }}>
         {lastwork && (
           <>
             <Link href={`/works/${lastwork.id}`}>

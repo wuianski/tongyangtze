@@ -5,7 +5,7 @@ import { Box, Paper, Stack, styled } from "@mui/material";
 
 const Item = styled(Paper)(({ theme }) => ({
   textAlign: "left",
-  color: "#222222",
+  color: "#000",
   width: "max-content",
   boxShadow: "none",
   background: "none",
@@ -32,7 +32,7 @@ export default function AboutList({ timelines }) {
                   <Box mt={1}>
                     {timeline.link ? (
                       <a href={timeline.link} target="_blank">
-                        <Box className="hover">{timeline.title}</Box>
+                        <Box className="hover_ex_tab">{timeline.title}</Box>
                       </a>
                     ) : (
                       timeline.title
