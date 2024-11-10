@@ -78,6 +78,7 @@ export default function OthersList({ others }) {
                               objectPosition: "center",
                             }}
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
+                            priority={true}
                           />
                         </Box>
                       </motion.div>

@@ -160,6 +160,7 @@ export default function AboutStack({
                   style={{ objectFit: "cover", objectPosition: "center" }}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
                   placeholder="blur"
+                  priority={true}
                 />
               </Box>
               {/* </motion.div> */}

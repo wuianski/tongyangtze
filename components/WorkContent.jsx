@@ -160,6 +160,7 @@ export default function WorkContent({ work }) {
                           }}
                           quality={100}
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
+                          priority={true}
                         />
                       </Box>
                       <Box
