@@ -10,6 +10,8 @@ import Slider from "react-slick";
 /* Icons */
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import ArrrowRight from "@/public/icons/arrow-right.svg";
+import ArrrowLeft from "@/public/icons/arrow-left.svg";
 /* Framer Motion */
 import { motion } from "framer-motion";
 
@@ -46,19 +48,19 @@ function NextArrow_thumb(props) {
         background: "none",
         position: "relative",
         right: "-38px",
-        top: "-68px",
+        top: "-72px",
         float: "right",
       }}
       onClick={onClick}
     >
-      <ArrowForwardIosIcon
+      <Box
         sx={{
-          fontSize: 30,
-          color: "#aaa",
           opacity: className.includes("slick-disabled") ? 0.25 : 1,
           cursor: className.includes("slick-disabled") ? "unset" : "pointer",
         }}
-      />
+      >
+        <ArrrowRight />
+      </Box>
     </div>
   );
 }
@@ -77,17 +79,17 @@ function PrevArrow_thumb(props) {
         // top: "60px",
         width: "fit-content",
       }}
-      sx={{ top: { xs: "46px", sm: "60px" } }}
+      sx={{ top: { xs: "54px", sm: "63px" } }}
       onClick={onClick}
     >
-      <ArrowBackIosNewIcon
+      <Box
         sx={{
-          fontSize: 30,
-          color: "#aaa",
           opacity: className.includes("slick-disabled") ? 0.25 : 1,
           cursor: className.includes("slick-disabled") ? "unset" : "pointer",
         }}
-      />
+      >
+        <ArrrowLeft />
+      </Box>
     </Box>
   );
 }
@@ -161,7 +163,7 @@ export default function WorkContent({ work }) {
                             maxHeight: "49vh",
                           }}
                           quality={100}
-                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"
                           priority={true}
                         />
                       </Box>
@@ -192,7 +194,7 @@ export default function WorkContent({ work }) {
           <Box
             mt={{ xs: -3, sm: -1 }}
             sx={{
-              width: { xs: "80vw", sm: "50vw" },
+              width: { xs: "70vw", sm: "50vw" },
               marginLeft: "auto",
               marginRight: "auto",
             }}
@@ -234,7 +236,7 @@ export default function WorkContent({ work }) {
                           height={0}
                           style={{ width: "auto", height: "100%" }}
                           quality={100}
-                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         />
                       </Box>
                     </motion.div>

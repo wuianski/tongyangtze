@@ -141,7 +141,7 @@ export default function AboutStack({
               >
                 <Box
                   sx={{
-                    position: { xs: "relative", sm: "fixed" },
+                    position: { xs: "relative", sm: "absolute" },
                     top: 0,
                     right: 0,
                     zIndex: -1,
@@ -156,7 +156,7 @@ export default function AboutStack({
                     fill={true}
                     quality={100}
                     style={{ objectFit: "cover", objectPosition: "center" }}
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                     placeholder="blur"
                     priority={true}
                   />

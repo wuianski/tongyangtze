@@ -1,6 +1,3 @@
-// "use client";
-
-import React, { useState, useEffect } from "react";
 import Box from "@mui/material/Box";
 import Image from "next/image";
 /* Image */
@@ -30,9 +27,10 @@ export default function Home() {
           fill={true}
           quality={100}
           style={{ objectFit: "cover", objectPosition: "center" }}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw"
+          sizes="100vw"
           priority={true}
           placeholder="blur"
+          loading="eager"
         />
       </Box>
       <Box

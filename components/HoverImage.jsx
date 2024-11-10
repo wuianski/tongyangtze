@@ -114,7 +114,7 @@ export default function HoverImage({ works }) {
                     objectFit: "contain",
                     objectPosition: "center top",
                   }}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                 />
               </Box>
             </motion.div>

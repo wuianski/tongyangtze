@@ -4,8 +4,8 @@ import Link from "next/link";
 /* MUI */
 import Box from "@mui/material/Box";
 /* Icons */
-import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from "@mui/icons-material/Close";
+import Menu from "@/public/icons/menu.svg";
+import Close from "@/public/icons/xmark.svg";
 /* Components */
 import FadeUpAnimation from "@/components/FadeUpAnimation";
 
@@ -24,13 +24,13 @@ export default function NavMobile({ textColor }) {
           onClick={() => setNav_m(true)}
           sx={{
             position: "fixed",
-            top: 8,
-            right: 10,
+            top: 15,
+            right: 15,
             zIndex: 100,
             cursor: "pointer",
           }}
         >
-          <MenuIcon sx={{ fontSize: 40, color: textColor }} />
+          <Menu />
         </Box>
       )}
       {nav_m && (
@@ -38,13 +38,13 @@ export default function NavMobile({ textColor }) {
           onClick={() => setNav_m(false)}
           sx={{
             position: "fixed",
-            top: 8,
-            right: 10,
+            top: 15,
+            right: 15,
             zIndex: 100,
             cursor: "pointer",
           }}
         >
-          <CloseIcon sx={{ fontSize: 40, color: "#666" }} />
+          <Close />
         </Box>
       )}
       {nav_m && (
