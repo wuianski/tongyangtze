@@ -50,9 +50,10 @@ export default function Home() {
           fill={true}
           quality={100}
           style={{ objectFit: "cover", objectPosition: "center" }}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw"
+          sizes="100vw"
           priority={true}
           placeholder="blur"
+          loading="eager"
         />
       </Box>
       {/* </FadeUpAnimation> */}

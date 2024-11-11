@@ -69,6 +69,7 @@ export default function NavMobile({ textColor }) {
                   color: "#666",
                   position: "abolute",
                   zIndex: 100,
+                  fontFamily: "apparat",
                 }}
                 p={2}
               >

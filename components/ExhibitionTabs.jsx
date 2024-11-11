@@ -53,6 +53,7 @@ const StyledTabs = styled((props) => (
     maxWidth: 40,
     width: "100%",
     backgroundColor: "#666",
+    display: "none",
   },
 });
 
@@ -61,7 +62,7 @@ const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
     textTransform: "none",
     fontWeight: theme.typography.fontWeightRegular,
     fontSize: theme.typography.pxToRem(15),
-    marginRight: theme.spacing(1),
+    margin: 0,
     fontFamily: "apparat-light",
     color: "#222222ff",
     "&.Mui-selected": {
@@ -72,6 +73,10 @@ const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
     // "&.Mui-focusVisible": {
     //   backgroundColor: "rgba(100, 95, 228, 0.32)",
     // },
+    paddingLeft: 10,
+    paddingRight: 10,
+    width: "fit-content",
+    minWidth: "unset",
   })
 );
 

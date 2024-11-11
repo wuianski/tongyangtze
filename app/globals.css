@@ -66,6 +66,10 @@ a {
   margin-top: -10px !important;
 }
 
+.variable-width .slick-active {
+  margin-top: -8px !important;
+}
+
 .hover:hover {
   text-decoration: underline;
 }

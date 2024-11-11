@@ -370,6 +370,22 @@ export function getOthers() {
         },
         {
             id: 6,
+            title: "Calligraphy sculpture “Cheng”",
+            year: "2011-2018",
+            context: "For the first time, Tong Yang-Tze combined calligraphy and sculpture to create a three-dimensional “Cheng” character. She used yew and nanmu to create the theme of “Cheng” (Sincerity, Honesty) has taken on contemporary significance in Taiwanese society in recent years and is more like a profound advice to society. It is not only a work of art, but also a value that Tong Yang-Tze believes that Taiwan can share with the world. Calligraphy sculpture “Cheng” toured evolving into a seven-year traveling exhibition “Cheng–A Calligraphy Sculpture on the Move” across Taiwan, and still ongoing.",
+            src: "/others_cover/Cheng.jpg",
+            link: "",
+        },
+        {
+            id: 7,
+            title: "Ingenuity follows Nature",
+            year: "2011",
+            context: "A poster exhibition of Asian designers & Tong Yang-Tze calligraphy in 2011 Taipei World Design EXPO.",
+            src: "/others_cover/IngenuityfollowsNature.jpg",
+            link: "https://www.youtube.com/watch?v=PD-bxBowRFU",
+        },
+        {
+            id: 8,
             title: "X Beyond O: Calligraphy—Sign—Space",
             year: "2023",
             context: "In their newest collaboration Ink, choreographer Huang Yi and audiovisiual pioneer Ryoichi Kurokawa dismantle and reconstruct the lines from a hundred artworks in renowned calligrapher Tong Yang-Tze’s “Silent Music” series, exploring the various texture between body, sound, visual and space.  Hovering between delicate and frantic dynamics, Yi digs deeper into his cultural roots and reveals a wild movement language, turning dancers’ bodies into brushes that paint and leave marks on stage. With speed and a ferocious vocabulary, dancers churn like a vortex in one moment, only to become flowing liquid in the next. Kurokawa transforms the inkblots into luminous tracks, echoing and merging with the unique brushstrokes of Tong, constructing a continuous flow of paintings via stunning holographic projection.  Combining Yi’s explosive and precise language and Kurokawa’s meticulous and sophisticated artistry, Ink is a work that crosses borders and fuses analog and digital, reflecting the harmonic tension between the realms of ancient practice and future design.  Ink was co-commissioned by the National Taichung Theater and National Theater, Taipei in Taiwan and had its world premiere in June 2023.",

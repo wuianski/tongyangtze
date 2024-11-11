@@ -45,7 +45,7 @@ export default function HoverImage({ works }) {
   return (
     <>
       <Box
-        pt={{ xs: 15, sm: 18 }}
+        pt={{ xs: 15, sm: 20 }}
         pl={{ xs: 0, sm: 15 }}
         pr={{ xs: 0, sm: 15 }}
       >
@@ -68,7 +68,7 @@ export default function HoverImage({ works }) {
                 {works.map((w, index) => (
                   <Link key={index} href={`/works/${w.id}`}>
                     <Box
-                      pt={1}
+                      pb={2}
                       onMouseOver={() => setHoverId(index)}
                       sx={{
                         fontSize: 30,

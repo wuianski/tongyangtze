@@ -45,7 +45,13 @@ export default function OthersList({ others }) {
         <Stack direction="column" spacing={6}>
           {others.map((other, index) => (
             <Item sx={{ width: { xs: "100%", sm: "100%" } }} key={index}>
-              <Box sx={{ borderBottom: "solid 1px #000" }} pb={6}>
+              <Box
+                sx={[
+                  { borderBottom: "solid 1px #000" },
+                  index === others.length - 1 && { borderBottom: "none" },
+                ]}
+                pb={6}
+              >
                 <Stack
                   direction={{ xs: "column", sm: "row" }}
                   spacing={{ xs: 2, sm: 0 }}
@@ -61,9 +67,6 @@ export default function OthersList({ others }) {
                         <Box
                           sx={{
                             position: "relative",
-                            // width: { xs: "100%", sm: (751 / 4) * 3 },
-                            // height: { xs: "60vw", sm: (416 / 4) * 3 },
-                            // maxWidth: "calc(50vw - 256px)",
                             width: "100%",
                             paddingTop: "56.25%",
                           }}
@@ -94,7 +97,7 @@ export default function OthersList({ others }) {
                       <Box
                         mt={0}
                         sx={{
-                          fontSize: 30,
+                          fontSize: { xs: 25, sm: 30 },
                           color: "#000",
                           fontFamily: "baskerville-display-pt",
                         }}
@@ -114,15 +117,17 @@ export default function OthersList({ others }) {
                       >
                         {other.context}
                       </Box>
-                      <Box pt={4} sx={{ fontSize: 15 }}>
-                        <a
-                          href={other.link}
-                          target="_blank"
-                          className="hover_ex_tab"
-                        >
-                          More Information
-                        </a>
-                      </Box>
+                      {other.link && (
+                        <Box pt={4} sx={{ fontSize: 15 }}>
+                          <a
+                            href={other.link}
+                            target="_blank"
+                            className="hover_ex_tab"
+                          >
+                            More Information
+                          </a>
+                        </Box>
+                      )}
                     </motion.div>
                   </Item>
                 </Stack>
@@ -130,6 +135,20 @@ export default function OthersList({ others }) {
             </Item>
           ))}
         </Stack>
+      </Box>
+      <Box
+        pt={{ xs: 40, sm: 100 }}
+        pl={2}
+        pb={2}
+        sx={{ width: { xs: "100%", sm: "40%" }, fontSize: 15 }}
+      >
+        <Box pt={0} pb={2} sx={{ width: "100%" }}>
+          © 2024 — Tong Yang Tze, All rights reserved
+        </Box>
+        <Box pt={0} pb={0} sx={{ width: "100%" }}>
+          IMAGE LICENSING: “Moving Ink: Tong Yang-Tze” exhibited at Taipei Fine
+          Arts Museum, 2019-2020. Courtesy of Taipei Fine Arts Museum.
+        </Box>
       </Box>
     </>
   );

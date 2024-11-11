@@ -192,7 +192,7 @@ export default function WorkContent({ work }) {
             </Slider>
           </Box>
           <Box
-            mt={{ xs: -3, sm: -1 }}
+            mt={{ xs: -4, sm: -2 }}
             sx={{
               width: { xs: "70vw", sm: "50vw" },
               marginLeft: "auto",
@@ -218,7 +218,7 @@ export default function WorkContent({ work }) {
             >
               {work.works.map((w, index) => {
                 return (
-                  <Box key={index} sx={{ textAlign: "center" }} mt={1}>
+                  <Box key={index} sx={{ textAlign: "center" }} mt={2}>
                     <motion.div whileHover={{ y: -8 }}>
                       <Box
                         mb={2}

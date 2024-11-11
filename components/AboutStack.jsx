@@ -141,7 +141,7 @@ export default function AboutStack({
               >
                 <Box
                   sx={{
-                    position: { xs: "relative", sm: "absolute" },
+                    position: { xs: "relative", sm: "fixed" },
                     top: 0,
                     right: 0,
                     zIndex: -1,

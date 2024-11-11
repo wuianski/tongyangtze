@@ -4,6 +4,7 @@ import React, { useState } from "react";
 /* MUI */
 import { Box, Typography } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import NavArrowDown from "@/public/icons/nav-arrow-down.svg";
 import { styled } from "@mui/material/styles";
 import MuiAccordion from "@mui/material/Accordion";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
@@ -55,7 +56,7 @@ export default function ExhibitionAccordion({
           onChange={handleChange("panel1")}
         >
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<NavArrowDown />}
             aria-controls="panel1-content"
             id="panel1-header"
           >
@@ -70,7 +71,7 @@ export default function ExhibitionAccordion({
           onChange={handleChange("panel2")}
         >
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<NavArrowDown />}
             aria-controls="panel2-content"
             id="panel2-header"
           >
@@ -85,7 +86,7 @@ export default function ExhibitionAccordion({
           onChange={handleChange("panel3")}
         >
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<NavArrowDown />}
             aria-controls="panel3-content"
             id="panel3-header"
           >
