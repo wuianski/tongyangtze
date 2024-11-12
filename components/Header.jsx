@@ -33,20 +33,20 @@ export default function Header() {
 
   if (pathname === "/about" || pathname === "/contacts") {
     backgroundColor = "none";
-    textColor = "#000";
+    textColor = "#222";
     siteBackgroundColor = "#fff";
   } else if (pathname === "/others") {
     backgroundColor = "#fff";
     siteBackgroundColor = "#fff";
   } else if (pathname === "/works") {
     backgroundColor = "#151515ff";
-    textColor = "#666";
+    textColor = "#aaa";
   } else if (pathname === "/") {
     backgroundColor = "none";
-    textColor = "#666";
+    textColor = "#aaa";
   } else {
     backgroundColor = "#151515ff";
-    textColor = "#666";
+    textColor = "#aaa";
   }
 
   return (

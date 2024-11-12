@@ -114,8 +114,9 @@ export default function OthersList({ others }) {
                           minHeight: { xs: "unset", sm: "unset" },
                           lineHeight: 2,
                         }}
+                        dangerouslySetInnerHTML={{ __html: other.context }}
                       >
-                        {other.context}
+                        {/* {other.context} */}
                       </Box>
                       {other.link && (
                         <Box pt={4} sx={{ fontSize: 15 }}>

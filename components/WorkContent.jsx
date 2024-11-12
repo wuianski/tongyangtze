@@ -48,7 +48,7 @@ function NextArrow_thumb(props) {
         background: "none",
         position: "relative",
         right: "-38px",
-        top: "-72px",
+        top: "-56px",
         float: "right",
       }}
       onClick={onClick}
@@ -79,7 +79,7 @@ function PrevArrow_thumb(props) {
         // top: "60px",
         width: "fit-content",
       }}
-      sx={{ top: { xs: "54px", sm: "63px" } }}
+      sx={{ top: { xs: "62px", sm: "72px" } }}
       onClick={onClick}
     >
       <Box
@@ -182,7 +182,12 @@ export default function WorkContent({ work }) {
                           {w.info2}
                         </Box>
                       ) : null}
-                      <Box sx={{ fontSize: { xs: 12, sm: 14 } }}>{w.info}</Box>
+                      {/* <Box sx={{ fontSize: { xs: 12, sm: 14 } }}>{w.info}</Box> */}
+                      <Box
+                        sx={{ fontSize: { xs: 12, sm: 14 } }}
+                        dangerouslySetInnerHTML={{ __html: w.info }}
+                      ></Box>
+
                       <Box sx={{ fontSize: { xs: 12, sm: 14 } }}>{w.year}</Box>
                       <Box sx={{ fontSize: { xs: 12, sm: 14 } }}>{w.size}</Box>
                     </Box>
@@ -195,8 +200,11 @@ export default function WorkContent({ work }) {
             mt={{ xs: -4, sm: -2 }}
             sx={{
               width: { xs: "70vw", sm: "50vw" },
-              marginLeft: "auto",
-              marginRight: "auto",
+              // marginLeft: "auto",
+              // marginRight: "auto",
+              position: "absolute",
+              bottom: { xs: "0", sm: "-24px" },
+              left: { xs: "calc(70vw - 55vw)", sm: "calc(50vw - 25vw)" },
             }}
           >
             <Slider
@@ -205,8 +213,8 @@ export default function WorkContent({ work }) {
               className="slider variable-width"
               infinite={false}
               // centerMode={true}
-              slidesToShow={1}
-              slidesToScroll={1}
+              // slidesToShow={1}
+              // slidesToScroll={4}
               swipeToSlide={true}
               focusOnSelect={true}
               variableWidth={true}
@@ -221,7 +229,7 @@ export default function WorkContent({ work }) {
                   <Box key={index} sx={{ textAlign: "center" }} mt={2}>
                     <motion.div whileHover={{ y: -8 }}>
                       <Box
-                        mb={2}
+                        mb={0}
                         mr={2} // margin between images
                         sx={{
                           position: "relative",

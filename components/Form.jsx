@@ -81,6 +81,14 @@ export default function Form() {
 
   return (
     <>
+      <Box mb={4} sx={{ color: "#222222ff" }}>
+        <Box mt={1} sx={{ fontSize: 30, fontFamily: "baskerville-display-pt" }}>
+          Contact us
+        </Box>
+        <Box sx={{ fontSize: 15, color: "#000" }}>
+          Please fill this form in a decent manner.
+        </Box>
+      </Box>
       <Box
         component="form"
         onSubmit={handleSubmit}

@@ -8,11 +8,11 @@ export function getWorks() {
                 {
                     id: 1,
                     title: "The movement of heaven is powerful",
-                    info: "Sources: The Book of Changes",
+                    info: "Sources: " + "<i>The Book of Changes</i>",
                     year: "Year: 2020",
                     size: "Size: 360 x 194 cm",
                     src: "/works/2020天行健.jpg",
-                    info2: "Commission: M+"
+                    info2: "Commissioned by M+"
                 },
                 {
                     id: 2,
@@ -21,39 +21,39 @@ export function getWorks() {
                     year: "Year: 2020",
                     size: "Size: 360 x 194 cm",
                     src: "/works/2020日新.jpg",
-                    info2: "Commission: M+"
+                    info2: "Commissioned by M+"
                 },
                 {
                     id: 3,
                     title: "At the auspicious moment, act without delay",
-                    info: "Sources: The Book of Changes",
+                    info: "Sources: " + "<i>The Book of Changes</i>",
                     year: "Year: 2020",
                     size: "Size: 360 x 194 cm",
                     src: "/works/2020見機而作.jpg",
-                    info2: "Commission: M+"
+                    info2: "Commissioned by M+"
                 },
                 {
                     id: 4,
                     title: "Delight in the existence of heaven and understand its order",
-                    info: "Sources: The Book of Changes",
+                    info: "Sources: " + "<i>The Book of Changes</i>",
                     year: "Year: 2020",
                     size: "Size: 360 x 194 cm",
                     src: "/works/2020樂天知命.jpg",
-                    info2: "Commission: M+"
+                    info2: "Commissioned by M+"
                 },
                 {
                     id: 5,
                     title: "Embracing the way of heaven brings progress",
-                    info: "Sources: The Book of Changes",
+                    info: "Sources: " + "<i>The Book of Changes</i>",
                     year: "Year: 2020",
                     size: "Size: 360 x 1037 cm",
                     src: "/works/2020何天之衢道大行也.jpg",
-                    info2: "Commission: M+"
+                    info2: "Commissioned by M+"
                 },
                 {
                     id: 6,
                     title: "There are things that one must not do",
-                    info: "Sources: Zi Lu, The Analects of Confucius",
+                    info: "Sources: " + "Zi Lu, " + "<i>The Analects of Confucius</i>",
                     year: "Year: 2017",
                     size: "Size: 69 x 138 cm",
                     src: "/works/2017有所不為.jpg",
@@ -69,7 +69,7 @@ export function getWorks() {
                 {
                     id: 8,
                     title: "I do not open up the truth to one who is not eager to get knowledge, nor help out any one who is not anxious to explain himself",
-                    info: "Sources: Shu Er, The Analects of Confucius",
+                    info: "Sources: " + "Shu Er, " + "<i>The Analects of Confucius</i>",
                     year: "Year: 2015",
                     size: "Size: 97 x 180 cm",
                     src: "/works/2015不憤不啓不悱不發.jpg",
@@ -77,7 +77,7 @@ export function getWorks() {
                 {
                     id: 9,
                     title: "They are determined to be sincere in what they do",
-                    info: "Sources: Zi Lu, The Analects of Confucius",
+                    info: "Sources: " + "Zi Lu, " + "<i>The Analects of Confucius</i>",
                     year: "Year: 2015",
                     size: "Size: 97 x 180 cm",
                     src: "/works/2015言必信行必果.jpg",
@@ -85,7 +85,7 @@ export function getWorks() {
                 {
                     id: 10,
                     title: "Three-point Reflection",
-                    info: "Sources: Xue Er, The Analects of Confucius",
+                    info: "Sources: " + "Xue Er, " + "<i>The Analects of Confucius</i>",
                     year: "Year: 2014",
                     size: "Size: 180 x 97 cm",
                     src: "/works/2014三省.jpg",
@@ -101,7 +101,7 @@ export function getWorks() {
                 {
                     id: 12,
                     title: "Don't ignore one's conscience",
-                    info: "Sources: Chapter 14, Dao De Jing, Laozi",
+                    info: "Sources: " + "Chapter 14, " + "<i>Dao De Jing</i>" + ", Laozi",
                     year: "Year: 2013",
                     size: "Size: 144 x 152 cm",
                     src: "/works/2013不昧.jpg",
@@ -109,7 +109,7 @@ export function getWorks() {
                 {
                     id: 13,
                     title: "Solitary joy",
-                    info: "Sources: King Hui of Liang: Part Two, The Mencius",
+                    info: "Sources: King Hui of Liang: Part Two, " + "<i>The Mencius</i>",
                     year: "Year: 2011",
                     size: "Size: 180 x 776 cm (180 x 97cm/ each, set of 8)",
                     src: "/works/獨樂樂.jpg",
@@ -117,7 +117,7 @@ export function getWorks() {
                 {
                     id: 14,
                     title: "The hawk flies up to heaven, the fish leaps in the deep",
-                    info: "Sources: Major Court Hymns, The Book of Odes",
+                    info: "Sources: Major Court Hymns, " + "<i>The Book of Odes</i>",
                     year: "Year: 2011",
                     size: "Size: 180 x 776 cm (180 x 97cm/ each, set of 8)",
                     src: "/works/鳶飛戾天魚躍于淵.jpg",
@@ -132,7 +132,7 @@ export function getWorks() {
                 {
                     id: 1,
                     title: "Out of Nought: Not to do",
-                    info: "Sources: Zi Lu, The Analects of Confucius",
+                    info: "Sources: " + "Zi Lu, " + "<i>The Analects of Confucius</i>",
                     year: "Year: 2009",
                     size: "Size: 138 x 276cm",
                     src: "/works/「無中生有」系列——有所不為.jpg",
@@ -164,7 +164,7 @@ export function getWorks() {
                 {
                     id: 5,
                     title: "Having arrived, be at ease",
-                    info: "Sources: Ji Shi, The Analects of Confucius",
+                    info: "Sources: Ji Shi, " + "<i>The Analects of Confucius</i>",
                     year: "Year: 2006",
                     size: "Size: 180 x 776 cm (180x97cm/each, set of 8)",
                     src: "/works/既來之則安之.jpg",
@@ -172,7 +172,7 @@ export function getWorks() {
                 {
                     id: 6,
                     title: "Find work suitable to your talents",
-                    info: "Sources: Sutras 13, The Middle-length Discourses",
+                    info: "Sources: Sutras 13, " + "<i>The Middle-length Discourses</i>",
                     year: "Year: 2003",
                     size: "Size: 360 x 873 cm",
                     src: "/works/任所適.jpg",
@@ -180,7 +180,7 @@ export function getWorks() {
                 {
                     id: 7,
                     title: "Cutting and filing, chiseling and polishing, pure as gold or as tin, soft and rich as a scepter of jade",
-                    info: "Sources: Airs of the States, The Book of Odes",
+                    info: "Sources: Airs of the States, " + "<i>The Book of Odes</i>",
                     year: "Year: 2002",
                     size: "Size: 182 x 736 cm (182 x 92cm/ each, set of 8)",
                     src: "/works/如切如磋如琢如磨如金如錫如圭如壁.jpg",
@@ -188,7 +188,7 @@ export function getWorks() {
                 {
                     id: 8,
                     title: "A swan goose elevates itself little by little to the perfect rock",
-                    info: "Sources: The Book of Changes",
+                    info: "Sources: " + "<i>The Book of Changes</i>",
                     year: "Year: 2002",
                     size: "Size: 181 x 368 cm (181x92 cm/each, set of 4)",
                     src: "/works/鴻漸于磐.jpg",
@@ -196,7 +196,7 @@ export function getWorks() {
                 {
                     id: 9,
                     title: "To wander while lying down",
-                    info: "Sources: Biography of Zong Bing, The History of the Song",
+                    info: "Sources: Biography of Zong Bing, " + "<i>The History of the Song</i>",
                     year: "Year: 2002",
                     size: "Size: 69 x 69 cm",
                     src: "/works/臥遊.jpg",
@@ -219,7 +219,7 @@ export function getWorks() {
                 {
                     id: 2,
                     title: "Looking unyielding and strong",
-                    info: "Sources: Men of Former Times 11, The Analects of Confucius",
+                    info: "Sources: Men of Former Times 11, " + "<i>The Analects of Confucius</i>",
                     year: "Year: 2000",
                     size: "Size: 61.8 x 137.6 cm",
                     src: "/works/行行如也.jpg",
@@ -227,7 +227,7 @@ export function getWorks() {
                 {
                     id: 3,
                     title: "I alone am respectable",
-                    info: "Sources: Story of the Prince Attaining Enlightenment 1, The New Collection of Dunhuang Transformation Texts．Volume 3",
+                    info: "Sources: Story of the Prince Attaining Enlightenment 1, " + "<i>The New Collection of Dunhuang Transformation Texts．Volume 3</i>",
                     year: "Year: 1998",
                     size: "Size: 70 x 138 cm",
                     src: "/works/唯我獨尊.jpg",
@@ -243,7 +243,7 @@ export function getWorks() {
                 {
                     id: 5,
                     title: "Don't ignore one's conscience",
-                    info: "Sources: Chapter 14, Dao De Jing, Laozi",
+                    info: "Sources: Chapter 14, " + "<i>Dao De Jing</i>, " + "Laozi",
                     year: "Year: 1997",
                     size: "Size: 66.3 x 134.6 cm",
                     src: "/works/不昧.jpg",
@@ -251,7 +251,7 @@ export function getWorks() {
                 {
                     id: 6,
                     title: "Loitering About",
-                    info: "Sources: Inner Chapters, The Zhuangzi",
+                    info: "Sources: Inner Chapters, " + "<i>The Zhuangzi</i>",
                     year: "Year: 1997",
                     size: "Size: 62 x53 cm",
                     src: "/works/逍遙遊.jpg",
@@ -267,7 +267,7 @@ export function getWorks() {
                 {
                     id: 8,
                     title: "[If at the beginning there is] a difference of a millimeter, [in the end] the discrepancy will be a thousand li",
-                    info: "Sources: Explanations of the Classics, The Book of Rites",
+                    info: "Sources: Explanations of the Classics, " + "<i>The Book of Rites</i>",
                     year: "Year: 1992",
                     size: "Size: 69 x 69 cm",
                     src: "/works/差若毫厘繆以千里.jpg",
@@ -275,7 +275,7 @@ export function getWorks() {
                 {
                     id: 9,
                     title: " [When asked about filial piety] the difficulty is with countenance",
-                    info: "Sources: Exercising Government, The Analects of Confucius",
+                    info: "Sources: Exercising Government, " + "<i>The Analects of Confucius</i>",
                     year: "Year: 1991",
                     size: "Size: 69 x 69 cm",
                     src: "/works/色難.jpg",
@@ -290,7 +290,7 @@ export function getWorks() {
                 {
                     id: 1,
                     title: "A Journey of a thousand miles begins with the first step",
-                    info: "Sources: Chapter 64, Dao De Jing, Laozi",
+                    info: "Sources: Chapter 64, " + "<i>Dao De Jing</i>, " + "Laozi",
                     year: "Year: 1987",
                     size: "Size: 68 x 70 cm",
                     src: "/works/千里之行始於足下.jpg",
@@ -314,7 +314,7 @@ export function getWorks() {
                 {
                     id: 4,
                     title: "Taking a spoonful of water from surging sea cannot reduce its immensity",
-                    info: "Sources: The Master Who Embraces simplicity, Ge Hong, Eastern Jin period",
+                    info: "Sources: " + "<i>The Master Who Embraces simplicity</i>, Ge Hong, Eastern Jin period",
                     year: "Year: 1973",
                     size: "Size: 81 x 86.5 cm",
                     src: "/works/滄海之滉漾浥勺水不足以削其廣.jpg",
@@ -355,16 +355,16 @@ export function getOthers() {
         {
             id: 4,
             title: "From Ink to Apparel—A Crossover between Calligraphy Art and Fashion Design.",
-            year: "2021-2016",
-            context: "Concerning that written language is the root of an ethnicity, Taiwan's contemporary artist Tong Yang-Tze initiated From Ink to Apparel in 2016. Tong calls for the society's attention to the value and legacy of Chinese characters when western trends have taken on as the mainstream, and strives to revitalize the art of calligraphy in the Internet era. Tong sought to bring forth a boundary-crossing challenge to calligraphy and fashion design by presenting a platform that showcases creativity and cultural heritage.The Chinese title for From Ink to Apparel is 讀衣 (du-yi, literally “reading clothes”), which not only signifies that there are characters and messages hidden in the apparel, but also invites the audience to reflect upon fashion in the context of their own culture when viewing the exhibited items. The Chinese pronunciation of From Ink to Apparel, du-yi, resembles “uniqueness” in Mandarin Chinese, indicating that the combining of calligraphy and fashion creates distinction and novelty. The fiveyear project, positioned as a voice of fashion from the east, invites fashion designers in the Chinese-speaking world to create pieces inspired by Tong's calligraphy works. Such attempt not only brings cultural depth to fashion design, but also exposes the viewers to the charm of calligraphy in the exhibition and encourage them to treasure the value of Chinese characters.",
+            year: "2016-2021",
+            context: "Concerning that written language is the root of an ethnicity, Taiwan's contemporary artist Tong Yang-Tze initiated From Ink to Apparel in 2016. Tong calls for the society's attention to the value and legacy of Chinese characters when western trends have taken on as the mainstream, and strives to revitalize the art of calligraphy in the Internet era. Tong sought to bring forth a boundary-crossing challenge to calligraphy and fashion design by presenting a platform that showcases creativity and cultural heritage.The Chinese title for " + "<i>From Ink to Apparel</i>" + " is 讀衣 (du-yi, literally “reading clothes”), which not only signifies that there are characters and messages hidden in the apparel, but also invites the audience to reflect upon fashion in the context of their own culture when viewing the exhibited items. The Chinese pronunciation of From Ink to Apparel, du-yi, resembles “uniqueness” in Mandarin Chinese, indicating that the combining of calligraphy and fashion creates distinction and novelty. The fiveyear project, positioned as a voice of fashion from the east, invites fashion designers in the Chinese-speaking world to create pieces inspired by Tong's calligraphy works. Such attempt not only brings cultural depth to fashion design, but also exposes the viewers to the charm of calligraphy in the exhibition and encourage them to treasure the value of Chinese characters.",
             src: "/others_cover/讀衣示意圖.jpg",
             link: "https://www.youtube.com/playlist?list=PLImwtMdW8pBDjtBD8A1rZoejbolPoJqUS",
         },
         {
             id: 5,
             title: "Sao",
-            year: "2016-2014",
-            context: "Commissioned by the National Theater and Concert Hall of National Performing Arts Center to curate the crossover theater performance “SAO,” which was premiered in TIFA 2014.The performance was again staged　in new editions “SAO+” in 2015, and “SAO 2016” in 2016. The creation by globally acclaimed artist TONG Yang-Tze is a crossover play combining her calligraphic contours with multi-media, videos, jazz music and contemporary dance. The visual elements are originated from 100 calligraphic pieces. With the transformation of multi-media technology, the calligraphic contours are changed from 2D into 3D, combining with live jazz music improvisation and contemporary dance to form a brand new interpretation of the calligraphic art. “Calligraphic art is a performance of lines, as well as music phrases and bodily motions of a dancer. Hopefully the sensations of the audience will be stimulated as soon as the performance begins, and they’ll be eager to rush onto the stage to join the dance and music with the dancers and musicians in the end,” said TONG. ",
+            year: "2014-2016",
+            context: "Commissioned by the National Theater and Concert Hall of National Performing Arts Center to curate the crossover theater performance “" + "<i>SAO</i>" + ",” which was premiered in TIFA 2014.The performance was again staged　in new editions “" + "<i>SAO</i>" + "+” in 2015, and “" + "<i>SAO 2016</i>" + "” in 2016. The creation by globally acclaimed artist TONG Yang-Tze is a crossover play combining her calligraphic contours with multi-media, videos, jazz music and contemporary dance. The visual elements are originated from 100 calligraphic pieces. With the transformation of multi-media technology, the calligraphic contours are changed from 2D into 3D, combining with live jazz music improvisation and contemporary dance to form a brand new interpretation of the calligraphic art. “Calligraphic art is a performance of lines, as well as music phrases and bodily motions of a dancer. Hopefully the sensations of the audience will be stimulated as soon as the performance begins, and they’ll be eager to rush onto the stage to join the dance and music with the dancers and musicians in the end,” said TONG. ",
             src: "/others_cover/騷_封面海報2-02.jpg",
             link: "https://youtube.com/channel/UClta_IE9qoElIGuvAKZZC2w?si=Ix55MXzyZB6qY68Y",
         },
@@ -372,7 +372,7 @@ export function getOthers() {
             id: 6,
             title: "Calligraphy sculpture “Cheng”",
             year: "2011-2018",
-            context: "For the first time, Tong Yang-Tze combined calligraphy and sculpture to create a three-dimensional “Cheng” character. She used yew and nanmu to create the theme of “Cheng” (Sincerity, Honesty) has taken on contemporary significance in Taiwanese society in recent years and is more like a profound advice to society. It is not only a work of art, but also a value that Tong Yang-Tze believes that Taiwan can share with the world. Calligraphy sculpture “Cheng” toured evolving into a seven-year traveling exhibition “Cheng–A Calligraphy Sculpture on the Move” across Taiwan, and still ongoing.",
+            context: "For the first time, Tong Yang-Tze combined calligraphy and sculpture to create a three-dimensional “Cheng” character. She used yew and nanmu to create the theme of “Cheng” (Sincerity, Honesty) has taken on contemporary significance in Taiwanese society in recent years and is more like a profound advice to society. It is not only a work of art, but also a value that Tong Yang-Tze believes that Taiwan can share with the world. Calligraphy sculpture “Cheng” toured evolving into a seven-year traveling exhibition “" + "<i>Cheng–A Calligraphy Sculpture on the Move</i>" + "” across Taiwan, and still ongoing.",
             src: "/others_cover/Cheng.jpg",
             link: "",
         },
@@ -387,8 +387,8 @@ export function getOthers() {
         {
             id: 8,
             title: "X Beyond O: Calligraphy—Sign—Space",
-            year: "2023",
-            context: "In their newest collaboration Ink, choreographer Huang Yi and audiovisiual pioneer Ryoichi Kurokawa dismantle and reconstruct the lines from a hundred artworks in renowned calligrapher Tong Yang-Tze’s “Silent Music” series, exploring the various texture between body, sound, visual and space.  Hovering between delicate and frantic dynamics, Yi digs deeper into his cultural roots and reveals a wild movement language, turning dancers’ bodies into brushes that paint and leave marks on stage. With speed and a ferocious vocabulary, dancers churn like a vortex in one moment, only to become flowing liquid in the next. Kurokawa transforms the inkblots into luminous tracks, echoing and merging with the unique brushstrokes of Tong, constructing a continuous flow of paintings via stunning holographic projection.  Combining Yi’s explosive and precise language and Kurokawa’s meticulous and sophisticated artistry, Ink is a work that crosses borders and fuses analog and digital, reflecting the harmonic tension between the realms of ancient practice and future design.  Ink was co-commissioned by the National Taichung Theater and National Theater, Taipei in Taiwan and had its world premiere in June 2023.",
+            year: "2009",
+            context: "The " + "<i>X Beyond O: Calligraphy—Sign—Space</i>" + " exhibition relies on the collaboration between cross-disciplinary art fields to unite calligraphy's aesthetic, space, design, ideology and architectural elements. The process of creation and innovation gave birth to an avant-garde contemporary art exhibition. The objective of this exhibition is to bridge traditional and contemporary, and to break the framework of co-existence between the past and the present, promoting an experience that allows cross-disciplinary collaboration and traditional calligraphy appreciation through the merging of topics, entertainment, poetic thinking and theatric space. The artists use different media and approaches to interpret and reveal the meaning of “Calligraphy, Sign, and Space” three-part rondo, enriching the boundaries of calligraphy creation and admiration.",
             src: "/others_cover/20200729161427lkqpbrqIn2.jpg",
             link: "https://www.mocataipei.org.tw/tw/ExhibitionAndEvent/Info/無中生有",
         },
@@ -749,6 +749,12 @@ export function getArticle() {
 
 export function getPress() {
     const press = [
+        {
+            id: 0,
+            year: 2023,
+            title: "The New York Times | This Taiwanese Calligrapher Brings a Message of Freedom to the Met",
+            link: "https://www.nytimes.com/2024/11/09/arts/design/taiwanese-calligrapher-message-of-freedom-met.html?unlocked_article_code=1.Yk4.L4QF.mRS6C0WULyft&smid=nytcore-ios-share&referringSource=articleShare&sgrp=c-cb&ngrp=mnp&fbclid=IwY2xjawGerw9leHRuA2FlbQIxMQABHX2llWG-iXLL7uWWeaGflK3sTPEWX5x5rycPBTNF8hBmb3UbqiAamttAaw_aem_3eeBJBylrjDUXqXBKtcduw",
+        },
         {
             id: 1,
             year: 2023,

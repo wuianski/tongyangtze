@@ -100,7 +100,7 @@ export default function ExhibitionTabs({ currentExs, pastExs, upcomingExs }) {
             >
               <StyledTab label="Current" {...a11yProps(0)} />
               <StyledTab label="Past" {...a11yProps(1)} />
-              <StyledTab label="Upcoming" {...a11yProps(2)} />
+              {/* <StyledTab label="Upcoming" {...a11yProps(2)} /> */}
             </StyledTabs>
           </Box>
           <Box pt={1}>

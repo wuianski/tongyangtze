@@ -3,39 +3,39 @@
 "use client";
 import { motion } from "framer-motion";
 
-export const fadeUpVariant = {
+export const fadeDownVariant = {
   initial: {
-    opacity: 0,
-    transition: {
-      // delay: 1.5,
-      duration: 0.3,
-    },
-  },
-  animate: {
     opacity: 1,
     transition: {
       // delay: 1.5,
       duration: 0.3,
     },
   },
-  exit: {
+  animate: {
     opacity: 0,
     transition: {
+      // delay: 1.5,
       duration: 0.3,
     },
   },
+  // exit: {
+  //   opacity: 0,
+  //   transition: {
+  //     duration: 0.3,
+  //   },
+  // },
 };
-const FadeUpAnimation = ({ children }) => {
+const FadeDownAnimation = ({ children }) => {
   return (
     <motion.div
-      variants={fadeUpVariant}
+      variants={fadeDownVariant}
       initial="initial"
       animate="animate"
-      exit="exit"
+      // exit="exit"
     >
       {children}
     </motion.div>
   );
 };
 
-export default FadeUpAnimation;
+export default FadeDownAnimation;

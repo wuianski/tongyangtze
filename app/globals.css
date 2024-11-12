@@ -75,11 +75,11 @@ a {
 }
 
 .hover_works:hover {
-  color: #888;
+  color: #fff;
 }
 
 .active_light {
-  color: #888;
+  color: #fff;
 }
 
 .active_dark {
@@ -101,6 +101,6 @@ html {
 /* responsive */
 @media (max-width: 768px) {
   .NextArrow_thumb {
-    top: -61px !important;
+    top: -46px !important;
   }
 }

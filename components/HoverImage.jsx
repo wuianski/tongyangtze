@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 const Item = styled(Paper)(({ theme }) => ({
   textAlign: "left",
-  color: "#666",
+  color: "#aaa",
   width: "max-content",
   boxShadow: "none",
   background: "none",
@@ -107,6 +107,8 @@ export default function HoverImage({ works }) {
               >
                 <Image
                   priority={true}
+                  // placeholder="blur"
+                  loading="eager"
                   src={renderSrc}
                   fill={true}
                   alt="Picture of the artwork"
@@ -114,7 +116,7 @@ export default function HoverImage({ works }) {
                     objectFit: "contain",
                     objectPosition: "center top",
                   }}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+                  sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 50vw"
                 />
               </Box>
             </motion.div>

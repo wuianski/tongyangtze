@@ -27,16 +27,16 @@ export default function Nav() {
   let hoverClass;
 
   if (pathname === "/about" || pathname === "/contacts") {
-    textColor = "#000";
+    textColor = "#222";
     hoverClass = "hover_ex_tab";
   } else if (pathname === "/others") {
-    textColor = "#000";
+    textColor = "#222";
     hoverClass = "hover_ex_tab";
   } else if (pathname === "/works" || pathname === "/") {
-    textColor = "#666";
+    textColor = "#aaa";
     hoverClass = "hover_works";
   } else {
-    textColor = "#666";
+    textColor = "#aaa";
     hoverClass = "hover_works";
   }
 
@@ -50,7 +50,7 @@ export default function Nav() {
         }}
       >
         <Link
-          className={` ${pathname === "/works" ? "active_light" : hoverClass}`}
+          className={` ${pathname === "/works" ? "active_light" : hoverClass} `}
           href="/works"
         >
           <Box ml={0} component="span">
@@ -59,7 +59,7 @@ export default function Nav() {
         </Link>
 
         <Link
-          className={` ${pathname === "/others" ? "active_light" : hoverClass}`}
+          className={` ${pathname === "/others" ? "active_dark" : hoverClass}`}
           href="/others"
         >
           <Box ml={3} component="span">
@@ -92,7 +92,7 @@ export default function Nav() {
           <Box ml={3} component="span">
             <Link
               className={` ${
-                pathname === "/about" ? "active_light" : hoverClass
+                pathname === "/about" ? "active_dark" : hoverClass
               }`}
               href="/about"
             >
@@ -103,7 +103,7 @@ export default function Nav() {
 
         <Link
           className={` ${
-            pathname === "/contacts" ? "active_light" : hoverClass
+            pathname === "/contacts" ? "active_dark" : hoverClass
           }`}
           href="/contacts"
         >
