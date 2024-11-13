@@ -1,5 +1,5 @@
 /* Components */
-import WorkContent from "@/components/WorkContent";
+import WorkContent from "@/components/WorkContentT";
 /* Data */
 import { getWorks } from "@/data/data";
 /* MUI */

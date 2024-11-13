@@ -51,14 +51,40 @@ a {
 
 .slick-dots {
   position: relative !important;
-  bottom: 20px !important;
+  bottom: 0px !important;
 }
 
 .slick-dots li {
   width: auto !important;
   height: 48px !important;
-  margin: 0 10px !important;
-  
+  /* margin: 0 10px !important; */
+}
+
+.slick-dots.slick-thumb{
+  display: inline-flex !important;
+  width: 50vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  left: 25vw;
+  height: 88px;
+  scrollbar-width: none; /* hide scrollbar */
+}
+
+.slick-active {
+  margin-top: -8px !important;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .slick-dots.slick-thumb {
+    width: calc(100vw - 32px);
+    left: 16px;
+  }
+}
+
+
+.slick-dots.slick-thumb::-webkit-scrollbar{
+  display: none; /* hide scrollbar */
 }
 
 .slick-arrow {
@@ -104,3 +130,4 @@ html {
     top: -46px !important;
   }
 }
+

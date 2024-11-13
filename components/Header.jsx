@@ -10,7 +10,7 @@ import Stack from "@mui/material/Stack";
 import { styled } from "@mui/material/styles";
 /* Components */
 import Nav from "@/components/Nav";
-import NavMobile from "@/components/NavMobile";
+import NavMobile from "@/components/NavMobileM";
 /* Framer Motion */
 import { motion } from "framer-motion";
 
