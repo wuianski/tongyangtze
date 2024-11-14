@@ -8,8 +8,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { LayoutTransition } from "@/components/LayoutTransition";
 
 export const metadata = {
-  title: "TONG YANG TZE",
-  description: "TONG YANG TZE's personal website",
+  title: "Tong Yang-Tze",
+  description: "Tong Yang-Tze Official Website",
 };
 
 export default function RootLayout({ children }) {

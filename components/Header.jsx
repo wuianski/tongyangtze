@@ -71,7 +71,7 @@ export default function Header() {
             <Link href={`/`} scroll={false}>
               <Box
                 sx={{
-                  fontSize: { xs: 18, md: 15 },
+                  fontSize: { xs: 15, md: 15 },
                   width: "fit-content",
                   color: textColor,
                   position: "fixed",
@@ -80,7 +80,7 @@ export default function Header() {
                 }}
                 p={2}
               >
-                TONG YANG TZE
+                Tong Yang-Tze
               </Box>
             </Link>
           </Item>

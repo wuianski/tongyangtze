@@ -77,7 +77,7 @@ export default function NavMobile({ textColor }) {
                   }}
                   p={2}
                 >
-                  TONG YANG TZE
+                  Tong Yang-Tze
                 </Box>
               </Link>
               {/* Menu */}

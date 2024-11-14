@@ -144,7 +144,7 @@ export default function OthersList({ others }) {
         sx={{ width: { xs: "100%", sm: "40%" }, fontSize: 15 }}
       >
         <Box pt={0} pb={2} sx={{ width: "100%" }}>
-          © 2024 — Tong Yang Tze, All rights reserved
+          © 2024 — Tong Yang-Tze, All rights reserved
         </Box>
         <Box pt={0} pb={0} sx={{ width: "100%" }}>
           IMAGE LICENSING: “Moving Ink: Tong Yang-Tze” exhibited at Taipei Fine

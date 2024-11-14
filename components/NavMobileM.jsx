@@ -124,7 +124,7 @@ export default function NavMobile({ textColor }) {
               <Link href={`/`} scroll={false}>
                 <Box
                   sx={{
-                    fontSize: 18,
+                    fontSize: 15,
                     width: "fit-content",
                     color: "#aaa",
                     position: "abolute",
@@ -133,7 +133,7 @@ export default function NavMobile({ textColor }) {
                   }}
                   p={2}
                 >
-                  TONG YANG TZE
+                  Tong Yang-Tze
                 </Box>
               </Link>
               {/* Menu */}
@@ -144,10 +144,11 @@ export default function NavMobile({ textColor }) {
                 }}
                 pt={17}
                 pl={2}
-                onClick={async () => {
-                  await delay(100);
-                  setNav_m(false);
-                }}
+                // onClick={async () => {
+                //   await delay(100);
+                //   setNav_m(false);
+                // }}
+                onClick={handleClose}
               >
                 <Link
                   className={`link ${pathname === "/works" ? "active" : ""}`}

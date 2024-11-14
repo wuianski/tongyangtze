@@ -8,13 +8,13 @@ import Link from "next/link";
 import { Box, Paper, Stack, styled } from "@mui/material";
 /* Framer Motion */
 import { motion } from "framer-motion";
-/* image */
-import work1 from "@/public/works/鳶飛戾天魚躍于淵.jpg";
-import work2 from "@/public/works/任所適.jpg";
-import work3 from "@/public/works//浩如烟海.jpg";
-import work4 from "@/public/works/滄海之滉漾浥勺水不足以削其廣.jpg";
+// /* image */
+// import work1 from "@/public/works/鳶飛戾天魚躍于淵.jpg";
+// import work2 from "@/public/works/任所適.jpg";
+// import work3 from "@/public/works//浩如烟海.jpg";
+// import work4 from "@/public/works/滄海之滉漾浥勺水不足以削其廣.jpg";
 
-const myworks = [work1, work2, work3, work4];
+// const myworks = [work1, work2, work3, work4];
 
 const Item = styled(Paper)(({ theme }) => ({
   textAlign: "left",
@@ -29,16 +29,16 @@ const Item = styled(Paper)(({ theme }) => ({
   },
 }));
 
-export default function HoverImage({ works }) {
+export default function HoverImage({ works, worksImage }) {
   const [hoverId, setHoverId] = useState(0);
 
   // const [renderSrc, setRenderSrc] = useState(works[hoverId].src);
-  const [renderSrc, setRenderSrc] = useState(myworks[hoverId]);
+  const [renderSrc, setRenderSrc] = useState(worksImage[hoverId]);
 
   useEffect(() => {
     // console.log(hoverId);
     // setRenderSrc(works[hoverId].src);
-    setRenderSrc(myworks[hoverId]);
+    setRenderSrc(worksImage[hoverId]);
     // console.log(renderSrc);
   }, [hoverId]);
 

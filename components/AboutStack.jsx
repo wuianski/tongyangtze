@@ -61,7 +61,7 @@ export default function AboutStack({
                   mt={10}
                   sx={{ fontSize: 30, fontFamily: "baskerville-display-pt" }}
                 >
-                  TONG YANG TZE
+                  Tong Yang-Tze
                 </Box>
                 <Box pt={6}>
                   <AboutList timelines={aboutContext2} />
@@ -120,7 +120,7 @@ export default function AboutStack({
                     </Box>
                   </Box>
                   <Box pt={0} pb={2} sx={{ width: "100%" }}>
-                    © 2024 — Tong Yang Tze, All rights reserved
+                    © 2024 — Tong Yang-Tze, All rights reserved
                   </Box>
                   <Box pt={0} pb={2} sx={{ width: "100%" }}>
                     IMAGE LICENSING: “Moving Ink: Tong Yang-Tze” exhibited at

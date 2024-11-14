@@ -3,13 +3,10 @@ import Image from "next/image";
 /* Image */
 import front_desktop from "@/public/Index_Desktop.jpg";
 import index_Mobile from "@/public/Index_Mobile.jpg";
-/* Components */
-import FadeUpAnimation from "@/components/FadeUpAnimation";
 
 export default function Home() {
   return (
     <>
-      {/* <FadeUpAnimation> */}
       <Box
         sx={{
           position: "relative",
@@ -56,7 +53,6 @@ export default function Home() {
           loading="eager"
         />
       </Box>
-      {/* </FadeUpAnimation> */}
     </>
   );
 }

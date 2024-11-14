@@ -1,4 +1,4 @@
-# Tong Yang Tze #
+# Tong Yang-Tze #
 
 ## Prerequisites ##
 
