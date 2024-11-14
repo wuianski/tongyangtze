@@ -17,12 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link
-          rel="icon"
-          href="/icon/favicon-32x32.png"
-          type="image/png"
-          sizes="32x32"
-        />
+        <link rel="icon" href="/icon/icon.png" type="image/png" sizes="32x32" />
         <link rel="stylesheet" href="https://use.typekit.net/fll2djb.css" />
       </head>
       <body>
