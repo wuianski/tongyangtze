@@ -427,7 +427,7 @@ export function getCurrentExs() {
         {
             id: 1,
             year: 2024,
-            title: "The Great Hall Commission: Tong Yang-Tze, Dialogue",
+            title: "The Great Hall Commission: Tong Yang-Tze, Dialogue, The MET, New York.",
             link: "https://www.metmuseum.org/exhibitions/the-great-hall-commission-tong-yang-tze",
         },
     ];
@@ -439,7 +439,7 @@ export function getPastExs() {
         {
             id: 1,
             year: 2021,
-            title: "M+ Commission: Tong Yang-Tze",
+            title: "M+ Commission: Tong Yang-Tze, Hong Kong.",
             link: "https://www.mplus.org.hk/en/exhibitions/m-commission-tong-yang-tze/",
         },
         {
@@ -751,7 +751,7 @@ export function getPress() {
     const press = [
         {
             id: 0,
-            year: 2023,
+            year: 2024,
             title: "The New York Times | This Taiwanese Calligrapher Brings a Message of Freedom to the Met",
             link: "https://www.nytimes.com/2024/11/09/arts/design/taiwanese-calligrapher-message-of-freedom-met.html?unlocked_article_code=1.Yk4.L4QF.mRS6C0WULyft&smid=nytcore-ios-share&referringSource=articleShare&sgrp=c-cb&ngrp=mnp&fbclid=IwY2xjawGerw9leHRuA2FlbQIxMQABHX2llWG-iXLL7uWWeaGflK3sTPEWX5x5rycPBTNF8hBmb3UbqiAamttAaw_aem_3eeBJBylrjDUXqXBKtcduw",
         },

@@ -5,11 +5,10 @@ import Image from "next/image";
 /* MUI */
 import { Box, Modal, Slide, Backdrop, Fade, Grow } from "@mui/material";
 /* Icons */
-import Menu from "@/public/icons/menu-light.svg";
+import MenuLight from "@/public/icons/menu-light.svg";
+import MenuDark from "@/public/icons/menu-dark.svg";
 import Close from "@/public/icons/xmark-light.svg";
-/* Components */
-import FadeUpAnimation from "@/components/FadeUpAnimation";
-import FadeDownAnimation from "@/components/FadeDownAnimation";
+import path from "path";
 
 /*************/
 /*** delay ***/
@@ -53,7 +52,15 @@ export default function NavMobile({ textColor }) {
           cursor: "pointer",
         }}
       >
-        <Menu />
+        {pathname === "/works" ||
+        pathname === "/works/1" ||
+        pathname === "/works/2" ||
+        pathname === "/works/3" ||
+        pathname === "/works/4" ? (
+          <MenuLight />
+        ) : (
+          <MenuDark />
+        )}
       </Box>
       <Modal
         open={nav_m}

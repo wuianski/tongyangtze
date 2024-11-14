@@ -57,18 +57,18 @@ a {
 .slick-dots li {
   width: auto !important;
   height: 48px !important;
-  /* margin: 0 10px !important; */
 }
 
 .slick-dots.slick-thumb{
-  display: inline-flex !important;
+  /* display: inline-flex !important; */
   width: 50vw;
   overflow-x: scroll;
   overflow-y: hidden;
   left: 25vw;
   height: 88px;
-  scrollbar-width: none; /* hide scrollbar */
+  scrollbar-width: none; 
 }
+
 
 .slick-active {
   margin-top: -8px !important;

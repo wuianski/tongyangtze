@@ -12,6 +12,13 @@ export const metadata = {
   description: "Tong Yang-Tze Official Website",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  shrinkToFit: "no",
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

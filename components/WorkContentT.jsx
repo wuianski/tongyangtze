@@ -5,108 +5,88 @@ import Image from "next/image";
 /* MUI */
 import { Box } from "@mui/material";
 /* React-Slick */
-import React, { useState, useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import Slider from "react-slick";
 /* Icons */
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrrowRight from "@/public/icons/arrow-right.svg";
 import ArrrowLeft from "@/public/icons/arrow-left.svg";
 /* Framer Motion */
 import { motion } from "framer-motion";
-
-/* Customizing React-Slick's arrow */
-function NextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "none" }}
-      onClick={onClick}
-    />
-  );
-}
-
-function PrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "none" }}
-      onClick={onClick}
-    />
-  );
-}
+/* Custom Hook */
+import { useDraggable } from "react-use-draggable-scroll";
 
 export default function WorkContent({ work }) {
-  const [activeSlide, setActiveSlide] = useState(0);
-  // console.log(activeSlide);
+  /* Draggable Scroll */
+  const ref = useRef(); // We will use React useRef hook to reference the wrapping div:
+  const { events } = useDraggable(ref);
 
+  /* React-Slick Settings */
   const settings = {
+    appendDots: (dots) => (
+      <div>
+        <div
+          className="slick-dots slick-thumb"
+          style={{ margin: "0px", display: "flex", overflowX: "scroll" }}
+          {...events}
+          ref={ref}
+        >
+          {dots}
+        </div>
+      </div>
+    ),
     customPaging: function (i) {
       return (
         work.works[i].src && (
-          <motion.div whileHover={{ y: -8 }}>
-            <a>
-              <Box
-                mt={2}
-                mb={0}
-                mr={2} // margin between images
-                sx={{
-                  position: "relative",
-                  height: { xs: 48, sm: 68 },
-                  pointerEvents: "none",
-                }}
-              >
-                <Image
-                  src={work.works[i].src}
-                  alt="Picture of the artwork"
-                  width={0}
-                  height={0}
-                  style={{ width: "auto", height: "100%" }}
-                  quality={100}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  priority={true}
-                />
-              </Box>
-            </a>
-          </motion.div>
+          <a>
+            <Box
+              mt={1}
+              mb={0}
+              mr={{ xs: 1, sm: 2 }} // margin between images
+              sx={{
+                position: "relative",
+                height: { xs: 48, sm: 68 },
+                pointerEvents: "none",
+              }}
+            >
+              <Image
+                src={work.works[i].src}
+                alt="Picture of the artwork"
+                width={0}
+                height={0}
+                style={{ width: "auto", height: "100%" }}
+                quality={100}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                priority={true}
+              />
+            </Box>
+          </a>
         )
       );
     },
     dots: true,
-    dotsClass: "slick-dots slick-thumb",
+    // dotsClass: "slick-dots slick-thumb",
     infinite: false,
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
-    beforeChange: (current, next) => {
-      setActiveSlide(next);
-    },
   };
 
+  /* Framer Motion */
   const variants = {
     hidden: {
       opacity: 0,
-      // y: 100,
     },
-    visible: (custom) => ({
+    visible: {
       opacity: 1,
-      // y: 0,
-      transition: { delay: custom * 0.3, duration: 0.3 },
-    }),
+      transition: { delay: 0.3, duration: 0.3 },
+    },
   };
 
   return (
     <>
       <Box pt={{ xs: 12, sm: 17 }} pl={{ xs: 0, sm: 0 }} pr={{ xs: 0, sm: 0 }}>
-        <motion.div
-          custom={0}
-          variants={variants}
-          initial="hidden"
-          animate="visible"
-        >
+        <motion.div variants={variants} initial="hidden" animate="visible">
           <div className="slider-container">
             <Box>
               <Slider {...settings}>
@@ -172,7 +152,6 @@ export default function WorkContent({ work }) {
                             {w.info2}
                           </Box>
                         ) : null}
-                        {/* <Box sx={{ fontSize: { xs: 12, sm: 14 } }}>{w.info}</Box> */}
                         <Box
                           sx={{ fontSize: { xs: 12, sm: 14 } }}
                           dangerouslySetInnerHTML={{ __html: w.info }}

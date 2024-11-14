@@ -43,7 +43,7 @@ export default function Header() {
     textColor = "#aaa";
   } else if (pathname === "/") {
     backgroundColor = "none";
-    textColor = "#aaa";
+    textColor = "#222";
   } else {
     backgroundColor = "#151515ff";
     textColor = "#aaa";

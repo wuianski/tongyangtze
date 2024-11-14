@@ -26,13 +26,13 @@ export default function Nav() {
   let textColor;
   let hoverClass;
 
-  if (pathname === "/about" || pathname === "/contacts") {
+  if (pathname === "/about" || pathname === "/contacts" || pathname === "/") {
     textColor = "#222";
     hoverClass = "hover_ex_tab";
   } else if (pathname === "/others") {
     textColor = "#222";
     hoverClass = "hover_ex_tab";
-  } else if (pathname === "/works" || pathname === "/") {
+  } else if (pathname === "/works") {
     textColor = "#aaa";
     hoverClass = "hover_works";
   } else {
@@ -50,7 +50,16 @@ export default function Nav() {
         }}
       >
         <Link
-          className={` ${pathname === "/works" ? "active_light" : hoverClass} `}
+          className={` ${
+            pathname === "/works"
+              ? // ||
+                // pathname === "/works/1" ||
+                // pathname === "/works/2" ||
+                // pathname === "/works/3" ||
+                // pathname === "/works/4"
+                "active_light"
+              : hoverClass
+          } `}
           href="/works"
         >
           <Box ml={0} component="span">
