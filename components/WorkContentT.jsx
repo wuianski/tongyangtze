@@ -85,89 +85,112 @@ export default function WorkContent({ work }) {
     },
   };
 
+  const variants = {
+    hidden: {
+      opacity: 0,
+      // y: 100,
+    },
+    visible: (custom) => ({
+      opacity: 1,
+      // y: 0,
+      transition: { delay: custom * 0.3, duration: 0.3 },
+    }),
+  };
+
   return (
     <>
       <Box pt={{ xs: 12, sm: 17 }} pl={{ xs: 0, sm: 0 }} pr={{ xs: 0, sm: 0 }}>
-        <div className="slider-container">
-          <Box>
-            <Slider {...settings}>
-              {work.works.map((w, index) => {
-                return (
-                  <Box
-                    key={index}
-                    sx={{
-                      textAlign: "center",
-                      mb: { xs: "0vh", sm: "0.5vh" },
-                      height: "68vh",
-                      position: "relative",
-                    }}
-                  >
+        <motion.div
+          custom={0}
+          variants={variants}
+          initial="hidden"
+          animate="visible"
+        >
+          <div className="slider-container">
+            <Box>
+              <Slider {...settings}>
+                {work.works.map((w, index) => {
+                  return (
                     <Box
+                      key={index}
                       sx={{
-                        position: "absolute",
-                        top: "50%",
-                        left: "50%",
-                        transform: "translate(-50%, -50%)",
+                        textAlign: "center",
+                        mb: { xs: "0vh", sm: "0.5vh" },
+                        height: "68vh",
+                        position: "relative",
                       }}
                     >
                       <Box
-                        mb={{ xs: 1, sm: 2 }}
                         sx={{
-                          position: "relative",
-                          width: { xs: "max-content", sm: "max-content" },
-                          maxWidth: "90vw",
-                          ml: "auto",
-                          mr: "auto",
-                          pointerEvents: "none",
+                          position: "absolute",
+                          top: "50%",
+                          left: "50%",
+                          transform: "translate(-50%, -50%)",
                         }}
                       >
-                        <Image
-                          src={w.src}
-                          // fill={true}
-                          width={0}
-                          height={0}
-                          alt="Picture of the artwork"
-                          style={{
-                            width: "auto",
-                            maxWidth: "100%",
-                            height: "100%",
-                            maxHeight: "49vh",
+                        <Box
+                          mb={{ xs: 1, sm: 2 }}
+                          sx={{
+                            position: "relative",
+                            width: { xs: "max-content", sm: "max-content" },
+                            maxWidth: "90vw",
+                            ml: "auto",
+                            mr: "auto",
+                            pointerEvents: "none",
                           }}
-                          quality={100}
-                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"
-                          priority={true}
-                        />
-                      </Box>
-                      <Box
-                        sx={{
-                          fontSize: { xs: 16, sm: 18 },
-                          fontFamily: "baskerville-display-pt",
-                          color: "#fff",
-                        }}
-                        pb={1}
-                      >
-                        {w.title}
-                      </Box>
-                      {w.info2 ? (
-                        <Box sx={{ fontSize: { xs: 12, sm: 14 } }}>
-                          {w.info2}
+                        >
+                          <Image
+                            src={w.src}
+                            // fill={true}
+                            width={0}
+                            height={0}
+                            alt="Picture of the artwork"
+                            style={{
+                              width: "auto",
+                              maxWidth: "100%",
+                              height: "100%",
+                              maxHeight: "49vh",
+                            }}
+                            quality={100}
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"
+                            priority={true}
+                          />
                         </Box>
-                      ) : null}
-                      {/* <Box sx={{ fontSize: { xs: 12, sm: 14 } }}>{w.info}</Box> */}
-                      <Box
-                        sx={{ fontSize: { xs: 12, sm: 14 } }}
-                        dangerouslySetInnerHTML={{ __html: w.info }}
-                      ></Box>
+                        <Box
+                          sx={{
+                            fontSize: { xs: 16, sm: 18 },
+                            fontFamily: "baskerville-display-pt",
+                            color: "#fff",
+                          }}
+                          pb={1}
+                        >
+                          {w.title}
+                        </Box>
+                        {w.info2 ? (
+                          <Box sx={{ fontSize: { xs: 12, sm: 14 } }}>
+                            {w.info2}
+                          </Box>
+                        ) : null}
+                        {/* <Box sx={{ fontSize: { xs: 12, sm: 14 } }}>{w.info}</Box> */}
+                        <Box
+                          sx={{ fontSize: { xs: 12, sm: 14 } }}
+                          dangerouslySetInnerHTML={{ __html: w.info }}
+                        ></Box>
 
-                      <Box sx={{ fontSize: { xs: 12, sm: 14 } }}>{w.year}</Box>
-                      <Box sx={{ fontSize: { xs: 12, sm: 14 } }}>{w.size}</Box>
+                        <Box sx={{ fontSize: { xs: 12, sm: 14 } }}>
+                          {w.year}
+                        </Box>
+                        <Box sx={{ fontSize: { xs: 12, sm: 14 } }}>
+                          {w.size}
+                        </Box>
+                      </Box>
                     </Box>
-                  </Box>
-                );
-              })}
-            </Slider>
-          </Box>
-        </div>
+                  );
+                })}
+              </Slider>
+            </Box>
+          </div>
+        </motion.div>
       </Box>
     </>
   );
