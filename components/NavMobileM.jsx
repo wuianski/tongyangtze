@@ -8,7 +8,6 @@ import { Box, Modal, Slide, Backdrop, Fade, Grow } from "@mui/material";
 import MenuLight from "@/public/icons/menu-light.svg";
 import MenuDark from "@/public/icons/menu-dark.svg";
 import Close from "@/public/icons/xmark-light.svg";
-import path from "path";
 
 /*************/
 /*** delay ***/
@@ -75,8 +74,7 @@ export default function NavMobile({ textColor }) {
           },
         }}
       >
-        <Slide direction="left" in={nav_m} mountOnEnter unmountOnExit>
-          {/* <Fade in={nav_m} mountOnEnter unmountOnExit> */}
+        <Fade in={nav_m} mountOnEnter unmountOnExit>
           <Box sx={{ ...style }}>
             <Box
               sx={{
@@ -214,8 +212,7 @@ export default function NavMobile({ textColor }) {
               </Box>
             </Box>
           </Box>
-          {/* </Fade> */}
-        </Slide>
+        </Fade>
       </Modal>
     </>
   );
