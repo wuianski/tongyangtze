@@ -26,6 +26,10 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/icon/icon.png" type="image/png" sizes="32x32" />
         <link rel="stylesheet" href="https://use.typekit.net/fll2djb.css" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+        />
       </head>
       <body>
         <LayoutTransition

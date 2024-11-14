@@ -146,7 +146,7 @@ export default function AboutStack({
                     right: 0,
                     zIndex: -1,
                     width: { xs: "calc(100% - 0px)", sm: "50vw" },
-                    height: { xs: "30vh", sm: "100vh" },
+                    height: { xs: "30dvh", sm: "100dvh" },
                   }}
                   mb={6}
                 >

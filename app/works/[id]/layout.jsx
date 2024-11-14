@@ -9,7 +9,7 @@ export default function WorksLayout({
       <Box
         sx={{
           backgroundColor: "#151515ff",
-          height: "100dvh",
+          height: "100ddvh",
           overflow: "hidden",
         }}
       >

@@ -14,7 +14,7 @@ export default function Home() {
           left: 0,
           zIndex: -1,
           width: "100vw",
-          height: "100vh",
+          height: "100dvh",
           display: { xs: "none", sm: "block" },
         }}
       >
@@ -37,7 +37,7 @@ export default function Home() {
           left: 0,
           zIndex: -1,
           width: "100vw",
-          height: "100vh",
+          height: "100dvh",
           display: { xs: "block", sm: "none" },
         }}
       >

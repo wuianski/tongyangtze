@@ -87,7 +87,7 @@ export default function ContactStack() {
                     right: 0,
                     zIndex: -1,
                     width: "50vw",
-                    height: "100vh",
+                    height: "100dvh",
                   }}
                   mb={6}
                 >

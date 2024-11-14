@@ -126,8 +126,8 @@ export default function WorkContent({ work }) {
                     key={index}
                     sx={{
                       textAlign: "center",
-                      mb: { xs: "0vh", sm: "0.5vh" },
-                      height: "68vh",
+                      mb: { xs: "0dvh", sm: "0.5dvh" },
+                      height: "68dvh",
                       position: "relative",
                     }}
                   >
@@ -160,7 +160,7 @@ export default function WorkContent({ work }) {
                             width: "auto",
                             maxWidth: "100%",
                             height: "100%",
-                            maxHeight: "49vh",
+                            maxHeight: "49dvh",
                           }}
                           quality={100}
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"

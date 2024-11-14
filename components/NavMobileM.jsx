@@ -120,7 +120,7 @@ export default function NavMobile({ textColor }) {
               sx={{
                 position: "absolute",
                 width: "100vw",
-                height: "100vh",
+                height: "100dvh",
                 left: 0,
                 top: 0,
                 backgroundColor: "#151515ff",
