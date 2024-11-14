@@ -2,9 +2,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: [
-      'dev.tongyangtze.com',
-    ],
+    // remotePatterns: [
+    //   {
+    //     protocol: 'https',
+    //     hostname: 'dev.tongyangtze.com',
+    //     port: '',
+    //     pathname: '/images/**',
+    //   },
+    // ],
     minimumCacheTTL: 60,
   },
   reactStrictMode: true,

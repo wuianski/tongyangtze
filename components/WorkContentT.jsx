@@ -66,6 +66,7 @@ export default function WorkContent({ work }) {
                   style={{ width: "auto", height: "100%" }}
                   quality={100}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  priority={true}
                 />
               </Box>
             </a>
