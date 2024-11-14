@@ -51,13 +51,12 @@ export default function Nav() {
       >
         <Link
           className={` ${
-            pathname === "/works"
-              ? // ||
-                // pathname === "/works/1" ||
-                // pathname === "/works/2" ||
-                // pathname === "/works/3" ||
-                // pathname === "/works/4"
-                "active_light"
+            pathname === "/works" ||
+            pathname === "/works/1" ||
+            pathname === "/works/2" ||
+            pathname === "/works/3" ||
+            pathname === "/works/4"
+              ? "active_light"
               : hoverClass
           } `}
           href="/works"

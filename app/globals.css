@@ -87,6 +87,13 @@ a {
   display: none; /* hide scrollbar */
 }
 
+.myNav::-webkit-scrollbar{
+  display: none; /* hide scrollbar */
+}
+.myNav{
+  scrollbar-width: none; 
+}
+
 .slick-arrow {
   /* display: none !important; */
   margin-top: -10px !important;

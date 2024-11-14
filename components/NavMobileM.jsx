@@ -24,7 +24,7 @@ const style = {
   paddingRight: { xs: "32px", md: "40px" },
   paddingTop: { xs: "32px", md: "40px" },
   paddingBottom: { xs: "40px", md: "20px" },
-  overflowY: { xs: "scroll", md: "auto" },
+  overflowY: { xs: "hidden", md: "auto" },
 };
 
 const logo = "/g90.png";
@@ -75,7 +75,7 @@ export default function NavMobile({ textColor }) {
         }}
       >
         <Fade in={nav_m} mountOnEnter unmountOnExit>
-          <Box sx={{ ...style }}>
+          <Box sx={{ ...style }} className="myNav">
             <Box
               sx={{
                 position: "fixed",
