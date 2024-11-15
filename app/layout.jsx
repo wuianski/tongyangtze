@@ -12,9 +12,9 @@ import { images } from "@/next.config";
 export const metadata = {
   title: "Tong Yang-Tze",
   description: "Tong Yang-Tze Official Website",
-  icons: {
-    icon: "/icon/icon.png",
-  },
+  // icons: {
+  //   icon: "/icon/icon.png",
+  // },
   openGraph: {
     title: "Tong Yang-Tze",
     description: "Tong Yang-Tze Official Website",
