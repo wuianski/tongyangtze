@@ -20,9 +20,9 @@ export const metadata = {
     description: "Tong Yang-Tze Official Website",
     images: [
       {
-        url: "https://dev.tongyangtze.com/icon/icon.png",
-        width: 192,
-        height: 192,
+        url: "https://dev.tongyangtze.com/Index_Desktop.jpg",
+        width: 1920,
+        height: 1279,
         alt: "Tong Yang-Tze",
       },
     ],
