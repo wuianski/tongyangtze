@@ -138,3 +138,8 @@ html {
   }
 }
 
+.slick-slider {
+  touch-action: auto !important;
+  -ms-touch-action: auto !important;
+}
+

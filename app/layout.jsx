@@ -6,10 +6,27 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import { LayoutTransition } from "@/components/LayoutTransition";
+import { title } from "process";
+import { images } from "@/next.config";
 
 export const metadata = {
   title: "Tong Yang-Tze",
   description: "Tong Yang-Tze Official Website",
+  icons: {
+    icon: "/icon/icon.png",
+  },
+  openGraph: {
+    title: "Tong Yang-Tze",
+    description: "Tong Yang-Tze Official Website",
+    images: [
+      {
+        url: "https://dev.tongyangtze.com/icon/icon.png",
+        width: 192,
+        height: 192,
+        alt: "Tong Yang-Tze",
+      },
+    ],
+  },
 };
 
 export const viewport = {
@@ -24,7 +41,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/icon/icon.png" type="image/png" sizes="32x32" />
+        {/* <link rel="icon" href="/icon/icon.png" type="image/png" sizes="32x32" /> */}
         <link rel="stylesheet" href="https://use.typekit.net/fll2djb.css" />
         <meta
           name="viewport"

@@ -88,49 +88,53 @@ export default function Header() {
           <Item sx={{ width: "14%" }}>
             {/* Logo */}
             <Box sx={{ display: { xs: "none", md: "block" } }}>
-              <Box
-                sx={{
-                  width: "fit-content",
-                  marginLeft: "auto",
-                  marginRight: "auto",
-                  position: "relative",
-                  zIndex: 100,
-                  pointerEvents: "none",
-                }}
-                pt={2}
-              >
-                <Image
-                  src={logo}
-                  alt="logo"
-                  width={40}
-                  height={39}
-                  quality={100}
-                  sizes="40px"
-                />
-              </Box>
+              <Link href={`/`} scroll={false}>
+                <Box
+                  sx={{
+                    width: "fit-content",
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                    position: "relative",
+                    zIndex: 100,
+                    pointerEvents: "none",
+                  }}
+                  pt={2}
+                >
+                  <Image
+                    src={logo}
+                    alt="logo"
+                    width={40}
+                    height={39}
+                    quality={100}
+                    sizes="40px"
+                  />
+                </Box>
+              </Link>
             </Box>
             {/* Mobile Logo */}
             <Box sx={{ display: { xs: "block", md: "none" } }}>
-              <Box
-                sx={{
-                  width: "fit-content",
-                  marginLeft: "auto",
-                  marginRight: "auto",
-                  position: "relative",
-                  zIndex: 100,
-                  pointerEvents: "none",
-                }}
-                pt={2}
-              >
-                <Image
-                  src={logo}
-                  alt="mobile logo"
-                  width={33}
-                  height={32}
-                  quality={100}
-                  sizes="33px"
-                />
-              </Box>
+              <Link href={`/`} scroll={false}>
+                <Box
+                  sx={{
+                    width: "fit-content",
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                    position: "relative",
+                    zIndex: 100,
+                    pointerEvents: "none",
+                  }}
+                  pt={2}
+                >
+                  <Image
+                    src={logo}
+                    alt="mobile logo"
+                    width={33}
+                    height={32}
+                    quality={100}
+                    sizes="33px"
+                  />
+                </Box>
+              </Link>
             </Box>
           </Item>
           <Item sx={{ width: "43%" }}>

@@ -47,7 +47,7 @@ export default function OthersList({ others }) {
             <Item sx={{ width: { xs: "100%", sm: "100%" } }} key={index}>
               <Box
                 sx={[
-                  { borderBottom: "solid 1px #000" },
+                  { borderBottom: "solid 0.5px #151515" },
                   index === others.length - 1 && { borderBottom: "none" },
                 ]}
                 pb={6}

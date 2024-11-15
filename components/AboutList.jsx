@@ -32,7 +32,12 @@ export default function AboutList({ timelines }) {
                   <Box mt={1}>
                     {timeline.link ? (
                       <a href={timeline.link} target="_blank">
-                        <Box className="hover_ex_tab">{timeline.title}</Box>
+                        <Box
+                          sx={{ textDecoration: "underline" }}
+                          className="hover_ex_tab"
+                        >
+                          {timeline.title}
+                        </Box>
                       </a>
                     ) : (
                       timeline.title
