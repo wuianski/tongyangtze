@@ -12,18 +12,23 @@ import { images } from "@/next.config";
 export const metadata = {
   title: "Tong Yang-Tze",
   description: "Tong Yang-Tze Official Website",
-  // icons: {
-  //   icon: "/icon/icon.png",
-  // },
+  icons: {
+    icon: "/icon/icon.png",
+  },
   openGraph: {
     title: "Tong Yang-Tze",
     description: "Tong Yang-Tze Official Website",
     images: [
       {
         url: "https://dev.tongyangtze.com/Index_Desktop.jpg",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "https://dev.tongyangtze.com/contact.png", // Must be an absolute URL
         width: 1920,
-        height: 1279,
-        alt: "Tong Yang-Tze",
+        height: 1280,
+        alt: "My custom alt",
       },
     ],
   },
