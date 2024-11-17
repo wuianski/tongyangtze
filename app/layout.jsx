@@ -17,12 +17,12 @@ export const metadata = {
     description: "Tong Yang-Tze Official Website",
     images: [
       {
-        url: "https://dev.tongyangtze.com/Index_Desktop.jpg",
+        url: "https://tongyangtze.com/Index_Desktop.jpg",
         width: 800,
         height: 600,
       },
       {
-        url: "https://dev.tongyangtze.com/contact.png", // Must be an absolute URL
+        url: "https://tongyangtze.com/contact.png", // Must be an absolute URL
         width: 1920,
         height: 1280,
         alt: "My custom alt",

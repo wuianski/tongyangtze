@@ -5,7 +5,7 @@ const nextConfig = {
     // remotePatterns: [
     //   {
     //     protocol: 'https',
-    //     hostname: 'dev.tongyangtze.com',
+    //     hostname: 'tongyangtze.com',
     //     port: '',
     //     pathname: '/images/**',
     //   },
