@@ -80,17 +80,37 @@ export default function Nav() {
           title={
             <React.Fragment>
               <Box color={textColor} sx={{ ml: "-3px", pb: 0.5 }}>
-                <Link href="/about#exhibition" className={hoverClass}>
+                {/* <Link href="/about#exhibition" className={hoverClass} >
+                 */}
+                <Link
+                  href={{
+                    pathname: "/about",
+                    query: { search: "exhibition" },
+                  }}
+                  className={hoverClass}
+                >
                   Exhibition
                 </Link>
               </Box>
               <Box color={textColor} sx={{ ml: "-3px", pb: 0.5 }}>
-                <Link href="/about#article" className={hoverClass}>
+                <Link
+                  href={{
+                    pathname: "/about",
+                    query: { search: "article" },
+                  }}
+                  className={hoverClass}
+                >
                   Article
                 </Link>
               </Box>
               <Box color={textColor} sx={{ ml: "-3px", pb: 0.5 }}>
-                <Link href="/about#press" className={hoverClass}>
+                <Link
+                  href={{
+                    pathname: "/about",
+                    query: { search: "press" },
+                  }}
+                  className={hoverClass}
+                >
                   Press
                 </Link>
               </Box>

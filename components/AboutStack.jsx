@@ -1,7 +1,9 @@
 "use client";
 
+import { useEffect, Suspense, use } from "react";
 /* Next */
 import Image from "next/image";
+import { useSearchParams } from "next/navigation";
 /* MUI */
 import { Box, Paper, Stack, styled } from "@mui/material";
 /* Components */
@@ -12,6 +14,8 @@ import ExhibitionAccordion from "@/components/ExhibitionAccordion";
 import about from "@/public/profile.jpeg";
 /* Framer Motion */
 import { motion } from "framer-motion";
+/* Seamless Scroll Polyfill */
+import { scrollIntoView } from "seamless-scroll-polyfill";
 
 const Item = styled(Paper)(({ theme }) => ({
   textAlign: "left",
@@ -45,8 +49,38 @@ export default function AboutStack({
     }),
   };
 
+  // using seamless-scroll-polyfill with react Suspense
+  const GoToElement = () => {
+    const searchParams = useSearchParams();
+    const search = searchParams.get("search");
+
+    useEffect(() => {
+      if (search === "exhibition") {
+        scrollIntoView(document.querySelector("#exhibition"), {
+          block: "start",
+          behavior: "smooth",
+        });
+      } else if (search === "article") {
+        scrollIntoView(document.querySelector("#article"), {
+          block: "start",
+          behavior: "smooth",
+        });
+      } else if (search === "press") {
+        scrollIntoView(document.querySelector("#press"), {
+          block: "start",
+          behavior: "smooth",
+        });
+      }
+    }, [search]);
+
+    return null;
+  };
+
   return (
     <>
+      <Suspense>
+        <GoToElement />
+      </Suspense>
       <Box pt={{ xs: 16, sm: 17 }} pl={{ xs: 2, sm: 2 }} pr={{ xs: 2, sm: 15 }}>
         <Stack direction={{ xs: "column-reverse", sm: "row" }} spacing={0}>
           <Item sx={{ width: { xs: "100%", sm: "80%" } }}>
