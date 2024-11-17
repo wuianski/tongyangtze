@@ -11,8 +11,6 @@ import { styled } from "@mui/material/styles";
 /* Components */
 import Nav from "@/components/Nav";
 import NavMobile from "@/components/NavMobileM";
-/* Framer Motion */
-import { motion } from "framer-motion";
 
 /* Stack Item Setting */
 const Item = styled(Paper)(({}) => ({
@@ -28,25 +26,30 @@ export default function Header() {
   const pathname = usePathname();
   //   console.log(pathname);
   let backgroundColor;
-  let textColor;
+  let textColor_mobile;
+  let textColor_desktop;
   let siteBackgroundColor;
 
   if (pathname === "/about" || pathname === "/contacts") {
     backgroundColor = "none";
-    textColor = "#222";
+    textColor_mobile = "#222";
+    textColor_desktop = "#222";
     siteBackgroundColor = "#fff";
   } else if (pathname === "/others") {
     backgroundColor = "#fff";
     siteBackgroundColor = "#fff";
   } else if (pathname === "/works") {
     backgroundColor = "#151515ff";
-    textColor = "#aaa";
+    textColor_mobile = "#aaa";
+    textColor_desktop = "#aaa";
   } else if (pathname === "/") {
     backgroundColor = "none";
-    textColor = "#222";
+    textColor_mobile = "#222";
+    textColor_desktop = "#aaa";
   } else {
     backgroundColor = "#151515ff";
-    textColor = "#aaa";
+    textColor_mobile = "#aaa";
+    textColor_desktop = "#aaa";
   }
 
   return (
@@ -73,10 +76,25 @@ export default function Header() {
                 sx={{
                   fontSize: { xs: 15, md: 15 },
                   width: "fit-content",
-                  color: textColor,
+                  color: textColor_mobile,
                   position: "fixed",
                   zIndex: 99,
                   fontFamily: "apparat",
+                  display: { xs: "block", md: "none" },
+                }}
+                p={2}
+              >
+                Tong Yang-Tze
+              </Box>
+              <Box
+                sx={{
+                  fontSize: { xs: 15, md: 15 },
+                  width: "fit-content",
+                  color: textColor_desktop,
+                  position: "fixed",
+                  zIndex: 99,
+                  fontFamily: "apparat",
+                  display: { xs: "none", md: "block" },
                 }}
                 p={2}
               >
@@ -150,7 +168,7 @@ export default function Header() {
                 <Nav />
               </Box>
               <Box sx={{ display: { xs: "block", md: "none" } }}>
-                <NavMobile textColor={textColor} />
+                <NavMobile textColor={textColor_mobile} />
               </Box>
             </Box>
           </Item>

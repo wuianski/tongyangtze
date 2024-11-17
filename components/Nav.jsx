@@ -26,13 +26,13 @@ export default function Nav() {
   let textColor;
   let hoverClass;
 
-  if (pathname === "/about" || pathname === "/contacts" || pathname === "/") {
+  if (pathname === "/about" || pathname === "/contacts") {
     textColor = "#222";
     hoverClass = "hover_ex_tab";
   } else if (pathname === "/others") {
     textColor = "#222";
     hoverClass = "hover_ex_tab";
-  } else if (pathname === "/works") {
+  } else if (pathname === "/works" || pathname === "/") {
     textColor = "#aaa";
     hoverClass = "hover_works";
   } else {

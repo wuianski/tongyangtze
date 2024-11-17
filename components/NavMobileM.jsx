@@ -3,7 +3,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 /* MUI */
-import { Box, Modal, Slide, Backdrop, Fade, Grow } from "@mui/material";
+import { Box, Modal, Backdrop, Fade } from "@mui/material";
 /* Icons */
 import MenuLight from "@/public/icons/menu-light.svg";
 import MenuDark from "@/public/icons/menu-dark.svg";
@@ -29,7 +29,7 @@ const style = {
 
 const logo = "/g90.png";
 
-export default function NavMobile({ textColor }) {
+export default function NavMobile() {
   const pathname = usePathname();
   const [nav_m, setNav_m] = useState(false);
   const handleOpen = () => {
