@@ -58,17 +58,17 @@ export default function AboutStack({
       if (search === "exhibition") {
         scrollIntoView(document.querySelector("#exhibition"), {
           block: "start",
-          behavior: "smooth",
+          behavior: "instant",
         });
       } else if (search === "article") {
         scrollIntoView(document.querySelector("#article"), {
           block: "start",
-          behavior: "smooth",
+          behavior: "instant",
         });
       } else if (search === "press") {
         scrollIntoView(document.querySelector("#press"), {
           block: "start",
-          behavior: "smooth",
+          behavior: "instant",
         });
       }
     }, [search]);
