@@ -6,8 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import { LayoutTransition } from "@/components/LayoutTransition";
-import { title } from "process";
-import { images } from "@/next.config";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata = {
   title: "Tong Yang-Tze",
@@ -65,6 +64,7 @@ export default function RootLayout({ children }) {
           </main>
         </LayoutTransition>
       </body>
+      <GoogleAnalytics gaId="G-P95ZN0CFW9" />
     </html>
   );
 }
