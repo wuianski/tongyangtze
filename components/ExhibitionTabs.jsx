@@ -98,7 +98,7 @@ export default function ExhibitionTabs({ currentExs, pastExs, upcomingExs }) {
               onChange={handleChange}
               aria-label="exhibitions tabs"
             >
-              <StyledTab label="Current" {...a11yProps(0)} />
+              <StyledTab label="Recent" {...a11yProps(0)} />
               <StyledTab label="Past" {...a11yProps(1)} />
               {/* <StyledTab label="Upcoming" {...a11yProps(2)} /> */}
             </StyledTabs>

@@ -60,7 +60,7 @@ export default function ExhibitionAccordion({
             aria-controls="panel1-content"
             id="panel1-header"
           >
-            <Typography>Current</Typography>
+            <Typography>Recent</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <AboutList timelines={currentExs} />
