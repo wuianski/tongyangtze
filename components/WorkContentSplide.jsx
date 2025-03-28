@@ -155,7 +155,22 @@ export default function WorkContent({ work }) {
   const renderSlides = () => {
     return work.works.map((slide) => (
       <SplideSlide key={slide.src}>
-        <img src={slide.src} alt={slide.alt} />
+        {/* <img src={slide.src} alt={slide.alt} /> */}
+        <Image
+          src={slide.src}
+          width={0}
+          height={0}
+          alt="Picture of the artwork"
+          style={{
+            width: "auto",
+            maxWidth: "100%",
+            height: "100%",
+            // maxHeight: "49dvh",
+          }}
+          quality={100}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
+          priority={true}
+        />
       </SplideSlide>
     ));
   };
