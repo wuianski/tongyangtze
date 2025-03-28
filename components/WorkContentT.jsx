@@ -66,10 +66,11 @@ export default function WorkContent({ work }) {
     dots: true,
     // dotsClass: "slick-dots slick-thumb",
     infinite: false,
-    speed: 1000,
+    speed: 100,
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
+    waitForAnimate: false,
   };
 
   /* Framer Motion */

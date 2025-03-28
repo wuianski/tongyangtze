@@ -119,6 +119,7 @@ export default function WorkContent({ work }) {
               nextArrow={<NextArrow />}
               prevArrow={<PrevArrow />}
               adaptiveHeight={false}
+              swipeToSlide={false}
             >
               {work.works.map((w, index) => {
                 return (
@@ -215,7 +216,7 @@ export default function WorkContent({ work }) {
               // centerMode={true}
               // slidesToShow={1}
               // slidesToScroll={4}
-              swipeToSlide={true}
+              swipeToSlide={false}
               focusOnSelect={true}
               variableWidth={true}
               nextArrow={<NextArrow_thumb />}

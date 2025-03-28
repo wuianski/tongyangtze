@@ -4,10 +4,9 @@ import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "@splidejs/react-splide/css";
 
 import { LayoutTransition } from "@/components/LayoutTransition";
-import { title } from "process";
-import { images } from "@/next.config";
 
 export const metadata = {
   title: "Tong Yang-Tze",
