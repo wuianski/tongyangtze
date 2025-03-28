@@ -11,6 +11,8 @@ import { styled } from "@mui/material/styles";
 /* Components */
 import Nav from "@/components/Nav";
 import NavMobile from "@/components/NavMobileM";
+/* Image */
+import logo from "@/public/g90.png";
 
 /* Stack Item Setting */
 const Item = styled(Paper)(({}) => ({
@@ -20,7 +22,7 @@ const Item = styled(Paper)(({}) => ({
   boxShadow: "none",
 }));
 
-const logo = "/g90.png";
+// const logo = "/g90.png";
 
 export default function Header() {
   const pathname = usePathname();
